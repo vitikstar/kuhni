@@ -1,0 +1,6104 @@
+2022-06-28 9:00:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: OCMOD Editor for OpenCart 3.0.x
+
+FILE: admin/controller/startup/permission.php
+CODE: $extension = array(
+LINE: 18
+
+FILE: admin/controller/marketplace/modification.php
+CODE: public function index() {
+LINE: 22
+CODE: $data['refresh'] = $this->url->link('marketplace/modification/refresh', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 674
+CODE: $data['modifications'][] = array(
+LINE: 696
+CODE: public function index() {
+LINE: 10
+CODE: $this->response->redirect($this->url->link('marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));
+LINE: 521
+
+FILE: admin/view/template/marketplace/modification.twig
+CODE: <div class="pull-right">
+LINE: 5
+CODE: {% if not modification.enabled %}
+LINE: 96
+----------------------------------------------------------------
+2022-06-28 9:00:50 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: OCMOD Editor for OpenCart 3.0.x
+
+FILE: admin/controller/startup/permission.php
+CODE: $extension = array(
+LINE: 18
+
+FILE: admin/controller/marketplace/modification.php
+CODE: public function index() {
+LINE: 22
+CODE: $data['refresh'] = $this->url->link('marketplace/modification/refresh', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 674
+CODE: $data['modifications'][] = array(
+LINE: 696
+CODE: public function index() {
+LINE: 10
+CODE: $this->response->redirect($this->url->link('marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));
+LINE: 521
+
+FILE: admin/view/template/marketplace/modification.twig
+CODE: <div class="pull-right">
+LINE: 5
+CODE: {% if not modification.enabled %}
+LINE: 96
+----------------------------------------------------------------
+2022-06-28 9:01:49 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: OCMOD Editor for OpenCart 3.0.x
+
+FILE: admin/controller/startup/permission.php
+CODE: $extension = array(
+LINE: 18
+
+FILE: admin/controller/marketplace/modification.php
+CODE: public function index() {
+LINE: 22
+CODE: $data['refresh'] = $this->url->link('marketplace/modification/refresh', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 674
+CODE: $data['modifications'][] = array(
+LINE: 696
+CODE: public function index() {
+LINE: 10
+CODE: $this->response->redirect($this->url->link('marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));
+LINE: 521
+
+FILE: admin/view/template/marketplace/modification.twig
+CODE: <div class="pull-right">
+LINE: 5
+CODE: {% if not modification.enabled %}
+LINE: 96
+----------------------------------------------------------------
+MOD: Summernote code fix
+
+FILE: admin/view/template/extension/analytics/google.twig
+CODE: {{ footer }}
+LINE: 69
+
+FILE: admin/view/template/extension/captcha/basic.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/captcha/google.twig
+CODE: {{ footer }}
+LINE: 76
+
+FILE: admin/view/template/extension/dashboard/activity_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/activity_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/chart_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/chart_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/customer_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/customer_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/map_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/map_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/online_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/online_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/order_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/recent_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/recent_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/sale_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/sale_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/analytics.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/captcha.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/dashboard.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/feed.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/fraud.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/menu.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/module.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/payment.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/report.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/shipping.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/theme.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/total.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/feed/google_base.twig
+CODE: {{ footer }}
+LINE: 257
+
+FILE: admin/view/template/extension/feed/google_base_category.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/feed/google_sitemap.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/feed/unisender.twig
+CODE: {{ footer }}
+LINE: 130
+
+FILE: admin/view/template/extension/feed/yandex_market.twig
+CODE: {{ footer }}
+LINE: 387
+
+FILE: admin/view/template/extension/feed/yandex_turbo.twig
+CODE: {{ footer }}
+LINE: 89
+
+FILE: admin/view/template/extension/fraud/fraudlabspro.twig
+CODE: {{ footer }}
+LINE: 199
+
+FILE: admin/view/template/extension/fraud/fraudlabspro_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/fraud/ip.twig
+CODE: {{ footer }}
+LINE: 186
+
+FILE: admin/view/template/extension/fraud/ip_ip.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/fraud/maxmind.twig
+CODE: {{ footer }}
+LINE: 87
+
+FILE: admin/view/template/extension/fraud/maxmind_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/modification/diff.twig
+CODE: {{ footer }}
+LINE: 58
+
+FILE: admin/view/template/extension/modification/editor.twig
+CODE: {{ footer }}
+LINE: 162
+
+FILE: admin/view/template/extension/modification/error_log.twig
+CODE: {{ footer }}
+LINE: 53
+
+FILE: admin/view/template/extension/modification/files.twig
+CODE: {{ footer }}
+LINE: 71
+
+FILE: admin/view/template/extension/module/account.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/amazon_login.twig
+CODE: {{ footer }}
+LINE: 156
+
+FILE: admin/view/template/extension/module/amazon_pay.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/module/banner.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/bestseller.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/blog_category.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/blog_featured.twig
+CODE: {{ footer }}
+LINE: 131
+
+FILE: admin/view/template/extension/module/blog_latest.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/carousel.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/category.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/divido_calculator.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/ebay_listing.twig
+CODE: {{ footer }}
+LINE: 144
+
+FILE: admin/view/template/extension/module/featured.twig
+CODE: {{ footer }}
+LINE: 131
+
+FILE: admin/view/template/extension/module/featured_article.twig
+CODE: {{ footer }}
+LINE: 91
+
+FILE: admin/view/template/extension/module/featured_product.twig
+CODE: {{ footer }}
+LINE: 91
+
+FILE: admin/view/template/extension/module/filter.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/google_hangouts.twig
+CODE: {{ footer }}
+LINE: 66
+
+FILE: admin/view/template/extension/module/html.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/module/information.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/klarna_checkout_module.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/latest.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/laybuy_layout.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/pilibaba_button.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/pp_braintree_button.twig
+CODE: {{ footer }}
+LINE: 65
+
+FILE: admin/view/template/extension/module/pp_button.twig
+CODE: {{ footer }}
+LINE: 68
+
+FILE: admin/view/template/extension/module/pp_login.twig
+CODE: {{ footer }}
+LINE: 169
+
+FILE: admin/view/template/extension/module/sagepay_direct_cards.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/sagepay_server_cards.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/slideshow.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/special.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/store.twig
+CODE: {{ footer }}
+LINE: 80
+
+FILE: admin/view/template/extension/openbay/amazon.twig
+CODE: {{ footer }}
+LINE: 74
+
+FILE: admin/view/template/extension/openbay/amazon_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazon_bulk_linking.twig
+CODE: {{ footer }}
+LINE: 180
+
+FILE: admin/view/template/extension/openbay/amazon_bulk_listing.twig
+CODE: {{ footer }}
+LINE: 255
+
+FILE: admin/view/template/extension/openbay/amazon_item_links.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazon_listing.twig
+CODE: {{ footer }}
+LINE: 384
+
+FILE: admin/view/template/extension/openbay/amazon_listing_advanced.twig
+CODE: {{ footer }}
+LINE: 729
+
+FILE: admin/view/template/extension/openbay/amazon_listing_edit.twig
+CODE: {{ footer }}
+LINE: 78
+
+FILE: admin/view/template/extension/openbay/amazon_saved_listings.twig
+CODE: {{ footer }}
+LINE: 120
+
+FILE: admin/view/template/extension/openbay/amazon_settings.twig
+CODE: {{ footer }}
+LINE: 221
+
+FILE: admin/view/template/extension/openbay/amazon_stock_updates.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/amazon_subscription.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/openbay/amazonus.twig
+CODE: {{ footer }}
+LINE: 74
+
+FILE: admin/view/template/extension/openbay/amazonus_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazonus_bulk_linking.twig
+CODE: {{ footer }}
+LINE: 166
+
+FILE: admin/view/template/extension/openbay/amazonus_bulk_listing.twig
+CODE: {{ footer }}
+LINE: 234
+
+FILE: admin/view/template/extension/openbay/amazonus_item_links.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazonus_listing.twig
+CODE: {{ footer }}
+LINE: 369
+
+FILE: admin/view/template/extension/openbay/amazonus_listing_advanced.twig
+CODE: {{ footer }}
+LINE: 698
+
+FILE: admin/view/template/extension/openbay/amazonus_listing_edit.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/openbay/amazonus_saved_listings.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/openbay/amazonus_settings.twig
+CODE: {{ footer }}
+LINE: 188
+
+FILE: admin/view/template/extension/openbay/amazonus_stock_updates.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/amazonus_subscription.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/openbay/ebay.twig
+CODE: {{ footer }}
+LINE: 89
+
+FILE: admin/view/template/extension/openbay/ebay_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_edit.twig
+CODE: {{ footer }}
+LINE: 430
+
+FILE: admin/view/template/extension/openbay/ebay_item_import.twig
+CODE: {{ footer }}
+LINE: 106
+
+FILE: admin/view/template/extension/openbay/ebay_item_link.twig
+CODE: {{ footer }}
+LINE: 452
+
+FILE: admin/view/template/extension/openbay/ebay_new.twig
+CODE: {{ footer }}
+LINE: 2466
+
+FILE: admin/view/template/extension/openbay/ebay_new_bulk.twig
+CODE: {{ footer }}
+LINE: 1102
+
+FILE: admin/view/template/extension/openbay/ebay_order_import.twig
+CODE: {{ footer }}
+LINE: 66
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_generic.twig
+CODE: {{ footer }}
+LINE: 94
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_returns.twig
+CODE: {{ footer }}
+LINE: 158
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_shipping.twig
+CODE: {{ footer }}
+LINE: 425
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_template.twig
+CODE: {{ footer }}
+LINE: 176
+
+FILE: admin/view/template/extension/openbay/ebay_profile_list.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_international_calculated.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_international_flat.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_national_calculated.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_national_flat.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_settings.twig
+CODE: {{ footer }}
+LINE: 588
+
+FILE: admin/view/template/extension/openbay/ebay_subscription.twig
+CODE: {{ footer }}
+LINE: 166
+
+FILE: admin/view/template/extension/openbay/ebay_summary.twig
+CODE: {{ footer }}
+LINE: 163
+
+FILE: admin/view/template/extension/openbay/ebay_syncronise.twig
+CODE: {{ footer }}
+LINE: 136
+
+FILE: admin/view/template/extension/openbay/ebay_template_form.twig
+CODE: {{ footer }}
+LINE: 70
+
+FILE: admin/view/template/extension/openbay/ebay_template_list.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/openbay/ebay_usage.twig
+CODE: {{ footer }}
+LINE: 72
+
+FILE: admin/view/template/extension/openbay/etsy.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/openbay/etsy_create.twig
+CODE: {{ footer }}
+LINE: 491
+
+FILE: admin/view/template/extension/openbay/etsy_edit.twig
+CODE: {{ footer }}
+LINE: 133
+
+FILE: admin/view/template/extension/openbay/etsy_links.twig
+CODE: {{ footer }}
+LINE: 190
+
+FILE: admin/view/template/extension/openbay/etsy_listings.twig
+CODE: {{ footer }}
+LINE: 342
+
+FILE: admin/view/template/extension/openbay/etsy_settings.twig
+CODE: {{ footer }}
+LINE: 205
+
+FILE: admin/view/template/extension/openbay/fba.twig
+CODE: {{ footer }}
+LINE: 62
+
+FILE: admin/view/template/extension/openbay/fba_fulfillment_form.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/openbay/fba_fulfillment_list.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/fba_order_info.twig
+CODE: {{ footer }}
+LINE: 224
+
+FILE: admin/view/template/extension/openbay/fba_order_list.twig
+CODE: {{ footer }}
+LINE: 145
+
+FILE: admin/view/template/extension/openbay/fba_settings.twig
+CODE: {{ footer }}
+LINE: 203
+
+FILE: admin/view/template/extension/openbay/openbay_itemlist.twig
+CODE: {{ footer }}
+LINE: 373
+
+FILE: admin/view/template/extension/openbay/openbay_manage.twig
+CODE: {{ footer }}
+LINE: 380
+
+FILE: admin/view/template/extension/openbay/openbay_orderlist.twig
+CODE: {{ footer }}
+LINE: 235
+
+FILE: admin/view/template/extension/openbay/openbay_orderlist_confirm.twig
+CODE: {{ footer }}
+LINE: 181
+
+FILE: admin/view/template/extension/payment/alipay.twig
+CODE: {{ footer }}
+LINE: 145
+
+FILE: admin/view/template/extension/payment/alipay_cross.twig
+CODE: {{ footer }}
+LINE: 150
+
+FILE: admin/view/template/extension/payment/amazon_login_pay.twig
+CODE: {{ footer }}
+LINE: 378
+
+FILE: admin/view/template/extension/payment/amazon_login_pay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/authorizenet_aim.twig
+CODE: {{ footer }}
+LINE: 173
+
+FILE: admin/view/template/extension/payment/authorizenet_sim.twig
+CODE: {{ footer }}
+LINE: 151
+
+FILE: admin/view/template/extension/payment/bank_transfer.twig
+CODE: {{ footer }}
+LINE: 111
+
+FILE: admin/view/template/extension/payment/bluepay_hosted.twig
+CODE: {{ footer }}
+LINE: 195
+
+FILE: admin/view/template/extension/payment/bluepay_hosted_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/bluepay_redirect.twig
+CODE: {{ footer }}
+LINE: 172
+
+FILE: admin/view/template/extension/payment/bluepay_redirect_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/buttons.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardconnect.twig
+CODE: {{ footer }}
+LINE: 316
+
+FILE: admin/view/template/extension/payment/cardconnect_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardinity.twig
+CODE: {{ footer }}
+LINE: 136
+
+FILE: admin/view/template/extension/payment/cardinity_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardinity_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cheque.twig
+CODE: {{ footer }}
+LINE: 123
+
+FILE: admin/view/template/extension/payment/cod.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/payment/divido.twig
+CODE: {{ footer }}
+LINE: 242
+
+FILE: admin/view/template/extension/payment/divido_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/eway.twig
+CODE: {{ footer }}
+LINE: 231
+
+FILE: admin/view/template/extension/payment/eway_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/firstdata.twig
+CODE: {{ footer }}
+LINE: 258
+
+FILE: admin/view/template/extension/payment/firstdata_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/firstdata_remote.twig
+CODE: {{ footer }}
+LINE: 263
+
+FILE: admin/view/template/extension/payment/firstdata_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/free_checkout.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/payment/g2apay.twig
+CODE: {{ footer }}
+LINE: 262
+
+FILE: admin/view/template/extension/payment/g2apay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/globalpay.twig
+CODE: {{ footer }}
+LINE: 357
+
+FILE: admin/view/template/extension/payment/globalpay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/globalpay_remote.twig
+CODE: {{ footer }}
+LINE: 416
+
+FILE: admin/view/template/extension/payment/globalpay_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_account.twig
+CODE: {{ footer }}
+LINE: 200
+
+FILE: admin/view/template/extension/payment/klarna_checkout.twig
+CODE: {{ footer }}
+LINE: 651
+
+FILE: admin/view/template/extension/payment/klarna_checkout_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_checkout_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_invoice.twig
+CODE: {{ footer }}
+LINE: 173
+
+FILE: admin/view/template/extension/payment/laybuy.twig
+CODE: {{ footer }}
+LINE: 585
+
+FILE: admin/view/template/extension/payment/laybuy_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/laybuy_transaction.twig
+CODE: {{ footer }}
+LINE: 448
+
+FILE: admin/view/template/extension/payment/liqpay.twig
+CODE: {{ footer }}
+LINE: 133
+
+FILE: admin/view/template/extension/payment/nochex.twig
+CODE: {{ footer }}
+LINE: 196
+
+FILE: admin/view/template/extension/payment/ocstore_w1.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/paymate.twig
+CODE: {{ footer }}
+LINE: 139
+
+FILE: admin/view/template/extension/payment/paypoint.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/payment/payza.twig
+CODE: {{ footer }}
+LINE: 122
+
+FILE: admin/view/template/extension/payment/perpetual_payments.twig
+CODE: {{ footer }}
+LINE: 139
+
+FILE: admin/view/template/extension/payment/pilibaba.twig
+CODE: {{ footer }}
+LINE: 264
+
+FILE: admin/view/template/extension/payment/pilibaba_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree.twig
+CODE: {{ footer }}
+LINE: 1041
+
+FILE: admin/view/template/extension/payment/pp_braintree_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree_preferred.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express.twig
+CODE: {{ footer }}
+LINE: 471
+
+FILE: admin/view/template/extension/payment/pp_express_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_preferred.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_refund.twig
+CODE: {{ footer }}
+LINE: 85
+
+FILE: admin/view/template/extension/payment/pp_express_search.twig
+CODE: {{ footer }}
+LINE: 274
+
+FILE: admin/view/template/extension/payment/pp_express_transaction.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_view.twig
+CODE: {{ footer }}
+LINE: 483
+
+FILE: admin/view/template/extension/payment/pp_payflow.twig
+CODE: {{ footer }}
+LINE: 165
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe.twig
+CODE: {{ footer }}
+LINE: 222
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe_refund.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/payment/pp_pro.twig
+CODE: {{ footer }}
+LINE: 156
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe.twig
+CODE: {{ footer }}
+LINE: 325
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_refund.twig
+CODE: {{ footer }}
+LINE: 84
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_transaction.twig
+CODE: {{ footer }}
+LINE: 432
+
+FILE: admin/view/template/extension/payment/pp_standard.twig
+CODE: {{ footer }}
+LINE: 288
+
+FILE: admin/view/template/extension/payment/realex.twig
+CODE: {{ footer }}
+LINE: 357
+
+FILE: admin/view/template/extension/payment/realex_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/realex_remote.twig
+CODE: {{ footer }}
+LINE: 341
+
+FILE: admin/view/template/extension/payment/realex_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_direct.twig
+CODE: {{ footer }}
+LINE: 199
+
+FILE: admin/view/template/extension/payment/sagepay_direct_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_server.twig
+CODE: {{ footer }}
+LINE: 193
+
+FILE: admin/view/template/extension/payment/sagepay_server_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_us.twig
+CODE: {{ footer }}
+LINE: 116
+
+FILE: admin/view/template/extension/payment/securetrading_pp.twig
+CODE: {{ footer }}
+LINE: 276
+
+FILE: admin/view/template/extension/payment/securetrading_pp_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/securetrading_ws.twig
+CODE: {{ footer }}
+LINE: 511
+
+FILE: admin/view/template/extension/payment/securetrading_ws_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/securetrading_ws_transactions.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/skrill.twig
+CODE: {{ footer }}
+LINE: 169
+
+FILE: admin/view/template/extension/payment/squareup.twig
+CODE: {{ footer }}
+LINE: 754
+
+FILE: admin/view/template/extension/payment/squareup_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/squareup_recurring_buttons.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/squareup_transaction_info.twig
+CODE: {{ footer }}
+LINE: 371
+
+FILE: admin/view/template/extension/payment/twocheckout.twig
+CODE: {{ footer }}
+LINE: 162
+
+FILE: admin/view/template/extension/payment/web_payment_software.twig
+CODE: {{ footer }}
+LINE: 150
+
+FILE: admin/view/template/extension/payment/webmoney_wmb.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wme.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmk.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmr.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmu.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmv.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmz.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/wechat_pay.twig
+CODE: {{ footer }}
+LINE: 143
+
+FILE: admin/view/template/extension/payment/worldpay.twig
+CODE: {{ footer }}
+LINE: 382
+
+FILE: admin/view/template/extension/payment/worldpay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_activity_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_activity_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_order_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_reward_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_reward_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_search_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_search_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_transaction_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_transaction_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/marketing_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/marketing_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/product_purchased_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/product_purchased_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/product_viewed_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/product_viewed_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_coupon_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_coupon_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_order_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_return_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_return_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_shipping_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_shipping_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_tax_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_tax_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/shipping/auspost.twig
+CODE: {{ footer }}
+LINE: 125
+
+FILE: admin/view/template/extension/shipping/citylink.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/ec_ship.twig
+CODE: {{ footer }}
+LINE: 296
+
+FILE: admin/view/template/extension/shipping/fedex.twig
+CODE: {{ footer }}
+LINE: 365
+
+FILE: admin/view/template/extension/shipping/flat.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/free.twig
+CODE: {{ footer }}
+LINE: 84
+
+FILE: admin/view/template/extension/shipping/item.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/parcelforce_48.twig
+CODE: {{ footer }}
+LINE: 174
+
+FILE: admin/view/template/extension/shipping/pickup.twig
+CODE: {{ footer }}
+LINE: 78
+
+FILE: admin/view/template/extension/shipping/royal_mail.twig
+CODE: {{ footer }}
+LINE: 517
+
+FILE: admin/view/template/extension/shipping/ups.twig
+CODE: {{ footer }}
+LINE: 919
+
+FILE: admin/view/template/extension/shipping/usps.twig
+CODE: {{ footer }}
+LINE: 678
+
+FILE: admin/view/template/extension/shipping/weight.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/theme/default.twig
+CODE: {{ footer }}
+LINE: 274
+
+FILE: admin/view/template/extension/total/coupon.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/credit.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/handling.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/total/klarna_fee.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/total/low_order_fee.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/total/reward.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/shipping.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/total/sub_total.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/tax.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/total.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/voucher.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/catalog/attribute_form.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/catalog/attribute_group_form.twig
+CODE: {{ footer }}
+LINE: 62
+
+FILE: admin/view/template/catalog/attribute_group_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/attribute_list.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/catalog/category_form.twig
+CODE: {{ footer }}
+LINE: 420
+
+FILE: admin/view/template/catalog/category_list.twig
+CODE: {{ footer }}
+LINE: 106
+
+FILE: admin/view/template/catalog/download_form.twig
+CODE: {{ footer }}
+LINE: 127
+
+FILE: admin/view/template/catalog/download_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/filter_form.twig
+CODE: {{ footer }}
+LINE: 121
+
+FILE: admin/view/template/catalog/filter_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/information_form.twig
+CODE: {{ footer }}
+LINE: 236
+
+FILE: admin/view/template/catalog/information_list.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/catalog/manufacturer_form.twig
+CODE: {{ footer }}
+LINE: 294
+
+FILE: admin/view/template/catalog/manufacturer_list.twig
+CODE: {{ footer }}
+LINE: 101
+
+FILE: admin/view/template/catalog/option_form.twig
+CODE: {{ footer }}
+LINE: 267
+
+FILE: admin/view/template/catalog/option_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: {{ footer }}
+LINE: 1722
+
+FILE: admin/view/template/catalog/product_list.twig
+CODE: {{ footer }}
+LINE: 525
+
+FILE: admin/view/template/catalog/recurring_form.twig
+CODE: {{ footer }}
+LINE: 163
+
+FILE: admin/view/template/catalog/recurring_list.twig
+CODE: {{ footer }}
+LINE: 93
+
+FILE: admin/view/template/catalog/review_form.twig
+CODE: {{ footer }}
+LINE: 167
+
+FILE: admin/view/template/catalog/review_list.twig
+CODE: {{ footer }}
+LINE: 253
+----------------------------------------------------------------
+2022-06-28 9:02:04 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: OCMOD Editor for OpenCart 3.0.x
+
+FILE: admin/controller/startup/permission.php
+CODE: $extension = array(
+LINE: 18
+
+FILE: admin/controller/marketplace/modification.php
+CODE: public function index() {
+LINE: 22
+CODE: $data['refresh'] = $this->url->link('marketplace/modification/refresh', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 674
+CODE: $data['modifications'][] = array(
+LINE: 696
+CODE: public function index() {
+LINE: 10
+CODE: $this->response->redirect($this->url->link('marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));
+LINE: 521
+
+FILE: admin/view/template/marketplace/modification.twig
+CODE: <div class="pull-right">
+LINE: 5
+CODE: {% if not modification.enabled %}
+LINE: 96
+----------------------------------------------------------------
+MOD: Summernote code fix
+
+FILE: admin/view/template/extension/analytics/google.twig
+CODE: {{ footer }}
+LINE: 69
+
+FILE: admin/view/template/extension/captcha/basic.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/captcha/google.twig
+CODE: {{ footer }}
+LINE: 76
+
+FILE: admin/view/template/extension/dashboard/activity_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/activity_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/chart_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/chart_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/customer_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/customer_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/map_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/map_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/online_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/online_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/order_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/recent_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/recent_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/sale_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/sale_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/analytics.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/captcha.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/dashboard.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/feed.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/fraud.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/menu.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/module.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/payment.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/report.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/shipping.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/theme.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/total.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/feed/google_base.twig
+CODE: {{ footer }}
+LINE: 257
+
+FILE: admin/view/template/extension/feed/google_base_category.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/feed/google_sitemap.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/feed/unisender.twig
+CODE: {{ footer }}
+LINE: 130
+
+FILE: admin/view/template/extension/feed/yandex_market.twig
+CODE: {{ footer }}
+LINE: 387
+
+FILE: admin/view/template/extension/feed/yandex_turbo.twig
+CODE: {{ footer }}
+LINE: 89
+
+FILE: admin/view/template/extension/fraud/fraudlabspro.twig
+CODE: {{ footer }}
+LINE: 199
+
+FILE: admin/view/template/extension/fraud/fraudlabspro_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/fraud/ip.twig
+CODE: {{ footer }}
+LINE: 186
+
+FILE: admin/view/template/extension/fraud/ip_ip.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/fraud/maxmind.twig
+CODE: {{ footer }}
+LINE: 87
+
+FILE: admin/view/template/extension/fraud/maxmind_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/modification/diff.twig
+CODE: {{ footer }}
+LINE: 58
+
+FILE: admin/view/template/extension/modification/editor.twig
+CODE: {{ footer }}
+LINE: 162
+
+FILE: admin/view/template/extension/modification/error_log.twig
+CODE: {{ footer }}
+LINE: 53
+
+FILE: admin/view/template/extension/modification/files.twig
+CODE: {{ footer }}
+LINE: 71
+
+FILE: admin/view/template/extension/module/account.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/amazon_login.twig
+CODE: {{ footer }}
+LINE: 156
+
+FILE: admin/view/template/extension/module/amazon_pay.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/module/banner.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/bestseller.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/blog_category.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/blog_featured.twig
+CODE: {{ footer }}
+LINE: 131
+
+FILE: admin/view/template/extension/module/blog_latest.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/carousel.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/category.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/divido_calculator.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/ebay_listing.twig
+CODE: {{ footer }}
+LINE: 144
+
+FILE: admin/view/template/extension/module/featured.twig
+CODE: {{ footer }}
+LINE: 131
+
+FILE: admin/view/template/extension/module/featured_article.twig
+CODE: {{ footer }}
+LINE: 91
+
+FILE: admin/view/template/extension/module/featured_product.twig
+CODE: {{ footer }}
+LINE: 91
+
+FILE: admin/view/template/extension/module/filter.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/google_hangouts.twig
+CODE: {{ footer }}
+LINE: 66
+
+FILE: admin/view/template/extension/module/html.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/module/information.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/klarna_checkout_module.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/latest.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/laybuy_layout.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/pilibaba_button.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/pp_braintree_button.twig
+CODE: {{ footer }}
+LINE: 65
+
+FILE: admin/view/template/extension/module/pp_button.twig
+CODE: {{ footer }}
+LINE: 68
+
+FILE: admin/view/template/extension/module/pp_login.twig
+CODE: {{ footer }}
+LINE: 169
+
+FILE: admin/view/template/extension/module/sagepay_direct_cards.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/sagepay_server_cards.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/slideshow.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/special.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/store.twig
+CODE: {{ footer }}
+LINE: 80
+
+FILE: admin/view/template/extension/openbay/amazon.twig
+CODE: {{ footer }}
+LINE: 74
+
+FILE: admin/view/template/extension/openbay/amazon_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazon_bulk_linking.twig
+CODE: {{ footer }}
+LINE: 180
+
+FILE: admin/view/template/extension/openbay/amazon_bulk_listing.twig
+CODE: {{ footer }}
+LINE: 255
+
+FILE: admin/view/template/extension/openbay/amazon_item_links.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazon_listing.twig
+CODE: {{ footer }}
+LINE: 384
+
+FILE: admin/view/template/extension/openbay/amazon_listing_advanced.twig
+CODE: {{ footer }}
+LINE: 729
+
+FILE: admin/view/template/extension/openbay/amazon_listing_edit.twig
+CODE: {{ footer }}
+LINE: 78
+
+FILE: admin/view/template/extension/openbay/amazon_saved_listings.twig
+CODE: {{ footer }}
+LINE: 120
+
+FILE: admin/view/template/extension/openbay/amazon_settings.twig
+CODE: {{ footer }}
+LINE: 221
+
+FILE: admin/view/template/extension/openbay/amazon_stock_updates.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/amazon_subscription.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/openbay/amazonus.twig
+CODE: {{ footer }}
+LINE: 74
+
+FILE: admin/view/template/extension/openbay/amazonus_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazonus_bulk_linking.twig
+CODE: {{ footer }}
+LINE: 166
+
+FILE: admin/view/template/extension/openbay/amazonus_bulk_listing.twig
+CODE: {{ footer }}
+LINE: 234
+
+FILE: admin/view/template/extension/openbay/amazonus_item_links.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazonus_listing.twig
+CODE: {{ footer }}
+LINE: 369
+
+FILE: admin/view/template/extension/openbay/amazonus_listing_advanced.twig
+CODE: {{ footer }}
+LINE: 698
+
+FILE: admin/view/template/extension/openbay/amazonus_listing_edit.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/openbay/amazonus_saved_listings.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/openbay/amazonus_settings.twig
+CODE: {{ footer }}
+LINE: 188
+
+FILE: admin/view/template/extension/openbay/amazonus_stock_updates.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/amazonus_subscription.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/openbay/ebay.twig
+CODE: {{ footer }}
+LINE: 89
+
+FILE: admin/view/template/extension/openbay/ebay_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_edit.twig
+CODE: {{ footer }}
+LINE: 430
+
+FILE: admin/view/template/extension/openbay/ebay_item_import.twig
+CODE: {{ footer }}
+LINE: 106
+
+FILE: admin/view/template/extension/openbay/ebay_item_link.twig
+CODE: {{ footer }}
+LINE: 452
+
+FILE: admin/view/template/extension/openbay/ebay_new.twig
+CODE: {{ footer }}
+LINE: 2466
+
+FILE: admin/view/template/extension/openbay/ebay_new_bulk.twig
+CODE: {{ footer }}
+LINE: 1102
+
+FILE: admin/view/template/extension/openbay/ebay_order_import.twig
+CODE: {{ footer }}
+LINE: 66
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_generic.twig
+CODE: {{ footer }}
+LINE: 94
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_returns.twig
+CODE: {{ footer }}
+LINE: 158
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_shipping.twig
+CODE: {{ footer }}
+LINE: 425
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_template.twig
+CODE: {{ footer }}
+LINE: 176
+
+FILE: admin/view/template/extension/openbay/ebay_profile_list.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_international_calculated.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_international_flat.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_national_calculated.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_national_flat.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_settings.twig
+CODE: {{ footer }}
+LINE: 588
+
+FILE: admin/view/template/extension/openbay/ebay_subscription.twig
+CODE: {{ footer }}
+LINE: 166
+
+FILE: admin/view/template/extension/openbay/ebay_summary.twig
+CODE: {{ footer }}
+LINE: 163
+
+FILE: admin/view/template/extension/openbay/ebay_syncronise.twig
+CODE: {{ footer }}
+LINE: 136
+
+FILE: admin/view/template/extension/openbay/ebay_template_form.twig
+CODE: {{ footer }}
+LINE: 70
+
+FILE: admin/view/template/extension/openbay/ebay_template_list.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/openbay/ebay_usage.twig
+CODE: {{ footer }}
+LINE: 72
+
+FILE: admin/view/template/extension/openbay/etsy.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/openbay/etsy_create.twig
+CODE: {{ footer }}
+LINE: 491
+
+FILE: admin/view/template/extension/openbay/etsy_edit.twig
+CODE: {{ footer }}
+LINE: 133
+
+FILE: admin/view/template/extension/openbay/etsy_links.twig
+CODE: {{ footer }}
+LINE: 190
+
+FILE: admin/view/template/extension/openbay/etsy_listings.twig
+CODE: {{ footer }}
+LINE: 342
+
+FILE: admin/view/template/extension/openbay/etsy_settings.twig
+CODE: {{ footer }}
+LINE: 205
+
+FILE: admin/view/template/extension/openbay/fba.twig
+CODE: {{ footer }}
+LINE: 62
+
+FILE: admin/view/template/extension/openbay/fba_fulfillment_form.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/openbay/fba_fulfillment_list.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/fba_order_info.twig
+CODE: {{ footer }}
+LINE: 224
+
+FILE: admin/view/template/extension/openbay/fba_order_list.twig
+CODE: {{ footer }}
+LINE: 145
+
+FILE: admin/view/template/extension/openbay/fba_settings.twig
+CODE: {{ footer }}
+LINE: 203
+
+FILE: admin/view/template/extension/openbay/openbay_itemlist.twig
+CODE: {{ footer }}
+LINE: 373
+
+FILE: admin/view/template/extension/openbay/openbay_manage.twig
+CODE: {{ footer }}
+LINE: 380
+
+FILE: admin/view/template/extension/openbay/openbay_orderlist.twig
+CODE: {{ footer }}
+LINE: 235
+
+FILE: admin/view/template/extension/openbay/openbay_orderlist_confirm.twig
+CODE: {{ footer }}
+LINE: 181
+
+FILE: admin/view/template/extension/payment/alipay.twig
+CODE: {{ footer }}
+LINE: 145
+
+FILE: admin/view/template/extension/payment/alipay_cross.twig
+CODE: {{ footer }}
+LINE: 150
+
+FILE: admin/view/template/extension/payment/amazon_login_pay.twig
+CODE: {{ footer }}
+LINE: 378
+
+FILE: admin/view/template/extension/payment/amazon_login_pay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/authorizenet_aim.twig
+CODE: {{ footer }}
+LINE: 173
+
+FILE: admin/view/template/extension/payment/authorizenet_sim.twig
+CODE: {{ footer }}
+LINE: 151
+
+FILE: admin/view/template/extension/payment/bank_transfer.twig
+CODE: {{ footer }}
+LINE: 111
+
+FILE: admin/view/template/extension/payment/bluepay_hosted.twig
+CODE: {{ footer }}
+LINE: 195
+
+FILE: admin/view/template/extension/payment/bluepay_hosted_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/bluepay_redirect.twig
+CODE: {{ footer }}
+LINE: 172
+
+FILE: admin/view/template/extension/payment/bluepay_redirect_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/buttons.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardconnect.twig
+CODE: {{ footer }}
+LINE: 316
+
+FILE: admin/view/template/extension/payment/cardconnect_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardinity.twig
+CODE: {{ footer }}
+LINE: 136
+
+FILE: admin/view/template/extension/payment/cardinity_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardinity_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cheque.twig
+CODE: {{ footer }}
+LINE: 123
+
+FILE: admin/view/template/extension/payment/cod.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/payment/divido.twig
+CODE: {{ footer }}
+LINE: 242
+
+FILE: admin/view/template/extension/payment/divido_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/eway.twig
+CODE: {{ footer }}
+LINE: 231
+
+FILE: admin/view/template/extension/payment/eway_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/firstdata.twig
+CODE: {{ footer }}
+LINE: 258
+
+FILE: admin/view/template/extension/payment/firstdata_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/firstdata_remote.twig
+CODE: {{ footer }}
+LINE: 263
+
+FILE: admin/view/template/extension/payment/firstdata_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/free_checkout.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/payment/g2apay.twig
+CODE: {{ footer }}
+LINE: 262
+
+FILE: admin/view/template/extension/payment/g2apay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/globalpay.twig
+CODE: {{ footer }}
+LINE: 357
+
+FILE: admin/view/template/extension/payment/globalpay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/globalpay_remote.twig
+CODE: {{ footer }}
+LINE: 416
+
+FILE: admin/view/template/extension/payment/globalpay_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_account.twig
+CODE: {{ footer }}
+LINE: 200
+
+FILE: admin/view/template/extension/payment/klarna_checkout.twig
+CODE: {{ footer }}
+LINE: 651
+
+FILE: admin/view/template/extension/payment/klarna_checkout_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_checkout_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_invoice.twig
+CODE: {{ footer }}
+LINE: 173
+
+FILE: admin/view/template/extension/payment/laybuy.twig
+CODE: {{ footer }}
+LINE: 585
+
+FILE: admin/view/template/extension/payment/laybuy_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/laybuy_transaction.twig
+CODE: {{ footer }}
+LINE: 448
+
+FILE: admin/view/template/extension/payment/liqpay.twig
+CODE: {{ footer }}
+LINE: 133
+
+FILE: admin/view/template/extension/payment/nochex.twig
+CODE: {{ footer }}
+LINE: 196
+
+FILE: admin/view/template/extension/payment/ocstore_w1.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/paymate.twig
+CODE: {{ footer }}
+LINE: 139
+
+FILE: admin/view/template/extension/payment/paypoint.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/payment/payza.twig
+CODE: {{ footer }}
+LINE: 122
+
+FILE: admin/view/template/extension/payment/perpetual_payments.twig
+CODE: {{ footer }}
+LINE: 139
+
+FILE: admin/view/template/extension/payment/pilibaba.twig
+CODE: {{ footer }}
+LINE: 264
+
+FILE: admin/view/template/extension/payment/pilibaba_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree.twig
+CODE: {{ footer }}
+LINE: 1041
+
+FILE: admin/view/template/extension/payment/pp_braintree_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree_preferred.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express.twig
+CODE: {{ footer }}
+LINE: 471
+
+FILE: admin/view/template/extension/payment/pp_express_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_preferred.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_refund.twig
+CODE: {{ footer }}
+LINE: 85
+
+FILE: admin/view/template/extension/payment/pp_express_search.twig
+CODE: {{ footer }}
+LINE: 274
+
+FILE: admin/view/template/extension/payment/pp_express_transaction.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_view.twig
+CODE: {{ footer }}
+LINE: 483
+
+FILE: admin/view/template/extension/payment/pp_payflow.twig
+CODE: {{ footer }}
+LINE: 165
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe.twig
+CODE: {{ footer }}
+LINE: 222
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe_refund.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/payment/pp_pro.twig
+CODE: {{ footer }}
+LINE: 156
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe.twig
+CODE: {{ footer }}
+LINE: 325
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_refund.twig
+CODE: {{ footer }}
+LINE: 84
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_transaction.twig
+CODE: {{ footer }}
+LINE: 432
+
+FILE: admin/view/template/extension/payment/pp_standard.twig
+CODE: {{ footer }}
+LINE: 288
+
+FILE: admin/view/template/extension/payment/realex.twig
+CODE: {{ footer }}
+LINE: 357
+
+FILE: admin/view/template/extension/payment/realex_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/realex_remote.twig
+CODE: {{ footer }}
+LINE: 341
+
+FILE: admin/view/template/extension/payment/realex_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_direct.twig
+CODE: {{ footer }}
+LINE: 199
+
+FILE: admin/view/template/extension/payment/sagepay_direct_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_server.twig
+CODE: {{ footer }}
+LINE: 193
+
+FILE: admin/view/template/extension/payment/sagepay_server_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_us.twig
+CODE: {{ footer }}
+LINE: 116
+
+FILE: admin/view/template/extension/payment/securetrading_pp.twig
+CODE: {{ footer }}
+LINE: 276
+
+FILE: admin/view/template/extension/payment/securetrading_pp_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/securetrading_ws.twig
+CODE: {{ footer }}
+LINE: 511
+
+FILE: admin/view/template/extension/payment/securetrading_ws_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/securetrading_ws_transactions.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/skrill.twig
+CODE: {{ footer }}
+LINE: 169
+
+FILE: admin/view/template/extension/payment/squareup.twig
+CODE: {{ footer }}
+LINE: 754
+
+FILE: admin/view/template/extension/payment/squareup_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/squareup_recurring_buttons.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/squareup_transaction_info.twig
+CODE: {{ footer }}
+LINE: 371
+
+FILE: admin/view/template/extension/payment/twocheckout.twig
+CODE: {{ footer }}
+LINE: 162
+
+FILE: admin/view/template/extension/payment/web_payment_software.twig
+CODE: {{ footer }}
+LINE: 150
+
+FILE: admin/view/template/extension/payment/webmoney_wmb.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wme.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmk.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmr.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmu.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmv.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmz.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/wechat_pay.twig
+CODE: {{ footer }}
+LINE: 143
+
+FILE: admin/view/template/extension/payment/worldpay.twig
+CODE: {{ footer }}
+LINE: 382
+
+FILE: admin/view/template/extension/payment/worldpay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_activity_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_activity_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_order_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_reward_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_reward_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_search_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_search_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_transaction_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_transaction_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/marketing_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/marketing_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/product_purchased_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/product_purchased_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/product_viewed_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/product_viewed_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_coupon_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_coupon_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_order_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_return_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_return_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_shipping_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_shipping_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_tax_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_tax_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/shipping/auspost.twig
+CODE: {{ footer }}
+LINE: 125
+
+FILE: admin/view/template/extension/shipping/citylink.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/ec_ship.twig
+CODE: {{ footer }}
+LINE: 296
+
+FILE: admin/view/template/extension/shipping/fedex.twig
+CODE: {{ footer }}
+LINE: 365
+
+FILE: admin/view/template/extension/shipping/flat.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/free.twig
+CODE: {{ footer }}
+LINE: 84
+
+FILE: admin/view/template/extension/shipping/item.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/parcelforce_48.twig
+CODE: {{ footer }}
+LINE: 174
+
+FILE: admin/view/template/extension/shipping/pickup.twig
+CODE: {{ footer }}
+LINE: 78
+
+FILE: admin/view/template/extension/shipping/royal_mail.twig
+CODE: {{ footer }}
+LINE: 517
+
+FILE: admin/view/template/extension/shipping/ups.twig
+CODE: {{ footer }}
+LINE: 919
+
+FILE: admin/view/template/extension/shipping/usps.twig
+CODE: {{ footer }}
+LINE: 678
+
+FILE: admin/view/template/extension/shipping/weight.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/theme/default.twig
+CODE: {{ footer }}
+LINE: 274
+
+FILE: admin/view/template/extension/total/coupon.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/credit.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/handling.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/total/klarna_fee.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/total/low_order_fee.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/total/reward.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/shipping.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/total/sub_total.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/tax.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/total.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/voucher.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/catalog/attribute_form.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/catalog/attribute_group_form.twig
+CODE: {{ footer }}
+LINE: 62
+
+FILE: admin/view/template/catalog/attribute_group_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/attribute_list.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/catalog/category_form.twig
+CODE: {{ footer }}
+LINE: 420
+
+FILE: admin/view/template/catalog/category_list.twig
+CODE: {{ footer }}
+LINE: 106
+
+FILE: admin/view/template/catalog/download_form.twig
+CODE: {{ footer }}
+LINE: 127
+
+FILE: admin/view/template/catalog/download_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/filter_form.twig
+CODE: {{ footer }}
+LINE: 121
+
+FILE: admin/view/template/catalog/filter_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/information_form.twig
+CODE: {{ footer }}
+LINE: 236
+
+FILE: admin/view/template/catalog/information_list.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/catalog/manufacturer_form.twig
+CODE: {{ footer }}
+LINE: 294
+
+FILE: admin/view/template/catalog/manufacturer_list.twig
+CODE: {{ footer }}
+LINE: 101
+
+FILE: admin/view/template/catalog/option_form.twig
+CODE: {{ footer }}
+LINE: 267
+
+FILE: admin/view/template/catalog/option_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: {{ footer }}
+LINE: 1722
+
+FILE: admin/view/template/catalog/product_list.twig
+CODE: {{ footer }}
+LINE: 525
+
+FILE: admin/view/template/catalog/recurring_form.twig
+CODE: {{ footer }}
+LINE: 163
+
+FILE: admin/view/template/catalog/recurring_list.twig
+CODE: {{ footer }}
+LINE: 93
+
+FILE: admin/view/template/catalog/review_form.twig
+CODE: {{ footer }}
+LINE: 167
+
+FILE: admin/view/template/catalog/review_list.twig
+CODE: {{ footer }}
+LINE: 253
+----------------------------------------------------------------
+MOD: SVG Tool Image
+
+FILE: admin/controller/common/filemanager.php
+CODE: jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF
+LINE: 47
+CODE: 'gif',
+LINE: 242
+CODE: 'image/x-png',
+LINE: 255
+
+FILE: admin/model/tool/image.php
+CODE: $new_image
+NOT FOUND - OPERATION SKIPPED!
+CODE: $extension = pathinfo($filename, PATHINFO_EXTENSION);
+LINE: 10
+CODE: $extension = $info['extension'];
+NOT FOUND - OPERATION SKIPPED!
+CODE: if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: if ($this->request->server['HTTPS']) {
+LINE: 44
+
+FILE: catalog/model/tool/image.php
+CODE: $new_image
+NOT FOUND - OPERATION SKIPPED!
+CODE: $extension = pathinfo($filename, PATHINFO_EXTENSION);
+LINE: 10
+CODE: $extension = $info['extension'];
+NOT FOUND - OPERATION SKIPPED!
+CODE: if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: if ($this->request->server['HTTPS']) {
+LINE: 46
+----------------------------------------------------------------
+2022-06-28 9:02:18 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: OCMOD Editor for OpenCart 3.0.x
+
+FILE: admin/controller/startup/permission.php
+CODE: $extension = array(
+LINE: 18
+
+FILE: admin/controller/marketplace/modification.php
+CODE: public function index() {
+LINE: 22
+CODE: $data['refresh'] = $this->url->link('marketplace/modification/refresh', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 674
+CODE: $data['modifications'][] = array(
+LINE: 696
+CODE: public function index() {
+LINE: 10
+CODE: $this->response->redirect($this->url->link('marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));
+LINE: 521
+
+FILE: admin/view/template/marketplace/modification.twig
+CODE: <div class="pull-right">
+LINE: 5
+CODE: {% if not modification.enabled %}
+LINE: 96
+----------------------------------------------------------------
+MOD: Summernote code fix
+
+FILE: admin/view/template/extension/analytics/google.twig
+CODE: {{ footer }}
+LINE: 69
+
+FILE: admin/view/template/extension/captcha/basic.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/captcha/google.twig
+CODE: {{ footer }}
+LINE: 76
+
+FILE: admin/view/template/extension/dashboard/activity_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/activity_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/chart_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/chart_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/customer_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/customer_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/map_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/map_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/online_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/online_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/order_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/recent_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/recent_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/sale_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/sale_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/analytics.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/captcha.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/dashboard.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/feed.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/fraud.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/menu.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/module.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/payment.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/report.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/shipping.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/theme.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/total.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/feed/google_base.twig
+CODE: {{ footer }}
+LINE: 257
+
+FILE: admin/view/template/extension/feed/google_base_category.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/feed/google_sitemap.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/feed/unisender.twig
+CODE: {{ footer }}
+LINE: 130
+
+FILE: admin/view/template/extension/feed/yandex_market.twig
+CODE: {{ footer }}
+LINE: 387
+
+FILE: admin/view/template/extension/feed/yandex_turbo.twig
+CODE: {{ footer }}
+LINE: 89
+
+FILE: admin/view/template/extension/fraud/fraudlabspro.twig
+CODE: {{ footer }}
+LINE: 199
+
+FILE: admin/view/template/extension/fraud/fraudlabspro_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/fraud/ip.twig
+CODE: {{ footer }}
+LINE: 186
+
+FILE: admin/view/template/extension/fraud/ip_ip.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/fraud/maxmind.twig
+CODE: {{ footer }}
+LINE: 87
+
+FILE: admin/view/template/extension/fraud/maxmind_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/modification/diff.twig
+CODE: {{ footer }}
+LINE: 58
+
+FILE: admin/view/template/extension/modification/editor.twig
+CODE: {{ footer }}
+LINE: 162
+
+FILE: admin/view/template/extension/modification/error_log.twig
+CODE: {{ footer }}
+LINE: 53
+
+FILE: admin/view/template/extension/modification/files.twig
+CODE: {{ footer }}
+LINE: 71
+
+FILE: admin/view/template/extension/module/account.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/amazon_login.twig
+CODE: {{ footer }}
+LINE: 156
+
+FILE: admin/view/template/extension/module/amazon_pay.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/module/banner.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/bestseller.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/blog_category.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/blog_featured.twig
+CODE: {{ footer }}
+LINE: 131
+
+FILE: admin/view/template/extension/module/blog_latest.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/carousel.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/category.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/divido_calculator.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/ebay_listing.twig
+CODE: {{ footer }}
+LINE: 144
+
+FILE: admin/view/template/extension/module/featured.twig
+CODE: {{ footer }}
+LINE: 131
+
+FILE: admin/view/template/extension/module/featured_article.twig
+CODE: {{ footer }}
+LINE: 91
+
+FILE: admin/view/template/extension/module/featured_product.twig
+CODE: {{ footer }}
+LINE: 91
+
+FILE: admin/view/template/extension/module/filter.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/google_hangouts.twig
+CODE: {{ footer }}
+LINE: 66
+
+FILE: admin/view/template/extension/module/html.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/module/information.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/klarna_checkout_module.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/latest.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/laybuy_layout.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/pilibaba_button.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/pp_braintree_button.twig
+CODE: {{ footer }}
+LINE: 65
+
+FILE: admin/view/template/extension/module/pp_button.twig
+CODE: {{ footer }}
+LINE: 68
+
+FILE: admin/view/template/extension/module/pp_login.twig
+CODE: {{ footer }}
+LINE: 169
+
+FILE: admin/view/template/extension/module/sagepay_direct_cards.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/sagepay_server_cards.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/slideshow.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/special.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/store.twig
+CODE: {{ footer }}
+LINE: 80
+
+FILE: admin/view/template/extension/openbay/amazon.twig
+CODE: {{ footer }}
+LINE: 74
+
+FILE: admin/view/template/extension/openbay/amazon_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazon_bulk_linking.twig
+CODE: {{ footer }}
+LINE: 180
+
+FILE: admin/view/template/extension/openbay/amazon_bulk_listing.twig
+CODE: {{ footer }}
+LINE: 255
+
+FILE: admin/view/template/extension/openbay/amazon_item_links.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazon_listing.twig
+CODE: {{ footer }}
+LINE: 384
+
+FILE: admin/view/template/extension/openbay/amazon_listing_advanced.twig
+CODE: {{ footer }}
+LINE: 729
+
+FILE: admin/view/template/extension/openbay/amazon_listing_edit.twig
+CODE: {{ footer }}
+LINE: 78
+
+FILE: admin/view/template/extension/openbay/amazon_saved_listings.twig
+CODE: {{ footer }}
+LINE: 120
+
+FILE: admin/view/template/extension/openbay/amazon_settings.twig
+CODE: {{ footer }}
+LINE: 221
+
+FILE: admin/view/template/extension/openbay/amazon_stock_updates.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/amazon_subscription.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/openbay/amazonus.twig
+CODE: {{ footer }}
+LINE: 74
+
+FILE: admin/view/template/extension/openbay/amazonus_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazonus_bulk_linking.twig
+CODE: {{ footer }}
+LINE: 166
+
+FILE: admin/view/template/extension/openbay/amazonus_bulk_listing.twig
+CODE: {{ footer }}
+LINE: 234
+
+FILE: admin/view/template/extension/openbay/amazonus_item_links.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazonus_listing.twig
+CODE: {{ footer }}
+LINE: 369
+
+FILE: admin/view/template/extension/openbay/amazonus_listing_advanced.twig
+CODE: {{ footer }}
+LINE: 698
+
+FILE: admin/view/template/extension/openbay/amazonus_listing_edit.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/openbay/amazonus_saved_listings.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/openbay/amazonus_settings.twig
+CODE: {{ footer }}
+LINE: 188
+
+FILE: admin/view/template/extension/openbay/amazonus_stock_updates.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/amazonus_subscription.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/openbay/ebay.twig
+CODE: {{ footer }}
+LINE: 89
+
+FILE: admin/view/template/extension/openbay/ebay_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_edit.twig
+CODE: {{ footer }}
+LINE: 430
+
+FILE: admin/view/template/extension/openbay/ebay_item_import.twig
+CODE: {{ footer }}
+LINE: 106
+
+FILE: admin/view/template/extension/openbay/ebay_item_link.twig
+CODE: {{ footer }}
+LINE: 452
+
+FILE: admin/view/template/extension/openbay/ebay_new.twig
+CODE: {{ footer }}
+LINE: 2466
+
+FILE: admin/view/template/extension/openbay/ebay_new_bulk.twig
+CODE: {{ footer }}
+LINE: 1102
+
+FILE: admin/view/template/extension/openbay/ebay_order_import.twig
+CODE: {{ footer }}
+LINE: 66
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_generic.twig
+CODE: {{ footer }}
+LINE: 94
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_returns.twig
+CODE: {{ footer }}
+LINE: 158
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_shipping.twig
+CODE: {{ footer }}
+LINE: 425
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_template.twig
+CODE: {{ footer }}
+LINE: 176
+
+FILE: admin/view/template/extension/openbay/ebay_profile_list.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_international_calculated.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_international_flat.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_national_calculated.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_national_flat.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_settings.twig
+CODE: {{ footer }}
+LINE: 588
+
+FILE: admin/view/template/extension/openbay/ebay_subscription.twig
+CODE: {{ footer }}
+LINE: 166
+
+FILE: admin/view/template/extension/openbay/ebay_summary.twig
+CODE: {{ footer }}
+LINE: 163
+
+FILE: admin/view/template/extension/openbay/ebay_syncronise.twig
+CODE: {{ footer }}
+LINE: 136
+
+FILE: admin/view/template/extension/openbay/ebay_template_form.twig
+CODE: {{ footer }}
+LINE: 70
+
+FILE: admin/view/template/extension/openbay/ebay_template_list.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/openbay/ebay_usage.twig
+CODE: {{ footer }}
+LINE: 72
+
+FILE: admin/view/template/extension/openbay/etsy.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/openbay/etsy_create.twig
+CODE: {{ footer }}
+LINE: 491
+
+FILE: admin/view/template/extension/openbay/etsy_edit.twig
+CODE: {{ footer }}
+LINE: 133
+
+FILE: admin/view/template/extension/openbay/etsy_links.twig
+CODE: {{ footer }}
+LINE: 190
+
+FILE: admin/view/template/extension/openbay/etsy_listings.twig
+CODE: {{ footer }}
+LINE: 342
+
+FILE: admin/view/template/extension/openbay/etsy_settings.twig
+CODE: {{ footer }}
+LINE: 205
+
+FILE: admin/view/template/extension/openbay/fba.twig
+CODE: {{ footer }}
+LINE: 62
+
+FILE: admin/view/template/extension/openbay/fba_fulfillment_form.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/openbay/fba_fulfillment_list.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/fba_order_info.twig
+CODE: {{ footer }}
+LINE: 224
+
+FILE: admin/view/template/extension/openbay/fba_order_list.twig
+CODE: {{ footer }}
+LINE: 145
+
+FILE: admin/view/template/extension/openbay/fba_settings.twig
+CODE: {{ footer }}
+LINE: 203
+
+FILE: admin/view/template/extension/openbay/openbay_itemlist.twig
+CODE: {{ footer }}
+LINE: 373
+
+FILE: admin/view/template/extension/openbay/openbay_manage.twig
+CODE: {{ footer }}
+LINE: 380
+
+FILE: admin/view/template/extension/openbay/openbay_orderlist.twig
+CODE: {{ footer }}
+LINE: 235
+
+FILE: admin/view/template/extension/openbay/openbay_orderlist_confirm.twig
+CODE: {{ footer }}
+LINE: 181
+
+FILE: admin/view/template/extension/payment/alipay.twig
+CODE: {{ footer }}
+LINE: 145
+
+FILE: admin/view/template/extension/payment/alipay_cross.twig
+CODE: {{ footer }}
+LINE: 150
+
+FILE: admin/view/template/extension/payment/amazon_login_pay.twig
+CODE: {{ footer }}
+LINE: 378
+
+FILE: admin/view/template/extension/payment/amazon_login_pay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/authorizenet_aim.twig
+CODE: {{ footer }}
+LINE: 173
+
+FILE: admin/view/template/extension/payment/authorizenet_sim.twig
+CODE: {{ footer }}
+LINE: 151
+
+FILE: admin/view/template/extension/payment/bank_transfer.twig
+CODE: {{ footer }}
+LINE: 111
+
+FILE: admin/view/template/extension/payment/bluepay_hosted.twig
+CODE: {{ footer }}
+LINE: 195
+
+FILE: admin/view/template/extension/payment/bluepay_hosted_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/bluepay_redirect.twig
+CODE: {{ footer }}
+LINE: 172
+
+FILE: admin/view/template/extension/payment/bluepay_redirect_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/buttons.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardconnect.twig
+CODE: {{ footer }}
+LINE: 316
+
+FILE: admin/view/template/extension/payment/cardconnect_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardinity.twig
+CODE: {{ footer }}
+LINE: 136
+
+FILE: admin/view/template/extension/payment/cardinity_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardinity_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cheque.twig
+CODE: {{ footer }}
+LINE: 123
+
+FILE: admin/view/template/extension/payment/cod.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/payment/divido.twig
+CODE: {{ footer }}
+LINE: 242
+
+FILE: admin/view/template/extension/payment/divido_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/eway.twig
+CODE: {{ footer }}
+LINE: 231
+
+FILE: admin/view/template/extension/payment/eway_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/firstdata.twig
+CODE: {{ footer }}
+LINE: 258
+
+FILE: admin/view/template/extension/payment/firstdata_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/firstdata_remote.twig
+CODE: {{ footer }}
+LINE: 263
+
+FILE: admin/view/template/extension/payment/firstdata_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/free_checkout.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/payment/g2apay.twig
+CODE: {{ footer }}
+LINE: 262
+
+FILE: admin/view/template/extension/payment/g2apay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/globalpay.twig
+CODE: {{ footer }}
+LINE: 357
+
+FILE: admin/view/template/extension/payment/globalpay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/globalpay_remote.twig
+CODE: {{ footer }}
+LINE: 416
+
+FILE: admin/view/template/extension/payment/globalpay_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_account.twig
+CODE: {{ footer }}
+LINE: 200
+
+FILE: admin/view/template/extension/payment/klarna_checkout.twig
+CODE: {{ footer }}
+LINE: 651
+
+FILE: admin/view/template/extension/payment/klarna_checkout_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_checkout_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_invoice.twig
+CODE: {{ footer }}
+LINE: 173
+
+FILE: admin/view/template/extension/payment/laybuy.twig
+CODE: {{ footer }}
+LINE: 585
+
+FILE: admin/view/template/extension/payment/laybuy_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/laybuy_transaction.twig
+CODE: {{ footer }}
+LINE: 448
+
+FILE: admin/view/template/extension/payment/liqpay.twig
+CODE: {{ footer }}
+LINE: 133
+
+FILE: admin/view/template/extension/payment/nochex.twig
+CODE: {{ footer }}
+LINE: 196
+
+FILE: admin/view/template/extension/payment/ocstore_w1.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/paymate.twig
+CODE: {{ footer }}
+LINE: 139
+
+FILE: admin/view/template/extension/payment/paypoint.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/payment/payza.twig
+CODE: {{ footer }}
+LINE: 122
+
+FILE: admin/view/template/extension/payment/perpetual_payments.twig
+CODE: {{ footer }}
+LINE: 139
+
+FILE: admin/view/template/extension/payment/pilibaba.twig
+CODE: {{ footer }}
+LINE: 264
+
+FILE: admin/view/template/extension/payment/pilibaba_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree.twig
+CODE: {{ footer }}
+LINE: 1041
+
+FILE: admin/view/template/extension/payment/pp_braintree_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree_preferred.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express.twig
+CODE: {{ footer }}
+LINE: 471
+
+FILE: admin/view/template/extension/payment/pp_express_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_preferred.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_refund.twig
+CODE: {{ footer }}
+LINE: 85
+
+FILE: admin/view/template/extension/payment/pp_express_search.twig
+CODE: {{ footer }}
+LINE: 274
+
+FILE: admin/view/template/extension/payment/pp_express_transaction.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_view.twig
+CODE: {{ footer }}
+LINE: 483
+
+FILE: admin/view/template/extension/payment/pp_payflow.twig
+CODE: {{ footer }}
+LINE: 165
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe.twig
+CODE: {{ footer }}
+LINE: 222
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe_refund.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/payment/pp_pro.twig
+CODE: {{ footer }}
+LINE: 156
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe.twig
+CODE: {{ footer }}
+LINE: 325
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_refund.twig
+CODE: {{ footer }}
+LINE: 84
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_transaction.twig
+CODE: {{ footer }}
+LINE: 432
+
+FILE: admin/view/template/extension/payment/pp_standard.twig
+CODE: {{ footer }}
+LINE: 288
+
+FILE: admin/view/template/extension/payment/realex.twig
+CODE: {{ footer }}
+LINE: 357
+
+FILE: admin/view/template/extension/payment/realex_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/realex_remote.twig
+CODE: {{ footer }}
+LINE: 341
+
+FILE: admin/view/template/extension/payment/realex_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_direct.twig
+CODE: {{ footer }}
+LINE: 199
+
+FILE: admin/view/template/extension/payment/sagepay_direct_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_server.twig
+CODE: {{ footer }}
+LINE: 193
+
+FILE: admin/view/template/extension/payment/sagepay_server_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_us.twig
+CODE: {{ footer }}
+LINE: 116
+
+FILE: admin/view/template/extension/payment/securetrading_pp.twig
+CODE: {{ footer }}
+LINE: 276
+
+FILE: admin/view/template/extension/payment/securetrading_pp_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/securetrading_ws.twig
+CODE: {{ footer }}
+LINE: 511
+
+FILE: admin/view/template/extension/payment/securetrading_ws_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/securetrading_ws_transactions.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/skrill.twig
+CODE: {{ footer }}
+LINE: 169
+
+FILE: admin/view/template/extension/payment/squareup.twig
+CODE: {{ footer }}
+LINE: 754
+
+FILE: admin/view/template/extension/payment/squareup_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/squareup_recurring_buttons.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/squareup_transaction_info.twig
+CODE: {{ footer }}
+LINE: 371
+
+FILE: admin/view/template/extension/payment/twocheckout.twig
+CODE: {{ footer }}
+LINE: 162
+
+FILE: admin/view/template/extension/payment/web_payment_software.twig
+CODE: {{ footer }}
+LINE: 150
+
+FILE: admin/view/template/extension/payment/webmoney_wmb.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wme.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmk.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmr.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmu.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmv.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmz.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/wechat_pay.twig
+CODE: {{ footer }}
+LINE: 143
+
+FILE: admin/view/template/extension/payment/worldpay.twig
+CODE: {{ footer }}
+LINE: 382
+
+FILE: admin/view/template/extension/payment/worldpay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_activity_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_activity_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_order_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_reward_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_reward_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_search_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_search_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_transaction_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_transaction_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/marketing_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/marketing_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/product_purchased_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/product_purchased_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/product_viewed_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/product_viewed_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_coupon_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_coupon_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_order_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_return_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_return_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_shipping_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_shipping_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_tax_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_tax_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/shipping/auspost.twig
+CODE: {{ footer }}
+LINE: 125
+
+FILE: admin/view/template/extension/shipping/citylink.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/ec_ship.twig
+CODE: {{ footer }}
+LINE: 296
+
+FILE: admin/view/template/extension/shipping/fedex.twig
+CODE: {{ footer }}
+LINE: 365
+
+FILE: admin/view/template/extension/shipping/flat.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/free.twig
+CODE: {{ footer }}
+LINE: 84
+
+FILE: admin/view/template/extension/shipping/item.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/parcelforce_48.twig
+CODE: {{ footer }}
+LINE: 174
+
+FILE: admin/view/template/extension/shipping/pickup.twig
+CODE: {{ footer }}
+LINE: 78
+
+FILE: admin/view/template/extension/shipping/royal_mail.twig
+CODE: {{ footer }}
+LINE: 517
+
+FILE: admin/view/template/extension/shipping/ups.twig
+CODE: {{ footer }}
+LINE: 919
+
+FILE: admin/view/template/extension/shipping/usps.twig
+CODE: {{ footer }}
+LINE: 678
+
+FILE: admin/view/template/extension/shipping/weight.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/theme/default.twig
+CODE: {{ footer }}
+LINE: 274
+
+FILE: admin/view/template/extension/total/coupon.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/credit.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/handling.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/total/klarna_fee.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/total/low_order_fee.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/total/reward.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/shipping.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/total/sub_total.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/tax.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/total.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/voucher.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/catalog/attribute_form.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/catalog/attribute_group_form.twig
+CODE: {{ footer }}
+LINE: 62
+
+FILE: admin/view/template/catalog/attribute_group_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/attribute_list.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/catalog/category_form.twig
+CODE: {{ footer }}
+LINE: 420
+
+FILE: admin/view/template/catalog/category_list.twig
+CODE: {{ footer }}
+LINE: 106
+
+FILE: admin/view/template/catalog/download_form.twig
+CODE: {{ footer }}
+LINE: 127
+
+FILE: admin/view/template/catalog/download_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/filter_form.twig
+CODE: {{ footer }}
+LINE: 121
+
+FILE: admin/view/template/catalog/filter_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/information_form.twig
+CODE: {{ footer }}
+LINE: 236
+
+FILE: admin/view/template/catalog/information_list.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/catalog/manufacturer_form.twig
+CODE: {{ footer }}
+LINE: 294
+
+FILE: admin/view/template/catalog/manufacturer_list.twig
+CODE: {{ footer }}
+LINE: 101
+
+FILE: admin/view/template/catalog/option_form.twig
+CODE: {{ footer }}
+LINE: 267
+
+FILE: admin/view/template/catalog/option_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: {{ footer }}
+LINE: 1722
+
+FILE: admin/view/template/catalog/product_list.twig
+CODE: {{ footer }}
+LINE: 525
+
+FILE: admin/view/template/catalog/recurring_form.twig
+CODE: {{ footer }}
+LINE: 163
+
+FILE: admin/view/template/catalog/recurring_list.twig
+CODE: {{ footer }}
+LINE: 93
+
+FILE: admin/view/template/catalog/review_form.twig
+CODE: {{ footer }}
+LINE: 167
+
+FILE: admin/view/template/catalog/review_list.twig
+CODE: {{ footer }}
+LINE: 253
+----------------------------------------------------------------
+MOD: SVG Tool Image
+
+FILE: admin/controller/common/filemanager.php
+CODE: jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF
+LINE: 47
+CODE: 'gif',
+LINE: 242
+CODE: 'image/x-png',
+LINE: 255
+
+FILE: admin/model/tool/image.php
+CODE: $new_image
+NOT FOUND - OPERATION SKIPPED!
+CODE: $extension = pathinfo($filename, PATHINFO_EXTENSION);
+LINE: 10
+CODE: $extension = $info['extension'];
+NOT FOUND - OPERATION SKIPPED!
+CODE: if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: if ($this->request->server['HTTPS']) {
+LINE: 44
+
+FILE: catalog/model/tool/image.php
+CODE: $new_image
+NOT FOUND - OPERATION SKIPPED!
+CODE: $extension = pathinfo($filename, PATHINFO_EXTENSION);
+LINE: 10
+CODE: $extension = $info['extension'];
+NOT FOUND - OPERATION SKIPPED!
+CODE: if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: if ($this->request->server['HTTPS']) {
+LINE: 46
+----------------------------------------------------------------
+MOD: Web-Bond | Patch for OcStore 3
+
+FILE: admin/controller/catalog/attribute.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/attribute_group.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/category.php
+CODE: $this->language->get('error_unique')
+LINE: 550
+CODE: $this->language->get('error_unique')
+LINE: 551
+
+FILE: admin/controller/catalog/download.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/filter.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/information.php
+CODE: $this->language->get('error_unique')
+LINE: 467
+CODE: $this->language->get('error_unique')
+LINE: 468
+
+FILE: admin/controller/catalog/manufacturer.php
+CODE: $this->language->get('error_unique')
+LINE: 515
+CODE: $this->language->get('error_unique')
+LINE: 516
+
+FILE: admin/controller/catalog/option.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/product.php
+CODE: $this->language->get('error_unique')
+LINE: 1648
+CODE: $this->language->get('error_unique')
+LINE: 1649
+
+FILE: admin/controller/catalog/recurring.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/review.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/blog/article.php
+CODE: $this->language->get('error_unique')
+LINE: 767
+CODE: $this->language->get('error_unique')
+LINE: 768
+
+FILE: admin/controller/blog/category.php
+CODE: $this->language->get('error_unique')
+LINE: 452
+CODE: $this->language->get('error_unique')
+LINE: 453
+
+FILE: admin/controller/blog/review.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/blog/setting.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/account.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/amazon_login.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/amazon_pay.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/banner.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/bestseller.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/blog_category.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/blog_featured.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/blog_latest.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/carousel.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/category.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/divido_calculator.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/ebay_listing.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/featured.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/featured_article.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/featured_product.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/filter.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/google_hangouts.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/html.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/information.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/klarna_checkout_module.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/latest.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/laybuy_layout.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/pilibaba_button.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/pp_braintree_button.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/pp_button.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/pp_login.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/sagepay_direct_cards.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/sagepay_server_cards.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/slideshow.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/special.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/store.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/common/dashboard.php
+CODE: if (DIR_STORAGE == DIR_SYSTEM . 'storage/')
+LINE: 78
+
+FILE: admin/controller/extension/extension/module.php
+CODE: $module_data[] = array(
+LINE: 163
+CODE: $filter_name = '';
+LINE: 30
+CODE: // Parent
+LINE: 141
+
+FILE: admin/controller/common/column_left.php
+CODE: $this->user->hasPermission('access', 'design/theme')
+LINE: 249
+----------------------------------------------------------------
+2022-06-28 9:02:20 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: OCMOD Editor for OpenCart 3.0.x
+
+FILE: admin/controller/startup/permission.php
+CODE: $extension = array(
+LINE: 18
+
+FILE: admin/controller/marketplace/modification.php
+CODE: public function index() {
+LINE: 22
+CODE: $data['refresh'] = $this->url->link('marketplace/modification/refresh', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 674
+CODE: $data['modifications'][] = array(
+LINE: 696
+CODE: public function index() {
+LINE: 10
+CODE: $this->response->redirect($this->url->link('marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));
+LINE: 521
+
+FILE: admin/view/template/marketplace/modification.twig
+CODE: <div class="pull-right">
+LINE: 5
+CODE: {% if not modification.enabled %}
+LINE: 96
+----------------------------------------------------------------
+MOD: Summernote code fix
+
+FILE: admin/view/template/extension/analytics/google.twig
+CODE: {{ footer }}
+LINE: 69
+
+FILE: admin/view/template/extension/captcha/basic.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/captcha/google.twig
+CODE: {{ footer }}
+LINE: 76
+
+FILE: admin/view/template/extension/dashboard/activity_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/activity_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/chart_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/chart_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/customer_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/customer_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/map_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/map_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/online_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/online_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/order_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/recent_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/recent_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/dashboard/sale_form.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/dashboard/sale_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/analytics.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/captcha.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/dashboard.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/feed.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/fraud.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/menu.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/module.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/payment.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/report.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/shipping.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/theme.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/extension/total.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/feed/google_base.twig
+CODE: {{ footer }}
+LINE: 257
+
+FILE: admin/view/template/extension/feed/google_base_category.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/feed/google_sitemap.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/feed/unisender.twig
+CODE: {{ footer }}
+LINE: 130
+
+FILE: admin/view/template/extension/feed/yandex_market.twig
+CODE: {{ footer }}
+LINE: 387
+
+FILE: admin/view/template/extension/feed/yandex_turbo.twig
+CODE: {{ footer }}
+LINE: 89
+
+FILE: admin/view/template/extension/fraud/fraudlabspro.twig
+CODE: {{ footer }}
+LINE: 199
+
+FILE: admin/view/template/extension/fraud/fraudlabspro_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/fraud/ip.twig
+CODE: {{ footer }}
+LINE: 186
+
+FILE: admin/view/template/extension/fraud/ip_ip.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/fraud/maxmind.twig
+CODE: {{ footer }}
+LINE: 87
+
+FILE: admin/view/template/extension/fraud/maxmind_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/modification/diff.twig
+CODE: {{ footer }}
+LINE: 58
+
+FILE: admin/view/template/extension/modification/editor.twig
+CODE: {{ footer }}
+LINE: 162
+
+FILE: admin/view/template/extension/modification/error_log.twig
+CODE: {{ footer }}
+LINE: 53
+
+FILE: admin/view/template/extension/modification/files.twig
+CODE: {{ footer }}
+LINE: 71
+
+FILE: admin/view/template/extension/module/account.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/amazon_login.twig
+CODE: {{ footer }}
+LINE: 156
+
+FILE: admin/view/template/extension/module/amazon_pay.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/module/banner.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/bestseller.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/blog_category.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/blog_featured.twig
+CODE: {{ footer }}
+LINE: 131
+
+FILE: admin/view/template/extension/module/blog_latest.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/carousel.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/category.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/divido_calculator.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/ebay_listing.twig
+CODE: {{ footer }}
+LINE: 144
+
+FILE: admin/view/template/extension/module/featured.twig
+CODE: {{ footer }}
+LINE: 131
+
+FILE: admin/view/template/extension/module/featured_article.twig
+CODE: {{ footer }}
+LINE: 91
+
+FILE: admin/view/template/extension/module/featured_product.twig
+CODE: {{ footer }}
+LINE: 91
+
+FILE: admin/view/template/extension/module/filter.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/google_hangouts.twig
+CODE: {{ footer }}
+LINE: 66
+
+FILE: admin/view/template/extension/module/html.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/module/information.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/klarna_checkout_module.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/latest.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/laybuy_layout.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/pilibaba_button.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/pp_braintree_button.twig
+CODE: {{ footer }}
+LINE: 65
+
+FILE: admin/view/template/extension/module/pp_button.twig
+CODE: {{ footer }}
+LINE: 68
+
+FILE: admin/view/template/extension/module/pp_login.twig
+CODE: {{ footer }}
+LINE: 169
+
+FILE: admin/view/template/extension/module/sagepay_direct_cards.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/sagepay_server_cards.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/module/slideshow.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/module/special.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/module/store.twig
+CODE: {{ footer }}
+LINE: 80
+
+FILE: admin/view/template/extension/openbay/amazon.twig
+CODE: {{ footer }}
+LINE: 74
+
+FILE: admin/view/template/extension/openbay/amazon_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazon_bulk_linking.twig
+CODE: {{ footer }}
+LINE: 180
+
+FILE: admin/view/template/extension/openbay/amazon_bulk_listing.twig
+CODE: {{ footer }}
+LINE: 255
+
+FILE: admin/view/template/extension/openbay/amazon_item_links.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazon_listing.twig
+CODE: {{ footer }}
+LINE: 384
+
+FILE: admin/view/template/extension/openbay/amazon_listing_advanced.twig
+CODE: {{ footer }}
+LINE: 729
+
+FILE: admin/view/template/extension/openbay/amazon_listing_edit.twig
+CODE: {{ footer }}
+LINE: 78
+
+FILE: admin/view/template/extension/openbay/amazon_saved_listings.twig
+CODE: {{ footer }}
+LINE: 120
+
+FILE: admin/view/template/extension/openbay/amazon_settings.twig
+CODE: {{ footer }}
+LINE: 221
+
+FILE: admin/view/template/extension/openbay/amazon_stock_updates.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/amazon_subscription.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/openbay/amazonus.twig
+CODE: {{ footer }}
+LINE: 74
+
+FILE: admin/view/template/extension/openbay/amazonus_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazonus_bulk_linking.twig
+CODE: {{ footer }}
+LINE: 166
+
+FILE: admin/view/template/extension/openbay/amazonus_bulk_listing.twig
+CODE: {{ footer }}
+LINE: 234
+
+FILE: admin/view/template/extension/openbay/amazonus_item_links.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/amazonus_listing.twig
+CODE: {{ footer }}
+LINE: 369
+
+FILE: admin/view/template/extension/openbay/amazonus_listing_advanced.twig
+CODE: {{ footer }}
+LINE: 698
+
+FILE: admin/view/template/extension/openbay/amazonus_listing_edit.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/openbay/amazonus_saved_listings.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/openbay/amazonus_settings.twig
+CODE: {{ footer }}
+LINE: 188
+
+FILE: admin/view/template/extension/openbay/amazonus_stock_updates.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/amazonus_subscription.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/openbay/ebay.twig
+CODE: {{ footer }}
+LINE: 89
+
+FILE: admin/view/template/extension/openbay/ebay_ajax_shippinginfo.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_edit.twig
+CODE: {{ footer }}
+LINE: 430
+
+FILE: admin/view/template/extension/openbay/ebay_item_import.twig
+CODE: {{ footer }}
+LINE: 106
+
+FILE: admin/view/template/extension/openbay/ebay_item_link.twig
+CODE: {{ footer }}
+LINE: 452
+
+FILE: admin/view/template/extension/openbay/ebay_new.twig
+CODE: {{ footer }}
+LINE: 2466
+
+FILE: admin/view/template/extension/openbay/ebay_new_bulk.twig
+CODE: {{ footer }}
+LINE: 1102
+
+FILE: admin/view/template/extension/openbay/ebay_order_import.twig
+CODE: {{ footer }}
+LINE: 66
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_generic.twig
+CODE: {{ footer }}
+LINE: 94
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_returns.twig
+CODE: {{ footer }}
+LINE: 158
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_shipping.twig
+CODE: {{ footer }}
+LINE: 425
+
+FILE: admin/view/template/extension/openbay/ebay_profile_form_template.twig
+CODE: {{ footer }}
+LINE: 176
+
+FILE: admin/view/template/extension/openbay/ebay_profile_list.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_international_calculated.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_international_flat.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_national_calculated.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_profile_shipping_national_flat.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/openbay/ebay_settings.twig
+CODE: {{ footer }}
+LINE: 588
+
+FILE: admin/view/template/extension/openbay/ebay_subscription.twig
+CODE: {{ footer }}
+LINE: 166
+
+FILE: admin/view/template/extension/openbay/ebay_summary.twig
+CODE: {{ footer }}
+LINE: 163
+
+FILE: admin/view/template/extension/openbay/ebay_syncronise.twig
+CODE: {{ footer }}
+LINE: 136
+
+FILE: admin/view/template/extension/openbay/ebay_template_form.twig
+CODE: {{ footer }}
+LINE: 70
+
+FILE: admin/view/template/extension/openbay/ebay_template_list.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/openbay/ebay_usage.twig
+CODE: {{ footer }}
+LINE: 72
+
+FILE: admin/view/template/extension/openbay/etsy.twig
+CODE: {{ footer }}
+LINE: 57
+
+FILE: admin/view/template/extension/openbay/etsy_create.twig
+CODE: {{ footer }}
+LINE: 491
+
+FILE: admin/view/template/extension/openbay/etsy_edit.twig
+CODE: {{ footer }}
+LINE: 133
+
+FILE: admin/view/template/extension/openbay/etsy_links.twig
+CODE: {{ footer }}
+LINE: 190
+
+FILE: admin/view/template/extension/openbay/etsy_listings.twig
+CODE: {{ footer }}
+LINE: 342
+
+FILE: admin/view/template/extension/openbay/etsy_settings.twig
+CODE: {{ footer }}
+LINE: 205
+
+FILE: admin/view/template/extension/openbay/fba.twig
+CODE: {{ footer }}
+LINE: 62
+
+FILE: admin/view/template/extension/openbay/fba_fulfillment_form.twig
+CODE: {{ footer }}
+LINE: 124
+
+FILE: admin/view/template/extension/openbay/fba_fulfillment_list.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/openbay/fba_order_info.twig
+CODE: {{ footer }}
+LINE: 224
+
+FILE: admin/view/template/extension/openbay/fba_order_list.twig
+CODE: {{ footer }}
+LINE: 145
+
+FILE: admin/view/template/extension/openbay/fba_settings.twig
+CODE: {{ footer }}
+LINE: 203
+
+FILE: admin/view/template/extension/openbay/openbay_itemlist.twig
+CODE: {{ footer }}
+LINE: 373
+
+FILE: admin/view/template/extension/openbay/openbay_manage.twig
+CODE: {{ footer }}
+LINE: 380
+
+FILE: admin/view/template/extension/openbay/openbay_orderlist.twig
+CODE: {{ footer }}
+LINE: 235
+
+FILE: admin/view/template/extension/openbay/openbay_orderlist_confirm.twig
+CODE: {{ footer }}
+LINE: 181
+
+FILE: admin/view/template/extension/payment/alipay.twig
+CODE: {{ footer }}
+LINE: 145
+
+FILE: admin/view/template/extension/payment/alipay_cross.twig
+CODE: {{ footer }}
+LINE: 150
+
+FILE: admin/view/template/extension/payment/amazon_login_pay.twig
+CODE: {{ footer }}
+LINE: 378
+
+FILE: admin/view/template/extension/payment/amazon_login_pay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/authorizenet_aim.twig
+CODE: {{ footer }}
+LINE: 173
+
+FILE: admin/view/template/extension/payment/authorizenet_sim.twig
+CODE: {{ footer }}
+LINE: 151
+
+FILE: admin/view/template/extension/payment/bank_transfer.twig
+CODE: {{ footer }}
+LINE: 111
+
+FILE: admin/view/template/extension/payment/bluepay_hosted.twig
+CODE: {{ footer }}
+LINE: 195
+
+FILE: admin/view/template/extension/payment/bluepay_hosted_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/bluepay_redirect.twig
+CODE: {{ footer }}
+LINE: 172
+
+FILE: admin/view/template/extension/payment/bluepay_redirect_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/buttons.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardconnect.twig
+CODE: {{ footer }}
+LINE: 316
+
+FILE: admin/view/template/extension/payment/cardconnect_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardinity.twig
+CODE: {{ footer }}
+LINE: 136
+
+FILE: admin/view/template/extension/payment/cardinity_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cardinity_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/cheque.twig
+CODE: {{ footer }}
+LINE: 123
+
+FILE: admin/view/template/extension/payment/cod.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/extension/payment/divido.twig
+CODE: {{ footer }}
+LINE: 242
+
+FILE: admin/view/template/extension/payment/divido_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/eway.twig
+CODE: {{ footer }}
+LINE: 231
+
+FILE: admin/view/template/extension/payment/eway_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/firstdata.twig
+CODE: {{ footer }}
+LINE: 258
+
+FILE: admin/view/template/extension/payment/firstdata_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/firstdata_remote.twig
+CODE: {{ footer }}
+LINE: 263
+
+FILE: admin/view/template/extension/payment/firstdata_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/free_checkout.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/payment/g2apay.twig
+CODE: {{ footer }}
+LINE: 262
+
+FILE: admin/view/template/extension/payment/g2apay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/globalpay.twig
+CODE: {{ footer }}
+LINE: 357
+
+FILE: admin/view/template/extension/payment/globalpay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/globalpay_remote.twig
+CODE: {{ footer }}
+LINE: 416
+
+FILE: admin/view/template/extension/payment/globalpay_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_account.twig
+CODE: {{ footer }}
+LINE: 200
+
+FILE: admin/view/template/extension/payment/klarna_checkout.twig
+CODE: {{ footer }}
+LINE: 651
+
+FILE: admin/view/template/extension/payment/klarna_checkout_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_checkout_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/klarna_invoice.twig
+CODE: {{ footer }}
+LINE: 173
+
+FILE: admin/view/template/extension/payment/laybuy.twig
+CODE: {{ footer }}
+LINE: 585
+
+FILE: admin/view/template/extension/payment/laybuy_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/laybuy_transaction.twig
+CODE: {{ footer }}
+LINE: 448
+
+FILE: admin/view/template/extension/payment/liqpay.twig
+CODE: {{ footer }}
+LINE: 133
+
+FILE: admin/view/template/extension/payment/nochex.twig
+CODE: {{ footer }}
+LINE: 196
+
+FILE: admin/view/template/extension/payment/ocstore_w1.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/paymate.twig
+CODE: {{ footer }}
+LINE: 139
+
+FILE: admin/view/template/extension/payment/paypoint.twig
+CODE: {{ footer }}
+LINE: 135
+
+FILE: admin/view/template/extension/payment/payza.twig
+CODE: {{ footer }}
+LINE: 122
+
+FILE: admin/view/template/extension/payment/perpetual_payments.twig
+CODE: {{ footer }}
+LINE: 139
+
+FILE: admin/view/template/extension/payment/pilibaba.twig
+CODE: {{ footer }}
+LINE: 264
+
+FILE: admin/view/template/extension/payment/pilibaba_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree.twig
+CODE: {{ footer }}
+LINE: 1041
+
+FILE: admin/view/template/extension/payment/pp_braintree_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree_order_ajax.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_braintree_preferred.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express.twig
+CODE: {{ footer }}
+LINE: 471
+
+FILE: admin/view/template/extension/payment/pp_express_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_preferred.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_refund.twig
+CODE: {{ footer }}
+LINE: 85
+
+FILE: admin/view/template/extension/payment/pp_express_search.twig
+CODE: {{ footer }}
+LINE: 274
+
+FILE: admin/view/template/extension/payment/pp_express_transaction.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_express_view.twig
+CODE: {{ footer }}
+LINE: 483
+
+FILE: admin/view/template/extension/payment/pp_payflow.twig
+CODE: {{ footer }}
+LINE: 165
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe.twig
+CODE: {{ footer }}
+LINE: 222
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_payflow_iframe_refund.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/extension/payment/pp_pro.twig
+CODE: {{ footer }}
+LINE: 156
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe.twig
+CODE: {{ footer }}
+LINE: 325
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_refund.twig
+CODE: {{ footer }}
+LINE: 84
+
+FILE: admin/view/template/extension/payment/pp_pro_iframe_transaction.twig
+CODE: {{ footer }}
+LINE: 432
+
+FILE: admin/view/template/extension/payment/pp_standard.twig
+CODE: {{ footer }}
+LINE: 288
+
+FILE: admin/view/template/extension/payment/realex.twig
+CODE: {{ footer }}
+LINE: 357
+
+FILE: admin/view/template/extension/payment/realex_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/realex_remote.twig
+CODE: {{ footer }}
+LINE: 341
+
+FILE: admin/view/template/extension/payment/realex_remote_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_direct.twig
+CODE: {{ footer }}
+LINE: 199
+
+FILE: admin/view/template/extension/payment/sagepay_direct_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_server.twig
+CODE: {{ footer }}
+LINE: 193
+
+FILE: admin/view/template/extension/payment/sagepay_server_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/sagepay_us.twig
+CODE: {{ footer }}
+LINE: 116
+
+FILE: admin/view/template/extension/payment/securetrading_pp.twig
+CODE: {{ footer }}
+LINE: 276
+
+FILE: admin/view/template/extension/payment/securetrading_pp_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/securetrading_ws.twig
+CODE: {{ footer }}
+LINE: 511
+
+FILE: admin/view/template/extension/payment/securetrading_ws_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/securetrading_ws_transactions.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/skrill.twig
+CODE: {{ footer }}
+LINE: 169
+
+FILE: admin/view/template/extension/payment/squareup.twig
+CODE: {{ footer }}
+LINE: 754
+
+FILE: admin/view/template/extension/payment/squareup_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/squareup_recurring_buttons.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/squareup_transaction_info.twig
+CODE: {{ footer }}
+LINE: 371
+
+FILE: admin/view/template/extension/payment/twocheckout.twig
+CODE: {{ footer }}
+LINE: 162
+
+FILE: admin/view/template/extension/payment/web_payment_software.twig
+CODE: {{ footer }}
+LINE: 150
+
+FILE: admin/view/template/extension/payment/webmoney_wmb.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wme.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmk.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmr.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmu.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmv.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/webmoney_wmz.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/payment/wechat_pay.twig
+CODE: {{ footer }}
+LINE: 143
+
+FILE: admin/view/template/extension/payment/worldpay.twig
+CODE: {{ footer }}
+LINE: 382
+
+FILE: admin/view/template/extension/payment/worldpay_order.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_activity_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_activity_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_order_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_reward_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_reward_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_search_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_search_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/customer_transaction_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/customer_transaction_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/marketing_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/marketing_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/product_purchased_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/product_purchased_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/product_viewed_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/product_viewed_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_coupon_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_coupon_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_order_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_order_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_return_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_return_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_shipping_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_shipping_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/report/sale_tax_form.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/report/sale_tax_info.twig
+CODE: {{ footer }}
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/view/template/extension/shipping/auspost.twig
+CODE: {{ footer }}
+LINE: 125
+
+FILE: admin/view/template/extension/shipping/citylink.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/ec_ship.twig
+CODE: {{ footer }}
+LINE: 296
+
+FILE: admin/view/template/extension/shipping/fedex.twig
+CODE: {{ footer }}
+LINE: 365
+
+FILE: admin/view/template/extension/shipping/flat.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/free.twig
+CODE: {{ footer }}
+LINE: 84
+
+FILE: admin/view/template/extension/shipping/item.twig
+CODE: {{ footer }}
+LINE: 99
+
+FILE: admin/view/template/extension/shipping/parcelforce_48.twig
+CODE: {{ footer }}
+LINE: 174
+
+FILE: admin/view/template/extension/shipping/pickup.twig
+CODE: {{ footer }}
+LINE: 78
+
+FILE: admin/view/template/extension/shipping/royal_mail.twig
+CODE: {{ footer }}
+LINE: 517
+
+FILE: admin/view/template/extension/shipping/ups.twig
+CODE: {{ footer }}
+LINE: 919
+
+FILE: admin/view/template/extension/shipping/usps.twig
+CODE: {{ footer }}
+LINE: 678
+
+FILE: admin/view/template/extension/shipping/weight.twig
+CODE: {{ footer }}
+LINE: 118
+
+FILE: admin/view/template/extension/theme/default.twig
+CODE: {{ footer }}
+LINE: 274
+
+FILE: admin/view/template/extension/total/coupon.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/credit.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/handling.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/total/klarna_fee.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/extension/total/low_order_fee.twig
+CODE: {{ footer }}
+LINE: 90
+
+FILE: admin/view/template/extension/total/reward.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/shipping.twig
+CODE: {{ footer }}
+LINE: 77
+
+FILE: admin/view/template/extension/total/sub_total.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/tax.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/total.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/extension/total/voucher.twig
+CODE: {{ footer }}
+LINE: 63
+
+FILE: admin/view/template/catalog/attribute_form.twig
+CODE: {{ footer }}
+LINE: 79
+
+FILE: admin/view/template/catalog/attribute_group_form.twig
+CODE: {{ footer }}
+LINE: 62
+
+FILE: admin/view/template/catalog/attribute_group_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/attribute_list.twig
+CODE: {{ footer }}
+LINE: 98
+
+FILE: admin/view/template/catalog/category_form.twig
+CODE: {{ footer }}
+LINE: 420
+
+FILE: admin/view/template/catalog/category_list.twig
+CODE: {{ footer }}
+LINE: 106
+
+FILE: admin/view/template/catalog/download_form.twig
+CODE: {{ footer }}
+LINE: 127
+
+FILE: admin/view/template/catalog/download_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/filter_form.twig
+CODE: {{ footer }}
+LINE: 121
+
+FILE: admin/view/template/catalog/filter_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/information_form.twig
+CODE: {{ footer }}
+LINE: 236
+
+FILE: admin/view/template/catalog/information_list.twig
+CODE: {{ footer }}
+LINE: 103
+
+FILE: admin/view/template/catalog/manufacturer_form.twig
+CODE: {{ footer }}
+LINE: 294
+
+FILE: admin/view/template/catalog/manufacturer_list.twig
+CODE: {{ footer }}
+LINE: 101
+
+FILE: admin/view/template/catalog/option_form.twig
+CODE: {{ footer }}
+LINE: 267
+
+FILE: admin/view/template/catalog/option_list.twig
+CODE: {{ footer }}
+LINE: 92
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: {{ footer }}
+LINE: 1722
+
+FILE: admin/view/template/catalog/product_list.twig
+CODE: {{ footer }}
+LINE: 525
+
+FILE: admin/view/template/catalog/recurring_form.twig
+CODE: {{ footer }}
+LINE: 163
+
+FILE: admin/view/template/catalog/recurring_list.twig
+CODE: {{ footer }}
+LINE: 93
+
+FILE: admin/view/template/catalog/review_form.twig
+CODE: {{ footer }}
+LINE: 167
+
+FILE: admin/view/template/catalog/review_list.twig
+CODE: {{ footer }}
+LINE: 253
+----------------------------------------------------------------
+MOD: SVG Tool Image
+
+FILE: admin/controller/common/filemanager.php
+CODE: jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF
+LINE: 47
+CODE: 'gif',
+LINE: 242
+CODE: 'image/x-png',
+LINE: 255
+
+FILE: admin/model/tool/image.php
+CODE: $new_image
+NOT FOUND - OPERATION SKIPPED!
+CODE: $extension = pathinfo($filename, PATHINFO_EXTENSION);
+LINE: 10
+CODE: $extension = $info['extension'];
+NOT FOUND - OPERATION SKIPPED!
+CODE: if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: if ($this->request->server['HTTPS']) {
+LINE: 44
+
+FILE: catalog/model/tool/image.php
+CODE: $new_image
+NOT FOUND - OPERATION SKIPPED!
+CODE: $extension = pathinfo($filename, PATHINFO_EXTENSION);
+LINE: 10
+CODE: $extension = $info['extension'];
+NOT FOUND - OPERATION SKIPPED!
+CODE: if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: if ($this->request->server['HTTPS']) {
+LINE: 46
+----------------------------------------------------------------
+MOD: Web-Bond | Patch for OcStore 3
+
+FILE: admin/controller/catalog/attribute.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/attribute_group.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/category.php
+CODE: $this->language->get('error_unique')
+LINE: 550
+CODE: $this->language->get('error_unique')
+LINE: 551
+
+FILE: admin/controller/catalog/download.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/filter.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/information.php
+CODE: $this->language->get('error_unique')
+LINE: 467
+CODE: $this->language->get('error_unique')
+LINE: 468
+
+FILE: admin/controller/catalog/manufacturer.php
+CODE: $this->language->get('error_unique')
+LINE: 515
+CODE: $this->language->get('error_unique')
+LINE: 516
+
+FILE: admin/controller/catalog/option.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/product.php
+CODE: $this->language->get('error_unique')
+LINE: 1648
+CODE: $this->language->get('error_unique')
+LINE: 1649
+
+FILE: admin/controller/catalog/recurring.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/catalog/review.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/blog/article.php
+CODE: $this->language->get('error_unique')
+LINE: 767
+CODE: $this->language->get('error_unique')
+LINE: 768
+
+FILE: admin/controller/blog/category.php
+CODE: $this->language->get('error_unique')
+LINE: 452
+CODE: $this->language->get('error_unique')
+LINE: 453
+
+FILE: admin/controller/blog/review.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/blog/setting.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/account.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/amazon_login.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/amazon_pay.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/banner.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/bestseller.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/blog_category.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/blog_featured.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/blog_latest.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/carousel.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/category.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/divido_calculator.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/ebay_listing.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/featured.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/featured_article.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/featured_product.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/filter.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/google_hangouts.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/html.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/information.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/klarna_checkout_module.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/latest.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/laybuy_layout.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/pilibaba_button.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/pp_braintree_button.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/pp_button.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/pp_login.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/sagepay_direct_cards.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/sagepay_server_cards.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/slideshow.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/special.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/extension/module/store.php
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->language->get('error_unique')
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: admin/controller/common/dashboard.php
+CODE: if (DIR_STORAGE == DIR_SYSTEM . 'storage/')
+LINE: 78
+
+FILE: admin/controller/extension/extension/module.php
+CODE: $module_data[] = array(
+LINE: 163
+CODE: $filter_name = '';
+LINE: 30
+CODE: // Parent
+LINE: 141
+
+FILE: admin/controller/common/column_left.php
+CODE: $this->user->hasPermission('access', 'design/theme')
+LINE: 249
+----------------------------------------------------------------
