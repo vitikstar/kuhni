@@ -1,5 +1,4 @@
 <?php
-exit;
 // Version
 define('VERSION', '3.0.2.0');
 
