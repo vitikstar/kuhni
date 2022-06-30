@@ -24,6 +24,14 @@ RewriteEngine On
 RewriteBase /
 RewriteRule ^sitemap.xml$ index.php?route=extension/feed/google_sitemap [L]
 RewriteRule ^googlebase.xml$ index.php?route=extension/feed/google_base [L]
+RewriteRule ^payment index.php?route=payment/index [L]
+RewriteRule ^projects index.php?route=projects/index [L]
+RewriteRule ^furniture index.php?route=furniture/index [L]
+RewriteRule ^sales index.php?route=sales/index [L]
+RewriteRule ^quiz index.php?route=quiz/index [L]
+RewriteRule ^about index.php?route=about/index [L]
+
+
 RewriteRule ^system/storage/(.*) index.php?route=error/not_found [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
