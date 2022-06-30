@@ -107,7 +107,7 @@ class Twig_Environment
             'optimizations' => -1,
         ), $options);
 
-        $this->debug = (bool) $options['debug'];
+        $this->debug = true;
         $this->charset = strtoupper($options['charset']);
         $this->baseTemplateClass = $options['base_template_class'];
         $this->autoReload = null === $options['auto_reload'] ? $this->debug : (bool) $options['auto_reload'];
