@@ -1,5 +1,5 @@
 <?php
-class ControllerCommonHome extends Controller {
+class ControllerProjectsIndex extends Controller {
 	public function index() {
 		$this->document->setTitle($this->config->get('config_meta_title'));
 		$this->document->setDescription($this->config->get('config_meta_description'));
@@ -13,18 +13,18 @@ class ControllerCommonHome extends Controller {
 			$this->document->addLink($canonical, 'canonical');
 		}
 
-		$data['column_left'] = $this->load->controller('common/column_left');
+		$data['block_3d'] = $this->load->controller('block/3d');
 		$data['menu'] = $this->load->controller('common/menu');
-		$data['column_right'] = $this->load->controller('common/column_right');
-		$data['content_top'] = $this->load->controller('common/content_top');
-		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
-		$data['full_catalog'] = $this->load->controller('block/catalog');
+		$data['block_payment'] = $this->load->controller('block/payment'); //блок оплата
+		$data['block_category'] = $this->load->controller('block/category'); //блок категорій
 		$data['block_capacity'] = $this->load->controller('block/capacity'); //3d блок
+		$data['cost'] = $this->load->controller('block/cost');
 		$data['map'] = $this->load->controller('common/map'); //yandex  карта
 
 
-		$this->response->setOutput($this->load->view('common/home', $data));
+
+		$this->response->setOutput($this->load->view('page/projects/index', $data));
 	}
 }
