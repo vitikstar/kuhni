@@ -139,7 +139,7 @@ $(document).ready(function ()
         }
         else
         {
-            var letters = ' zxcvbnmasdfghjklqwertyuiopQWERTYUIOPLKJHGFDSAZXCVBNMР№С†СѓРєРµРЅРіС€С‰Р·С…СЉС„С‹РІР°РїСЂРѕР»РґР¶СЌСЏС‡СЃРјРёС‚СЊР±СЋР™Р¦РЈРљР•РќР“РЁР©Р—РҐРЄР¤Р«Р’РђРџР РћР›Р”Р–Р­РЇР§РЎРњРРўР¬Р‘Р®';
+            var letters = ' zxcvbnmasdfghjklqwertyuiopQWERTYUIOPLKJHGFDSAZXCVBNMйцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ';
             return (letters.indexOf(String.fromCharCode(e.which)) != -1);
         }
     });
@@ -231,15 +231,15 @@ $(document).ready(function ()
             type: "POST",
             contentType: false,
             processData: false,
-            url: "/send.php",
+            url: "/send",
             data: formData,
         }).done(function ()
         {
-            if (type == 'РљРІРёР·')
+            if (type == 'Квиз')
             {
                 $('.block2__quiz').trigger('next.owl.carousel');
             }
-            else if (type == 'РЎРєР°С‡РёРІР°РЅРёРµ РєР°С‚Р°Р»РѕРіР°')
+            else if (type == 'Скачивание каталога')
             {
                 window.open("http://axis-portfolio.ru/logo.png");
             }
