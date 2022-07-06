@@ -3,7 +3,7 @@
 // *	@license	GNU General Public License version 3; see LICENSE.txt
 
 // Heading
-$_['heading_title']    = 'Скачайте полный каталог';
+$_['heading_title']    = '<img src="/image/cop.png" width=45>Скачайте полный каталог';
 
 $_['text_module']      = 'Модули';
 $_['text_success']     = 'Настройки успешно изменены!';

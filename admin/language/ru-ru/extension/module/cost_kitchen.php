@@ -3,7 +3,7 @@
 // *	@license	GNU General Public License version 3; see LICENSE.txt
 
 // Heading
-$_['heading_title']    = 'Узнайте стоимость кухни+закрепите за собой подарки';
+$_['heading_title']    = '<img src="/image/cop.png" width=45>Узнайте стоимость кухни+закрепите за собой подарки';
 
 $_['text_module']      = 'Модули';
 $_['text_success']     = 'Настройки успешно изменены!';

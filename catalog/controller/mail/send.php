@@ -1,7 +1,8 @@
 <?php
 class ControllerMailSend extends Controller {
 	public function index() {
-		$recepient = "Nastya772.85@mail.ru"; //pr877@mail.ru Nastya772.85@mail.ru  ip@seops.ru
+		//$recepient = "Nastya772.85@mail.ru"; //pr877@mail.ru Nastya772.85@mail.ru  ip@seops.ru
+		$recepient = $this->config->get('config_email');
 		$from_name = "Кухни";
 		$from_email = 'no-reply@pr-kuhni.ru';
 
@@ -114,8 +115,18 @@ class ControllerMailSend extends Controller {
 		$headers = "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\n";
 		$headers .= "From: =?UTF-8?B?" . base64_encode($from_name) . "?= <" . $from_email . ">\r\n";
 		if ($type != '') {
-			if (empty($uploadfile)) $data['mailres'] = mail($recepient, $subject, $msg, $headers);
-			else $data['mailres'] = $this->send_mail($from_name, $from_email, $recepient, $subject, $msg, $uploadfile, $fname);
+			if (empty($uploadfile)){
+				$data['mailres'][] = mail($recepient, $subject, $msg, $headers);
+				foreach(explode(',', $this->config->get('config_mail_alert_email')) as $recepient){
+					$data['mailres'][] = mail($recepient, $subject, $msg, $headers);
+				}
+			} 
+			else {
+				$data['mailres'][] = $this->send_mail($from_name, $from_email, $recepient, $subject, $msg, $uploadfile, $fname);
+				foreach (explode(',', $this->config->get('config_mail_alert_email')) as $recepient) {
+					$data['mailres'][] = $this->send_mail($from_name, $from_email, $recepient, $subject, $msg, $uploadfile, $fname);
+				}
+			}
 
 
 			die(json_encode($data));

@@ -3,7 +3,7 @@
 // *	@license	GNU General Public License version 3; see LICENSE.txt
 
 // Heading
-$_['heading_title']     = 'HTML контент';
+$_['heading_title']     = '<img src="/image/cop.png" width=45>HTML контент';
 
 // Text
 $_['text_module']       = 'Модули';
