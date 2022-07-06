@@ -3571,3 +3571,12 @@ nav a:hover {
     background-position: center;
     z-index: 999;
 }
+
+#google_map {
+    padding: 5px;
+}
+
+#map iframe {
+    width: 100%;
+    height: 450px;
+}
