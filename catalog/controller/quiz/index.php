@@ -13,10 +13,13 @@ class ControllerQuizIndex extends Controller {
 			$this->document->addLink($canonical, 'canonical');
 		}
 
-		$data['menu'] = $this->load->controller('common/menu');
-		$data['content_top'] = $this->load->controller('common/content_top');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
+
+		$data['column_left'] = $this->load->controller('common/column_left');
+		$data['column_right'] = $this->load->controller('common/column_right');
+		$data['content_top'] = $this->load->controller('common/content_top');
+		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 
 
 		$this->response->setOutput($this->load->view('page/quiz/index', $data));
