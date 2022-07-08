@@ -13,10 +13,10 @@ class ControllerAboutIndex extends Controller {
 			$this->document->addLink($canonical, 'canonical');
 		}
 
-		$data['menu'] = $this->load->controller('common/menu');
+		$data['column_left'] = $this->load->controller('common/column_left');
+		$data['column_right'] = $this->load->controller('common/column_right');
 		$data['content_top'] = $this->load->controller('common/content_top');
-		$data['cost'] = $this->load->controller('block/cost');
-		$data['block_capacity'] = $this->load->controller('block/capacity'); //3d блок
+		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
 
