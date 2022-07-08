@@ -16,10 +16,11 @@ class ControllerFurnitureIndex extends Controller {
 		$data['menu'] = $this->load->controller('common/menu');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
-		$data['cost'] = $this->load->controller('block/cost');
 
-		$data['full_catalog'] = $this->load->controller('block/catalog');
-
+		$data['column_left'] = $this->load->controller('common/column_left');
+		$data['column_right'] = $this->load->controller('common/column_right');
+		$data['content_top'] = $this->load->controller('common/content_top');
+		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 
 		$this->response->setOutput($this->load->view('page/furniture/index', $data));
 	}
