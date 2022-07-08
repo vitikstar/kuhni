@@ -36,15 +36,22 @@
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
 {# <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet"> #} <!--рідний опенкарта -->
+
+
+    <link href="catalog/view/theme/default/stylesheet/normalize.css" rel="stylesheet">
+
 <link href="catalog/view/theme/default/stylesheet/main.css" rel="stylesheet">
 <link href="catalog/view/theme/default/stylesheet/animate.css" rel="stylesheet">
 <link href="catalog/view/theme/default/stylesheet/YouTubePopUp.css" rel="stylesheet">
 <link href="catalog/view/theme/default/stylesheet/media.css" rel="stylesheet">
-<link href="catalog/view/theme/default/stylesheet/normalize.css" rel="stylesheet">
 <link href="catalog/view/theme/default/stylesheet/lightbox.css" rel="stylesheet">
     <link href="catalog/view/theme/default/stylesheet/fonts.css" rel="stylesheet">
 
 <link href="catalog/view/javascript/jquery/ui/css/jquery-ui.min.css" rel="stylesheet">
+
+
+
+
 
 {% for style in styles %}
 <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
@@ -60,3 +67,108 @@
 {{ analytic }}
 {% endfor %}
 </head>
+
+
+<div class="page-wrapper">
+
+    <div class="header-menu">
+        <header>
+            <div class="container">
+                <div class="header__flex">
+                    <div class="header__logo">
+                        <a href="/"><img src="/catalog/view/theme/default/image/logo.png" alt=""></a>
+                        <div class="title">Изготовление кухонь на заказ <br>в Москве и Московской области</div>
+
+                        <div class="header__contacts">
+                            <div class="header__contact insta">
+                                <a href="https://www.instagram.com/pravilnie_kuhni/" target="_blank">
+                                    <img src="/catalog/view/theme/default/image/icons/insta20.svg" alt=""><span>@pravilnie_kuhni </span>
+                                </a>
+                            </div>
+                            <div class="header__contact"><a href="+74951396339"><img src="/catalog/view/theme/default/image/icons/1.png" alt=""><span class="mobitel" data-tel="+74951396339">+7 (495) 139-63-39</span></a></div>
+                        </div>
+
+                    </div>
+                    <div class="header__right">
+                        <div class="header__contacts">
+                            <div class="header__contact"><a href="+74951396339"><img
+                                            src="/catalog/view/theme/default/image/icons/1.png" alt=""><span
+                                            class="mobitel" data-tel="+74951396339">+7 (495) 139-63-39</span></a></div>
+                            <!--<div class="header__contact"><img src="/catalog/view/theme/default/image/icons/2.png" alt=""/><span>2233553@mail.ru</span></div>-->
+                            <div class="header__contact insta"><a href="https://www.instagram.com/pravilnie_kuhni/"
+                                                                  target="_blank"><img
+                                            src="/catalog/view/theme/default/image/icons/insta20.svg" alt=""><span>@pravilnie_kuhni </span>
+                                </a></div>
+                        </div>
+                        <button class="button callback-btn">Заказать звонок</button>
+                    </div>
+                    <div class="mobile-menu__button">
+                        <div class="menu__button-1">
+                            <div class="box">
+                                <div class="line line1"></div>
+                                <div class="line line2"></div>
+                                <div class="line line3"></div>
+                            </div>
+                            <span>Меню</span>
+                        </div>
+                        <div class="menu__button-2">
+                            <button class="button callback-btn">Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            {{ menu }}
+        </nav>
+    </div>
+
+
+
+    {# fixed menu #}
+    <div class="header-menu-fixed" style="display: none;">
+
+    </div>
+    <script>
+        var header_menu = $('.header-menu').clone();
+        $('.header-menu-fixed').append(header_menu);
+
+        menu_fixed();
+        $(document).ready(function() {
+            menu_fixed();
+        });
+        $(window).scroll(function(){
+            menu_fixed();
+        });
+
+        function menu_fixed() {
+            var width = window.innerWidth;
+            if (width > 767) {
+                var menu_fixed = $('.header-menu-fixed');
+                var menu_offset_top = 200;
+                var window_scroll_top = $(window).scrollTop();
+
+                if (window_scroll_top > menu_offset_top) {
+                    menu_fixed.fadeIn();
+                } else {
+                    menu_fixed.fadeOut();
+                }
+            }
+        }
+    </script>
+{# end fixed menu #}
+
+
+    {# block 1 mob bg #}
+    <script>
+        $(document).ready(function() {
+            if (window.innerWidth <= 767) {
+                $('.block1__left').prepend('<div class="block1-bg-1"></div>');
+                $('.block1__right-wrapper').prepend('<div class="block1-bg-2"></div>');
+
+                fullWidthFinalAbsolute('.container', '.block1-bg-1');
+                fullWidthFinalAbsolute('.container', '.block1-bg-2');
+            }
+        });
+    </script>
+    {# end block 1 mob bg #}

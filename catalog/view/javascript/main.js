@@ -145,7 +145,7 @@ $(document).ready(function ()
     });
     $("input[name=phone]").mask("+7 (999) 999-9999");
 
-    $('.mobile-menu__button').click(function ()
+    $('.mobile-menu__button .menu__button-1').click(function ()
     {
         $('nav').addClass('nav-open')
     })
@@ -284,3 +284,54 @@ window.isMobile = function ()
     })(navigator.userAgent || navigator.vendor || window.opera);
     return check;
 };
+
+
+
+function fullWidthFinal(selector_container, selector_block) {
+    var selector_container = selector_container;
+    var selector_block = selector_block;
+    if ($(selector_container).length && $(selector_block).length) {
+        fullWidth(selector_container, selector_block);
+        $(window).on('resize', function() {
+            fullWidth(selector_container, selector_block);
+        });
+        $(document).ready(function() {
+            fullWidth(selector_container, selector_block);
+        });
+    }
+}
+function fullWidth(selector_container, selector_block) {
+    var selector_container = selector_container;
+    var class_block = selector_block;
+    if ($(selector_container).length && $(selector_block).length) {
+        var width = document.documentElement.clientWidth;
+        var containerWidth = $(selector_container).width();
+        var margin = -(width - containerWidth)/2;
+        $(class_block).css({'margin-left':+margin+'px','margin-right':+margin+'px'});
+    }
+}
+
+function fullWidthFinalAbsolute(selector_container, selector_block) {
+    var selector_container = selector_container;
+    var selector_block = selector_block;
+    if ($(selector_container).length && $(selector_block).length) {
+        fullWidthAbsolute(selector_container, selector_block);
+        $(window).on('resize', function() {
+            fullWidthAbsolute(selector_container, selector_block);
+        });
+        $(document).ready(function() {
+            fullWidthAbsolute(selector_container, selector_block);
+        });
+    }
+}
+function fullWidthAbsolute(selector_container, selector_block) {
+    var selector_container = selector_container;
+    var class_block = selector_block;
+    if ($(selector_container).length && $(selector_block).length) {
+        var width = document.documentElement.clientWidth;
+        var containerWidth = $(selector_container).width();
+        var margin = -(width - containerWidth)/2;
+
+        $(class_block).css({'left':+margin+'px','width':+width+'px'});
+    }
+}
