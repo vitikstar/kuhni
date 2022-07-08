@@ -41,6 +41,9 @@
     <link href="catalog/view/theme/default/stylesheet/normalize.css" rel="stylesheet">
 
 <link href="catalog/view/theme/default/stylesheet/main.css" rel="stylesheet">
+<link href="catalog/view/theme/default/libs/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+
 <link href="catalog/view/theme/default/stylesheet/animate.css" rel="stylesheet">
 <link href="catalog/view/theme/default/stylesheet/YouTubePopUp.css" rel="stylesheet">
 <link href="catalog/view/theme/default/stylesheet/media.css" rel="stylesheet">
@@ -76,7 +79,7 @@
             <div class="container">
                 <div class="header__flex">
                     <div class="header__logo">
-                        <a href="/"><img src="/catalog/view/theme/default/image/logo.png" alt=""></a>
+                        <a href="/"><img src="{{ logo }}" alt=""></a>
                         <div class="title">Изготовление кухонь на заказ <br>в Москве и Московской области</div>
 
                         <div class="header__contacts">
@@ -118,7 +121,7 @@
                 </div>
             </div>
         </header>
-        <nav>
+        <nav class="{{ class_nav }}">
             {{ menu }}
         </nav>
     </div>

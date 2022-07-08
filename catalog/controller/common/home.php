@@ -20,9 +20,6 @@ class ControllerCommonHome extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
-		$data['full_catalog'] = $this->load->controller('block/catalog');
-		$data['block_capacity'] = $this->load->controller('block/capacity'); //3d блок
-		$data['map'] = $this->load->controller('common/map'); //yandex  карта
 
 
 		$this->response->setOutput($this->load->view('common/home', $data));

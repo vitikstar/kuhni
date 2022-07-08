@@ -1,395 +1,367 @@
-
+<nav class="bottom-nav">
+		{{ menu }}
+</nav>
+		<header class="footer">
+			<div class="container">
+				<div class="header__flex">
+					<div class="header__logo"><a href="/"><img src="{{ logo }}" alt=""></a>
+						<div class="title">Изготовление кухонь на заказ <br>в Москве и Московской области</div>
+					</div>
+					<div class="header__right">
+						<div class="header__contacts">
+							<div class="header__contact"><a href="+74951396339"><img src="/catalog/view/theme/default/image/1.png" alt=""><span class="mobitel" data-tel="+74951396339">+7 (495) 139-63-39</span></a></div>
+							<!-- <div class="header__contact"><img src="/catalog/view/theme/default/image/icons/2.png" alt=""/><span>2233553@mail.ru</span></div> -->
+    						<div class="header__contact insta"><a href="https://www.instagram.com/pravilnie_kuhni/" target="_blank"><img src="/catalog/view/theme/default/image/icons/insta20.svg" alt=""><span>@pravilnie_kuhni</span> </a></div>
+						</div>
+						<button class="button callback-btn">Заказать звонок</button>
+					</div>
+				</div>
+			</div>
+		</header>
 <footer>
-  {# <div class="container">
-    <div class="row">
-      {% if informations %}
-      <div class="col-sm-3">
-        <h5>{{ text_information }}</h5>
-        <ul class="list-unstyled">
-         {% for information in informations %}
-          <li><a href="{{ information.href }}">{{ information.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-      <div class="col-sm-3">
-        <h5>{{ text_service }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ contact }}">{{ text_contact }}</a></li>
-          <li><a href="{{ return }}">{{ text_return }}</a></li>
-          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h5>{{ text_extra }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
-          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
-          <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
-          <li><a href="{{ special }}">{{ text_special }}</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h5>{{ text_account }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ account }}">{{ text_account }}</a></li>
-          <li><a href="{{ order }}">{{ text_order }}</a></li>
-          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
-          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-    <p>{{ powered }}</p>
-  </div>
-</footer>
-{% for script in scripts %}
-<script src="{{ script }}" type="text/javascript"></script>
-{% endfor %} #}
-<b>
-	<div class="layer" style="display: none;"><img src="/catalog/view/theme/default/image/close.png" alt="" class="close-popup">
-		<div class="popup callback-popup" style="display: block;">
-			<div class="block1__right-wrapper">
-				<form class="block1__right">
-					<div class="title">Заявка на обратный звонок</div>
-					<div class="descriptor">Менеджер перезвонит Вам в ближайшее время</div>
-					<div class="input">
-						<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
-						<input type="text" name="name" placeholder="Введите имя">
+		<div class="layer" style="display: none;"><img src="/catalog/view/theme/default/image/close.png" alt="" class="close-popup">
+				<div class="popup callback-popup" style="display: block;">
+					<div class="block1__right-wrapper">
+						<form class="block1__right">
+							<div class="title">Заявка на обратный звонок</div>
+							<div class="descriptor">Менеджер перезвонит Вам в ближайшее время</div>
+							<div class="input">
+								<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
+								<input type="text" name="name" placeholder="Введите имя">
+							</div>
+							<div class="input">
+								<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
+								<input type="text" name="phone" placeholder="Ваш телефон" required="required">
+							</div>
+							<button class="button">Отправить</button>
+							<div class="checkbox">
+								<input type="checkbox" id="c0" checked="checked">
+								<label for="c0">
+									<div class="box"><img src="/catalog/view/theme/default/image/icons/check.png" alt=""></div>
+									<div class="text">Согласен на обработку персональных данных</div>
+								</label>
+							</div>
+							<input type="hidden" name="type" value="Заявка на обратный звонок">
+						</form>
 					</div>
-					<div class="input">
-						<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
-						<input type="text" name="phone" placeholder="Ваш телефон" required="required">
-					</div>
-					<button class="button">Отправить</button>
-					<div class="checkbox">
-						<input type="checkbox" id="c0" checked="checked">
-						<label for="c0">
-							<div class="box"><img src="/catalog/view/theme/default/image/icons/check.png" alt=""></div>
-							<div class="text">Согласен на обработку персональных данных</div>
-						</label>
-					</div>
-					<input type="hidden" name="type" value="Заявка на обратный звонок">
-				</form>
-			</div>
-		</div>
-		<div class="popup thank-popup">
-			<div class="block1__right-wrapper">
-				<div class="block1__right">
-					<div class="title">Спасибо за доверие!</div>
-					<div class="descriptor">Менеджер перезвонит Вам в ближайшее время</div>
 				</div>
-			</div>
-		</div>
+				<div class="popup thank-popup">
+					<div class="block1__right-wrapper">
+						<div class="block1__right">
+							<div class="title">Спасибо за доверие!</div>
+							<div class="descriptor">Менеджер перезвонит Вам в ближайшее время</div>
+						</div>
+					</div>
+				</div>
 
-		
+				
 
-		
-		
-		<div class="popup case-popup furn" data-case="3">
-			<div class="case-popup__wrapper">
-				<div class="case__left">
-					<div class="title">Прихожие</div>
-					<div class="case__images clearfix">
-																<a href="/image/catalog/2019/12/D803431E-99FE-4C85-80BC-71DDA408E33C.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/D803431E-99FE-4C85-80BC-71DDA408E33C.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/2FE6B0F3-9AE4-4DA4-B138-A3A713DEE0A8.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/2FE6B0F3-9AE4-4DA4-B138-A3A713DEE0A8.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/3A5925C8-6D2B-436F-98AD-265075634650.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/3A5925C8-6D2B-436F-98AD-265075634650.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/D4421E7D-0A28-4058-964F-F740B884DC0C.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/D4421E7D-0A28-4058-964F-F740B884DC0C.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/6227823F-07BF-44EA-83D4-32163086E439.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/6227823F-07BF-44EA-83D4-32163086E439.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/CBB440E8-39C4-4C0F-9D1E-15EFB4002A04.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/CBB440E8-39C4-4C0F-9D1E-15EFB4002A04.jpeg');" class="case__img"></a>
-										</div>
-					<div class="text"></div>
-				</div>
-				<div class="case__right">
-					<div class="case__price" style="padding-bottom: 60px;">
-						<div class="key">Стоимость</div>
-						<div class="value"></div>
-					</div>
-					<!-- <div class="case__price">
-						<div class="key">Стоимость за м.п</div>
-						<div class="value"></div>
-					</div>
-					<div class="case__bonus">
-						<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
-					</div> -->
-					<form class="case__form">
-						<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
-							<input type="text" name="name" placeholder="Введите имя" required="required">
+				
+				
+				<div class="popup case-popup furn" data-case="3">
+					<div class="case-popup__wrapper">
+						<div class="case__left">
+							<div class="title">Прихожие</div>
+							<div class="case__images clearfix">
+																		<a href="/image/catalog/2019/12/D803431E-99FE-4C85-80BC-71DDA408E33C.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/D803431E-99FE-4C85-80BC-71DDA408E33C.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/2FE6B0F3-9AE4-4DA4-B138-A3A713DEE0A8.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/2FE6B0F3-9AE4-4DA4-B138-A3A713DEE0A8.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/3A5925C8-6D2B-436F-98AD-265075634650.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/3A5925C8-6D2B-436F-98AD-265075634650.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/D4421E7D-0A28-4058-964F-F740B884DC0C.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/D4421E7D-0A28-4058-964F-F740B884DC0C.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/6227823F-07BF-44EA-83D4-32163086E439.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/6227823F-07BF-44EA-83D4-32163086E439.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/CBB440E8-39C4-4C0F-9D1E-15EFB4002A04.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/CBB440E8-39C4-4C0F-9D1E-15EFB4002A04.jpeg');" class="case__img"></a>
+												</div>
+							<div class="text"></div>
 						</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
-							<input type="text" name="phone" placeholder="Ваш телефон" required="required">
+						<div class="case__right">
+							<div class="case__price" style="padding-bottom: 60px;">
+								<div class="key">Стоимость</div>
+								<div class="value"></div>
+							</div>
+							<!-- <div class="case__price">
+								<div class="key">Стоимость за м.п</div>
+								<div class="value"></div>
+							</div>
+							<div class="case__bonus">
+								<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
+							</div> -->
+							<form class="case__form">
+								<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
+									<input type="text" name="name" placeholder="Введите имя" required="required">
+								</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
+									<input type="text" name="phone" placeholder="Ваш телефон" required="required">
+								</div>
+								<button class="button">Закрепить за собой подарки</button>
+								<input type="hidden" name="type" value="Заявка с проекта Прихожие">
+							</form>
 						</div>
-						<button class="button">Закрепить за собой подарки</button>
-						<input type="hidden" name="type" value="Заявка с проекта Прихожие">
-					</form>
+					</div>
 				</div>
-			</div>
+				
+				<div class="popup case-popup furn" data-case="4">
+					<div class="case-popup__wrapper">
+						<div class="case__left">
+							<div class="title">Спальни</div>
+							<div class="case__images clearfix">
+																		<a href="/image/catalog/2019/12/9C166CE8-737F-46CB-BA28-777201B8AB4F.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/9C166CE8-737F-46CB-BA28-777201B8AB4F.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/53172832-19DE-4F8E-950A-3F438E5E027E.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/53172832-19DE-4F8E-950A-3F438E5E027E.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/EDDEC5A1-2DB4-43A4-9EBE-C382D75FBEA8.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/EDDEC5A1-2DB4-43A4-9EBE-C382D75FBEA8.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/461B899B-0786-44F3-AACB-69A46F155D49.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/461B899B-0786-44F3-AACB-69A46F155D49.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/47E041A1-E63C-43A9-AE30-2BD215B230E1.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/47E041A1-E63C-43A9-AE30-2BD215B230E1.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/14C70A58-4C31-4870-9280-BB41DB258350.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/14C70A58-4C31-4870-9280-BB41DB258350.jpeg');" class="case__img"></a>
+												</div>
+							<div class="text"></div>
+						</div>
+						<div class="case__right">
+							<div class="case__price" style="padding-bottom: 60px;">
+								<div class="key">Стоимость</div>
+								<div class="value"></div>
+							</div>
+							<!-- <div class="case__price">
+								<div class="key">Стоимость за м.п</div>
+								<div class="value"></div>
+							</div>
+							<div class="case__bonus">
+								<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
+							</div> -->
+							<form class="case__form">
+								<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
+									<input type="text" name="name" placeholder="Введите имя" required="required">
+								</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
+									<input type="text" name="phone" placeholder="Ваш телефон" required="required">
+								</div>
+								<button class="button">Закрепить за собой подарки</button>
+								<input type="hidden" name="type" value="Заявка с проекта Спальни">
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				<div class="popup case-popup furn" data-case="5">
+					<div class="case-popup__wrapper">
+						<div class="case__left">
+							<div class="title">Ванные</div>
+							<div class="case__images clearfix">
+																		<a href="/image/catalog/2019/12/7C924A40-25BB-4451-B67D-4CE79BFBB53F.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/7C924A40-25BB-4451-B67D-4CE79BFBB53F.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/C36F9D32-8266-4670-B410-E37D7502677D.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/C36F9D32-8266-4670-B410-E37D7502677D.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/F7C1A18F-EEB8-4377-A95C-8C894129A78F.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/F7C1A18F-EEB8-4377-A95C-8C894129A78F.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/28C6BC34-7616-4A30-B02B-0798CB31BA9E.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/28C6BC34-7616-4A30-B02B-0798CB31BA9E.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/C451D056-9181-4814-A59F-422950AA073B.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/C451D056-9181-4814-A59F-422950AA073B.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/7519AF66-6A43-41C5-AF46-848F6E40815F.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/7519AF66-6A43-41C5-AF46-848F6E40815F.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/4EF66EAA-EABF-407E-9E56-D75C205E0E77.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/4EF66EAA-EABF-407E-9E56-D75C205E0E77.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/88EC99AA-7E0B-4A05-9A66-03BF46ADF562.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/88EC99AA-7E0B-4A05-9A66-03BF46ADF562.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/F0618182-491C-4DEF-8088-E26178B2B90B.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/F0618182-491C-4DEF-8088-E26178B2B90B.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/5F606EF2-4825-42B6-BCAF-25A697A3607C.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/5F606EF2-4825-42B6-BCAF-25A697A3607C.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/29975092-063C-4909-BD59-69F5141531DA.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/29975092-063C-4909-BD59-69F5141531DA.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/71B7AFA5-1503-4FEA-BA12-D8B6FB3714B1.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/71B7AFA5-1503-4FEA-BA12-D8B6FB3714B1.jpeg');" class="case__img"></a>
+												</div>
+							<div class="text"></div>
+						</div>
+						<div class="case__right">
+							<div class="case__price" style="padding-bottom: 60px;">
+								<div class="key">Стоимость</div>
+								<div class="value"></div>
+							</div>
+							<!-- <div class="case__price">
+								<div class="key">Стоимость за м.п</div>
+								<div class="value"></div>
+							</div>
+							<div class="case__bonus">
+								<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
+							</div> -->
+							<form class="case__form">
+								<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
+									<input type="text" name="name" placeholder="Введите имя" required="required">
+								</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
+									<input type="text" name="phone" placeholder="Ваш телефон" required="required">
+								</div>
+								<button class="button">Закрепить за собой подарки</button>
+								<input type="hidden" name="type" value="Заявка с проекта Ванные">
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				<div class="popup case-popup furn" data-case="6">
+					<div class="case-popup__wrapper">
+						<div class="case__left">
+							<div class="title">Детские</div>
+							<div class="case__images clearfix">
+																		<a href="/image/catalog/2019/12/A22DE0C1-E8F9-40A6-8859-7583E85B3144.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/A22DE0C1-E8F9-40A6-8859-7583E85B3144.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/ED163277-85C9-4D85-85A9-83E72DE9CB13.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/ED163277-85C9-4D85-85A9-83E72DE9CB13.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/38D00F93-041B-4D26-978D-74854CE6D09E.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/38D00F93-041B-4D26-978D-74854CE6D09E.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/E38E35A7-1AE6-4069-8AAA-C6B9835B2160.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/E38E35A7-1AE6-4069-8AAA-C6B9835B2160.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/05BA37F7-C702-458A-8B40-1836F92C5DE6.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/05BA37F7-C702-458A-8B40-1836F92C5DE6.jpeg');" class="case__img"></a>
+																		<a href="" data-lightbox="case" style="background-image: url('');" class="case__img"></a>
+												</div>
+							<div class="text"></div>
+						</div>
+						<div class="case__right">
+							<div class="case__price" style="padding-bottom: 60px;">
+								<div class="key">Стоимость</div>
+								<div class="value"></div>
+							</div>
+							<!-- <div class="case__price">
+								<div class="key">Стоимость за м.п</div>
+								<div class="value"></div>
+							</div>
+							<div class="case__bonus">
+								<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
+							</div> -->
+							<form class="case__form">
+								<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
+									<input type="text" name="name" placeholder="Введите имя" required="required">
+								</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
+									<input type="text" name="phone" placeholder="Ваш телефон" required="required">
+								</div>
+								<button class="button">Закрепить за собой подарки</button>
+								<input type="hidden" name="type" value="Заявка с проекта Детские">
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				<div class="popup case-popup furn" data-case="8">
+					<div class="case-popup__wrapper">
+						<div class="case__left">
+							<div class="title">Гардеробные Системы</div>
+							<div class="case__images clearfix">
+																		<a href="/image/catalog/2019/12/DCDC524F-7FAB-43BA-8D9B-A93F41988740.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/DCDC524F-7FAB-43BA-8D9B-A93F41988740.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/85E7C1C2-2BA6-46A4-943F-031DC0328096.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/85E7C1C2-2BA6-46A4-943F-031DC0328096.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/A3BE1918-2C4F-4381-9679-2DB83BE544CD.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/A3BE1918-2C4F-4381-9679-2DB83BE544CD.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/08185904-5638-43FB-B030-C751C51B4330.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/08185904-5638-43FB-B030-C751C51B4330.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/7041562C-A73A-4324-80BF-700CB38D695D.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/7041562C-A73A-4324-80BF-700CB38D695D.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/9BB836BD-31D7-458F-99AC-6EB6F4D2A5A0.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/9BB836BD-31D7-458F-99AC-6EB6F4D2A5A0.jpeg');" class="case__img"></a>
+												</div>
+							<div class="text"></div>
+						</div>
+						<div class="case__right">
+							<div class="case__price" style="padding-bottom: 60px;">
+								<div class="key">Стоимость</div>
+								<div class="value"></div>
+							</div>
+							<!-- <div class="case__price">
+								<div class="key">Стоимость за м.п</div>
+								<div class="value"></div>
+							</div>
+							<div class="case__bonus">
+								<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
+							</div> -->
+							<form class="case__form">
+								<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
+									<input type="text" name="name" placeholder="Введите имя" required="required">
+								</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
+									<input type="text" name="phone" placeholder="Ваш телефон" required="required">
+								</div>
+								<button class="button">Закрепить за собой подарки</button>
+								<input type="hidden" name="type" value="Заявка с проекта Гардеробные Системы">
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				<div class="popup case-popup furn" data-case="7">
+					<div class="case-popup__wrapper">
+						<div class="case__left">
+							<div class="title">Двери</div>
+							<div class="case__images clearfix">
+																		<a href="/image/catalog/2019/12/25D0F24C-B049-4949-9622-B591BFEEA5BC.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/25D0F24C-B049-4949-9622-B591BFEEA5BC.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/3AAE23AE-3DBF-4D45-B5CB-32DCDC5779D4.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/3AAE23AE-3DBF-4D45-B5CB-32DCDC5779D4.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/391B170B-A0C9-427E-9AFD-3D71E0D3D526.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/391B170B-A0C9-427E-9AFD-3D71E0D3D526.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/E2A59346-D456-404C-9BC8-5839C56E82A1.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/E2A59346-D456-404C-9BC8-5839C56E82A1.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/9B8D2C38-34B8-497E-AE76-1C0955F428F9.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/9B8D2C38-34B8-497E-AE76-1C0955F428F9.jpeg');" class="case__img"></a>
+												</div>
+							<div class="text"></div>
+						</div>
+						<div class="case__right">
+							<div class="case__price" style="padding-bottom: 60px;">
+								<div class="key">Стоимость</div>
+								<div class="value"></div>
+							</div>
+							<!-- <div class="case__price">
+								<div class="key">Стоимость за м.п</div>
+								<div class="value"></div>
+							</div>
+							<div class="case__bonus">
+								<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
+							</div> -->
+							<form class="case__form">
+								<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
+									<input type="text" name="name" placeholder="Введите имя" required="required">
+								</div>
+								<div class="input">
+									<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
+									<input type="text" name="phone" placeholder="Ваш телефон" required="required">
+								</div>
+								<button class="button">Закрепить за собой подарки</button>
+								<input type="hidden" name="type" value="Заявка с проекта Двери">
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				<div class="popup case-popup furn" data-case="1">
+					<div class="case-popup__wrapper">
+						<div class="case__left">
+							<div class="title">Шкафы-купе</div>
+							<div class="case__images clearfix">
+																		<a href="/image/catalog/2019/12/CAC70995-F9F4-4121-B40A-2EE3B27CD671.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/CAC70995-F9F4-4121-B40A-2EE3B27CD671.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/F3B4B762-306D-44AD-9ED1-9A971B6072EF.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/F3B4B762-306D-44AD-9ED1-9A971B6072EF.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/F2FA481A-06B4-4F08-8FFC-375BDAB1FAB7.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/F2FA481A-06B4-4F08-8FFC-375BDAB1FAB7.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/4CC85067-FB7F-42A3-8943-F5C78813E7B6.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/4CC85067-FB7F-42A3-8943-F5C78813E7B6.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/63FD2292-0901-4A2A-9CB1-A8E49DE809CC.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/63FD2292-0901-4A2A-9CB1-A8E49DE809CC.jpeg');" class="case__img"></a>
+																		<a href="/image/catalog/2019/12/8DE1A211-3577-4441-884F-1F166C8A2884.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/8DE1A211-3577-4441-884F-1F166C8A2884.jpeg');" class="case__img"></a>
+												</div>
+							<div class="text"><p>описание TEST</p>
 		</div>
-		
-		<div class="popup case-popup furn" data-case="4">
-			<div class="case-popup__wrapper">
-				<div class="case__left">
-					<div class="title">Спальни</div>
-					<div class="case__images clearfix">
-																<a href="/image/catalog/2019/12/9C166CE8-737F-46CB-BA28-777201B8AB4F.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/9C166CE8-737F-46CB-BA28-777201B8AB4F.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/53172832-19DE-4F8E-950A-3F438E5E027E.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/53172832-19DE-4F8E-950A-3F438E5E027E.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/EDDEC5A1-2DB4-43A4-9EBE-C382D75FBEA8.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/EDDEC5A1-2DB4-43A4-9EBE-C382D75FBEA8.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/461B899B-0786-44F3-AACB-69A46F155D49.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/461B899B-0786-44F3-AACB-69A46F155D49.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/47E041A1-E63C-43A9-AE30-2BD215B230E1.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/47E041A1-E63C-43A9-AE30-2BD215B230E1.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/14C70A58-4C31-4870-9280-BB41DB258350.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/14C70A58-4C31-4870-9280-BB41DB258350.jpeg');" class="case__img"></a>
-										</div>
-					<div class="text"></div>
-				</div>
-				<div class="case__right">
-					<div class="case__price" style="padding-bottom: 60px;">
-						<div class="key">Стоимость</div>
-						<div class="value"></div>
-					</div>
-					<!-- <div class="case__price">
-						<div class="key">Стоимость за м.п</div>
-						<div class="value"></div>
-					</div>
-					<div class="case__bonus">
-						<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
-					</div> -->
-					<form class="case__form">
-						<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
-							<input type="text" name="name" placeholder="Введите имя" required="required">
-						</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
-							<input type="text" name="phone" placeholder="Ваш телефон" required="required">
-						</div>
-						<button class="button">Закрепить за собой подарки</button>
-						<input type="hidden" name="type" value="Заявка с проекта Спальни">
-					</form>
-				</div>
-			</div>
-		</div>
-		
-		<div class="popup case-popup furn" data-case="5">
-			<div class="case-popup__wrapper">
-				<div class="case__left">
-					<div class="title">Ванные</div>
-					<div class="case__images clearfix">
-																<a href="/image/catalog/2019/12/7C924A40-25BB-4451-B67D-4CE79BFBB53F.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/7C924A40-25BB-4451-B67D-4CE79BFBB53F.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/C36F9D32-8266-4670-B410-E37D7502677D.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/C36F9D32-8266-4670-B410-E37D7502677D.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/F7C1A18F-EEB8-4377-A95C-8C894129A78F.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/F7C1A18F-EEB8-4377-A95C-8C894129A78F.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/28C6BC34-7616-4A30-B02B-0798CB31BA9E.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/28C6BC34-7616-4A30-B02B-0798CB31BA9E.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/C451D056-9181-4814-A59F-422950AA073B.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/C451D056-9181-4814-A59F-422950AA073B.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/7519AF66-6A43-41C5-AF46-848F6E40815F.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/7519AF66-6A43-41C5-AF46-848F6E40815F.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/4EF66EAA-EABF-407E-9E56-D75C205E0E77.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/4EF66EAA-EABF-407E-9E56-D75C205E0E77.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/88EC99AA-7E0B-4A05-9A66-03BF46ADF562.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/88EC99AA-7E0B-4A05-9A66-03BF46ADF562.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/F0618182-491C-4DEF-8088-E26178B2B90B.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/F0618182-491C-4DEF-8088-E26178B2B90B.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/5F606EF2-4825-42B6-BCAF-25A697A3607C.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/5F606EF2-4825-42B6-BCAF-25A697A3607C.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/29975092-063C-4909-BD59-69F5141531DA.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/29975092-063C-4909-BD59-69F5141531DA.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/71B7AFA5-1503-4FEA-BA12-D8B6FB3714B1.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/71B7AFA5-1503-4FEA-BA12-D8B6FB3714B1.jpeg');" class="case__img"></a>
-										</div>
-					<div class="text"></div>
-				</div>
-				<div class="case__right">
-					<div class="case__price" style="padding-bottom: 60px;">
-						<div class="key">Стоимость</div>
-						<div class="value"></div>
-					</div>
-					<!-- <div class="case__price">
-						<div class="key">Стоимость за м.п</div>
-						<div class="value"></div>
-					</div>
-					<div class="case__bonus">
-						<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
-					</div> -->
-					<form class="case__form">
-						<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
-							<input type="text" name="name" placeholder="Введите имя" required="required">
-						</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
-							<input type="text" name="phone" placeholder="Ваш телефон" required="required">
-						</div>
-						<button class="button">Закрепить за собой подарки</button>
-						<input type="hidden" name="type" value="Заявка с проекта Ванные">
-					</form>
-				</div>
-			</div>
-		</div>
-		
-		<div class="popup case-popup furn" data-case="6">
-			<div class="case-popup__wrapper">
-				<div class="case__left">
-					<div class="title">Детские</div>
-					<div class="case__images clearfix">
-																<a href="/image/catalog/2019/12/A22DE0C1-E8F9-40A6-8859-7583E85B3144.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/A22DE0C1-E8F9-40A6-8859-7583E85B3144.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/ED163277-85C9-4D85-85A9-83E72DE9CB13.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/ED163277-85C9-4D85-85A9-83E72DE9CB13.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/38D00F93-041B-4D26-978D-74854CE6D09E.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/38D00F93-041B-4D26-978D-74854CE6D09E.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/E38E35A7-1AE6-4069-8AAA-C6B9835B2160.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/E38E35A7-1AE6-4069-8AAA-C6B9835B2160.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/05BA37F7-C702-458A-8B40-1836F92C5DE6.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/05BA37F7-C702-458A-8B40-1836F92C5DE6.jpeg');" class="case__img"></a>
-																<a href="" data-lightbox="case" style="background-image: url('');" class="case__img"></a>
-										</div>
-					<div class="text"></div>
-				</div>
-				<div class="case__right">
-					<div class="case__price" style="padding-bottom: 60px;">
-						<div class="key">Стоимость</div>
-						<div class="value"></div>
-					</div>
-					<!-- <div class="case__price">
-						<div class="key">Стоимость за м.п</div>
-						<div class="value"></div>
-					</div>
-					<div class="case__bonus">
-						<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
-					</div> -->
-					<form class="case__form">
-						<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
-							<input type="text" name="name" placeholder="Введите имя" required="required">
-						</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
-							<input type="text" name="phone" placeholder="Ваш телефон" required="required">
-						</div>
-						<button class="button">Закрепить за собой подарки</button>
-						<input type="hidden" name="type" value="Заявка с проекта Детские">
-					</form>
-				</div>
-			</div>
-		</div>
-		
-		<div class="popup case-popup furn" data-case="8">
-			<div class="case-popup__wrapper">
-				<div class="case__left">
-					<div class="title">Гардеробные Системы</div>
-					<div class="case__images clearfix">
-																<a href="/image/catalog/2019/12/DCDC524F-7FAB-43BA-8D9B-A93F41988740.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/DCDC524F-7FAB-43BA-8D9B-A93F41988740.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/85E7C1C2-2BA6-46A4-943F-031DC0328096.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/85E7C1C2-2BA6-46A4-943F-031DC0328096.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/A3BE1918-2C4F-4381-9679-2DB83BE544CD.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/A3BE1918-2C4F-4381-9679-2DB83BE544CD.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/08185904-5638-43FB-B030-C751C51B4330.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/08185904-5638-43FB-B030-C751C51B4330.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/7041562C-A73A-4324-80BF-700CB38D695D.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/7041562C-A73A-4324-80BF-700CB38D695D.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/9BB836BD-31D7-458F-99AC-6EB6F4D2A5A0.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/9BB836BD-31D7-458F-99AC-6EB6F4D2A5A0.jpeg');" class="case__img"></a>
-										</div>
-					<div class="text"></div>
-				</div>
-				<div class="case__right">
-					<div class="case__price" style="padding-bottom: 60px;">
-						<div class="key">Стоимость</div>
-						<div class="value"></div>
-					</div>
-					<!-- <div class="case__price">
-						<div class="key">Стоимость за м.п</div>
-						<div class="value"></div>
-					</div>
-					<div class="case__bonus">
-						<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
-					</div> -->
-					<form class="case__form">
-						<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
-							<input type="text" name="name" placeholder="Введите имя" required="required">
-						</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
-							<input type="text" name="phone" placeholder="Ваш телефон" required="required">
-						</div>
-						<button class="button">Закрепить за собой подарки</button>
-						<input type="hidden" name="type" value="Заявка с проекта Гардеробные Системы">
-					</form>
-				</div>
-			</div>
-		</div>
-		
-		<div class="popup case-popup furn" data-case="7">
-			<div class="case-popup__wrapper">
-				<div class="case__left">
-					<div class="title">Двери</div>
-					<div class="case__images clearfix">
-																<a href="/image/catalog/2019/12/25D0F24C-B049-4949-9622-B591BFEEA5BC.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/25D0F24C-B049-4949-9622-B591BFEEA5BC.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/3AAE23AE-3DBF-4D45-B5CB-32DCDC5779D4.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/3AAE23AE-3DBF-4D45-B5CB-32DCDC5779D4.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/391B170B-A0C9-427E-9AFD-3D71E0D3D526.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/391B170B-A0C9-427E-9AFD-3D71E0D3D526.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/E2A59346-D456-404C-9BC8-5839C56E82A1.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/E2A59346-D456-404C-9BC8-5839C56E82A1.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/9B8D2C38-34B8-497E-AE76-1C0955F428F9.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/9B8D2C38-34B8-497E-AE76-1C0955F428F9.jpeg');" class="case__img"></a>
-										</div>
-					<div class="text"></div>
-				</div>
-				<div class="case__right">
-					<div class="case__price" style="padding-bottom: 60px;">
-						<div class="key">Стоимость</div>
-						<div class="value"></div>
-					</div>
-					<!-- <div class="case__price">
-						<div class="key">Стоимость за м.п</div>
-						<div class="value"></div>
-					</div>
-					<div class="case__bonus">
-						<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
-					</div> -->
-					<form class="case__form">
-						<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
-							<input type="text" name="name" placeholder="Введите имя" required="required">
-						</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
-							<input type="text" name="phone" placeholder="Ваш телефон" required="required">
-						</div>
-						<button class="button">Закрепить за собой подарки</button>
-						<input type="hidden" name="type" value="Заявка с проекта Двери">
-					</form>
-				</div>
-			</div>
-		</div>
-		
-		<div class="popup case-popup furn" data-case="1">
-			<div class="case-popup__wrapper">
-				<div class="case__left">
-					<div class="title">Шкафы-купе</div>
-					<div class="case__images clearfix">
-																<a href="/image/catalog/2019/12/CAC70995-F9F4-4121-B40A-2EE3B27CD671.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/CAC70995-F9F4-4121-B40A-2EE3B27CD671.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/F3B4B762-306D-44AD-9ED1-9A971B6072EF.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/F3B4B762-306D-44AD-9ED1-9A971B6072EF.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/F2FA481A-06B4-4F08-8FFC-375BDAB1FAB7.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/F2FA481A-06B4-4F08-8FFC-375BDAB1FAB7.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/4CC85067-FB7F-42A3-8943-F5C78813E7B6.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/4CC85067-FB7F-42A3-8943-F5C78813E7B6.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/63FD2292-0901-4A2A-9CB1-A8E49DE809CC.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/63FD2292-0901-4A2A-9CB1-A8E49DE809CC.jpeg');" class="case__img"></a>
-																<a href="/image/catalog/2019/12/8DE1A211-3577-4441-884F-1F166C8A2884.jpeg" data-lightbox="case" style="background-image: url('/image/catalog/2019/12/8DE1A211-3577-4441-884F-1F166C8A2884.jpeg');" class="case__img"></a>
-										</div>
-					<div class="text"><p>описание TEST</p>
 </div>
+		<div class="case__right">
+			<div class="case__price" style="padding-bottom: 60px;">
+				<div class="key">Стоимость</div>
+				<div class="value">202</div>
+			</div>
+			<!-- <div class="case__price">
+				<div class="key">Стоимость за м.п</div>
+				<div class="value">202</div>
+			</div>
+			<div class="case__bonus">
+				<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
+			</div> -->
+			<form class="case__form">
+				<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
+				<div class="input">
+					<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
+					<input type="text" name="name" placeholder="Введите имя" required="required">
 				</div>
-				<div class="case__right">
-					<div class="case__price" style="padding-bottom: 60px;">
-						<div class="key">Стоимость</div>
-						<div class="value">202</div>
-					</div>
-					<!-- <div class="case__price">
-						<div class="key">Стоимость за м.п</div>
-						<div class="value">202</div>
-					</div>
-					<div class="case__bonus">
-						<div class="text">Кухни до конца августа <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="/catalog/view/theme/default/image/cases/1.png" alt=""/>
-					</div> -->
-					<form class="case__form">
-						<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
-							<input type="text" name="name" placeholder="Введите имя" required="required">
-						</div>
-						<div class="input">
-							<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
-							<input type="text" name="phone" placeholder="Ваш телефон" required="required">
-						</div>
-						<button class="button">Закрепить за собой подарки</button>
-						<input type="hidden" name="type" value="Заявка с проекта Шкафы-купе">
-					</form>
+				<div class="input">
+					<div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
+					<input type="text" name="phone" placeholder="Ваш телефон" required="required">
 				</div>
+				<button class="button">Закрепить за собой подарки</button>
+				<input type="hidden" name="type" value="Заявка с проекта Шкафы-купе">
+			</form>
+		</div>
 			</div>
 		</div>
 		
@@ -430,10 +402,7 @@
 				</div>
 			</div>
 		</div>
-
-		
 	</div>
-	{#<script src="/catalog/view/javascript/jquery-2.1.1.min.js"></script>#}
 	<script src="/catalog/view/javascript/libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="/catalog/view/javascript/YouTubePopUp.jquery.js"></script>
 	<script src="/catalog/view/javascript/libs/jquery-nice-select-1.1.0/jquery.nice-select.min.js"></script>
@@ -460,7 +429,6 @@
 
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(45261216, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <!-- /Yandex.Metrika counter -->
 
-</b>
 </footer>
 
 

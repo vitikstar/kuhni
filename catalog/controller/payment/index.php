@@ -13,13 +13,13 @@ class ControllerPaymentIndex extends Controller {
 			$this->document->addLink($canonical, 'canonical');
 		}
 
-		$data['menu'] = $this->load->controller('common/menu');
-		$data['content_top'] = $this->load->controller('common/content_top');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
-		$data['block_payment'] = $this->load->controller('block/payment');
-		$data['block_capacity'] = $this->load->controller('block/capacity'); //3d блок
-		$data['block_cost'] = $this->load->controller('block/cost');
+
+		$data['column_left'] = $this->load->controller('common/column_left');
+		$data['column_right'] = $this->load->controller('common/column_right');
+		$data['content_top'] = $this->load->controller('common/content_top');
+		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 
 
 

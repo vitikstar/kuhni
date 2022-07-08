@@ -99,6 +99,8 @@ class ControllerCommonHeader extends Controller {
 		$data['cart'] = $this->load->controller('common/cart');
 		$data['menu'] = $this->load->controller('common/menu');
 
+		$data['class_nav'] = ($this->request->get['route'] != "common/home") ? "radiant-bg" : ""; //@TODO: якщо головна то пустий класс, забув як перевіряється роут
+
 		return $this->load->view('common/header', $data);
 	}
 }

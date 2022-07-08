@@ -13,7 +13,6 @@ class ControllerFurnitureIndex extends Controller {
 			$this->document->addLink($canonical, 'canonical');
 		}
 
-		$data['menu'] = $this->load->controller('common/menu');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
 

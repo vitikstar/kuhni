@@ -17,7 +17,6 @@ class ControllerQuizIndex extends Controller {
 		$data['content_top'] = $this->load->controller('common/content_top');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
-		$data['cost'] = $this->load->controller('block/cost');
 
 
 		$this->response->setOutput($this->load->view('page/quiz/index', $data));
