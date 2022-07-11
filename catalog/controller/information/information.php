@@ -21,6 +21,9 @@ class ControllerInformationInformation extends Controller {
 			$information_id = 0;
 		}
 
+
+		$data['information_id'] = $information_id;
+
 		$information_info = $this->model_catalog_information->getInformation($information_id);
 
 		if ($information_info) {
@@ -55,8 +58,8 @@ class ControllerInformationInformation extends Controller {
 
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
-			$data['content_top'] = $this->load->controller('common/content_top');
-			$data['content_bottom'] = $this->load->controller('common/content_bottom');
+			$data['content_top'] = $this->moduleRenderTop($information_id);
+			$data['content_bottom'] = $this->moduleRenderBottom($information_id);
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
 
@@ -86,6 +89,41 @@ class ControllerInformationInformation extends Controller {
 
 			$this->response->setOutput($this->load->view('error/not_found', $data));
 		}
+	}
+
+
+	private function moduleRenderTop(int $information_id) : string
+	{
+		$html = "";
+
+		if($information_id == 7){
+		}elseif ($information_id == 8) {
+		} elseif ($information_id == 9) {
+		} elseif ($information_id == 10) {
+		} elseif ($information_id == 11) {
+		}
+
+		return $html;
+	}
+
+	private function moduleRenderBottom(int $information_id) : string
+	{
+		$html = "";
+
+		if ($information_id == 7) {
+			$html .= $this->load->controller('extension/module/catalog'); //скачать каталог
+			$html .= $this->load->controller('extension/module/cost_calculator'); //Хотите рассчитать точную стоимость кухни и посмотреть качество материалов?
+			$html .= $this->load->controller('extension/module/google_map');
+		} elseif ($information_id == 8) {
+			$html .= $this->load->controller('extension/module/capacity');
+			$html .= $this->load->controller('extension/module/cost_calculator');
+		} elseif ($information_id == 9 or $information_id == 11 or $information_id == 10) {
+			$html .= $this->load->controller('extension/module/constructor'); //3D конструктор
+			$html .= $this->load->controller('extension/module/cost_calculator');
+			$html .= $this->load->controller('extension/module/google_map');
+		}
+
+		return $html;
 	}
 
 	public function agree() {
