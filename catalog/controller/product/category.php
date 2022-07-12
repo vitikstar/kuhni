@@ -183,21 +183,8 @@ class ControllerProductCategory extends Controller {
 				'limit'              => $limit
 			);
 
-
-
-
 			$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
 			$results = $this->model_catalog_product->getProducts($filter_data);
-
-			//// up
-            $product_total = 30;
-            $results_data = $this->model_catalog_product->getProducts($filter_data);
-            $results = array();
-
-            for ($i = 0; $i < 24; $i++) {
-                $results[$i] = $results_data[50];
-            }
-            //// end up
 
 			foreach ($results as $result) {
 				if ($result['image']) {
