@@ -21,14 +21,9 @@
                 {#<div class="cat-categories-title">Подкатегории</div>#}
                 <ul>
                     <li class="cat-categories-title">Подкатегории</li>
-                    <li><a href="#">Кухни из массива дерева</a></li>
-                    <li><a href="#">Кухни из МДФ</a></li>
-                    <li><a href="#">Кухни из пластика</a></li>
-                    <li><a href="#">Кухни из шпона</a></li>
-                    <li><a href="#">Классические кухни</a></li>
-                    <li><a href="#">Современные кухни</a></li>
-                    <li><a href="#">Кухни в стиле Лофт</a></li>
-                    <li><a href="#">Кухни в стиле Неоклассика</a></li>
+                    {% for category in categories %}
+                    <li><a href="{{ category.href }}">{{ category.name }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
 
