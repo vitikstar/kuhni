@@ -183,9 +183,21 @@ class ControllerProductCategory extends Controller {
 				'limit'              => $limit
 			);
 
-			$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
 
+
+
+			$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
 			$results = $this->model_catalog_product->getProducts($filter_data);
+
+			//// up
+            $product_total = 30;
+            $results_data = $this->model_catalog_product->getProducts($filter_data);
+            $results = array();
+
+            for ($i = 0; $i < 24; $i++) {
+                $results[$i] = $results_data[50];
+            }
+            //// end up
 
 			foreach ($results as $result) {
 				if ($result['image']) {
@@ -218,10 +230,15 @@ class ControllerProductCategory extends Controller {
 					$rating = false;
 				}
 
+				//up
+                $attribute_groups = $this->model_catalog_product->getProductAttributes($result['product_id']);
+                //
+
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
 					'name'        => $result['name'],
+                    'attribute_groups' => $attribute_groups,
 					'description' => utf8_substr(trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8'))), 0, $this->config->get('theme_' . $this->config->get('config_theme') . '_product_description_length')) . '..',
 					'price'       => $price,
 					'special'     => $special,

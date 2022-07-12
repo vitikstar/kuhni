@@ -1,0 +1,89 @@
+<div class="productShowMore">
+    <div id="showMoreStatic" style="cursor: pointer;" onclick="showMore();">Загрузить еще</div>
+    <div id="showMoreImg" style="display: none;">
+        <img src="/image/catalog/spinner.gif" width="60" height="60">
+    </div>
+</div>
+
+<script>
+
+    function showMore() {
+        $('#showMoreImg').show();
+        $('#showMoreStatic').hide();
+
+        setTimeout(function () {
+            var href = $('#light_pagination ul li[class="active"]').next().find('a').attr('href');
+
+            $.get(href, function (data) {
+                var goods = $(data).find('.light_product');
+                // If the #posts element is at the top level of the data,
+                //    you'll need to use .filter() instead.
+                // var posts = $(data).filter('#posts');
+                $('#show_more_html').before(goods);
+                if(goods) {
+                    $('#showMoreImg').hide();
+                    $('#showMoreStatic').show();
+                }
+                $('#light_pagination ul li').next().find('a').removeClass('page-link');
+                $('#light_pagination ul li[class="active"]').next().find('a').replaceWith(function (index, oldHTML) {
+                    return $("<span>").html(oldHTML);
+                });
+                $('#light_pagination ul li[class="active"]').next().find('span').addClass('current');
+
+                $('#light_pagination ul li[class="active"]').next().addClass('active');
+
+
+                var str = $('#light_results').text();
+
+                if(str) {
+                    var arr = str.split(' ');
+                    arr[4] = parseInt(arr[4]) + goods.length;
+                    $('#light_results').html(arr.join(' '));
+                }
+                // fetchAllSkuPage();
+                show();
+
+            });
+
+        }, 1000);
+    }
+
+    function declOfNum(number, titles) {
+        cases = [2, 0, 1, 1, 1, 2];
+        return titles[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]];
+    }
+
+    function show() {
+        $('#light_pagination ul li a').last().removeClass('page-link');
+
+        var href = $('#light_pagination ul li[class="active"]').last().next().find('a').attr('href');
+        var hrefLast = $('#light_pagination ul li[class="active"]').last().next().hasClass('next-pag');
+        var hrefFirst = $('#light_pagination ul li[class="active"]').first().prev().hasClass('prev-pag');
+
+        if(href == undefined || hrefLast) {
+            $('#showMoreImg').parent().parent().remove();
+            $('.next-pag').remove();
+            $('#light_pagination a[class="next"]').hide();
+            return;
+        }
+
+        if (hrefFirst) {
+            $('.prev-pag').hide();
+        } else {
+            $('.prev-pag').show();
+        }
+
+        $.get(href,function(data) {
+            var goods = $(data).find('.light_product');
+
+            var lenght = goods.length;
+
+            var title = declOfNum(lenght,[{% if lang == 'ru' %}'товар','товара','товаров'{% else %}'товар','товара','товарів'{% endif %}]);
+
+            $('.productShowMore').parent().show();
+            $('#buttonShow').html('{% if lang == 'ru' %}Показать еще{% else %}Показати ще{% endif %} <br>'+lenght+' '+title);
+
+        });
+    }
+    show();
+</script>

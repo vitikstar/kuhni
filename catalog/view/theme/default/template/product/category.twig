@@ -1,7 +1,220 @@
 {{ header }}
-<img src="/catalog/view/theme/default/image/block1/bg.png" alt="" class="block__bg main__bg">
+<div class="category-product-page">
+    <div class="block__bg main__bg block__bg_small"></div>
+    <div id="product-category">
+        {{ content_top }}
+        <div id="content" class="container">
+            <ul class="breadcrumb">
+                {% set i = 0 %}
+                {% set length = breadcrumbs|length %}
+                {% for breadcrumb in breadcrumbs %}
+                    {% set i = i + 1 %}
+                    {% if length != i %}
+                        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+                    {% else %}
+                        <li>{{ breadcrumb.text }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <div class="cat-categories">
+                {#<div class="cat-categories-title">Подкатегории</div>#}
+                <ul>
+                    <li class="cat-categories-title">Подкатегории</li>
+                    <li><a href="#">Кухни из массива дерева</a></li>
+                    <li><a href="#">Кухни из МДФ</a></li>
+                    <li><a href="#">Кухни из пластика</a></li>
+                    <li><a href="#">Кухни из шпона</a></li>
+                    <li><a href="#">Классические кухни</a></li>
+                    <li><a href="#">Современные кухни</a></li>
+                    <li><a href="#">Кухни в стиле Лофт</a></li>
+                    <li><a href="#">Кухни в стиле Неоклассика</a></li>
+                </ul>
+            </div>
+
+            <h1 class="cat-title">{{ heading_title }}</h1>
+
+            {% if products %}
+                <div class="pr-catalog row">
+                    {% set i = 0 %}
+                    {% for product in products %}
+
+                        <div class="product-layout col-xs-12 col-sm-4 light_product">
+                            <div class="product-thumb">
+                                <div class="image">
+                                    <a href="{{ product.href }}">
+                                        <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="pr-catalog-detail">
+                                    <div class="caption">
+                                        <h3><a href="{{ product.href }}">{{ product.name }}</a></h3>
+                                        <div class="pr-catalog-option-items">
+                                            <div class="pr-catalog-option-item active">Любой цвет</div>
+                                            <div class="pr-catalog-option-item">Любые размеры и формы</div>
+                                        </div>
 
 
+                                        <div class="pr-catalog-attrs">
+                                            {% if product.attribute_groups %}
+                                                {% for attribute_group in product.attribute_groups %}
+                                                    {% for attribute in attribute_group.attribute %}
+                                                        {# 17 - Фасады, 18 - Стиль, 19 - Цвет #}
+                                                        {%
+                                                        if attribute.attribute_id == 17
+                                                        or
+                                                        attribute.attribute_id == 18
+                                                        or
+                                                        attribute.attribute_id == 19
+                                                        %}
+                                                            <div class="pr-catalog-attr">
+                                                                <div class="pr-catalog-attr-name">{{ attribute.name }}</div>
+                                                                <div class="pr-catalog-attr-text">{{ attribute.text }}</div>
+                                                            </div>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                {% endfor %}
+                                            {% endif %}
+
+                                            {% if product.price %}
+                                                <div class="pr-catalog-attr price">
+                                                    <div class="pr-catalog-attr-name">Цена</div>
+                                                    {% if not product.special %}
+                                                        <div class="price-new pr-catalog-attr-text">от {{ product.price }} / метр</div>
+                                                    {% else %}
+                                                        <div class="price-new pr-catalog-attr-text">от {{ product.special }} / метр</div>
+                                                        {#<span class="price-old">{{ product.price }}</span>#}
+                                                    {% endif %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+
+
+                                    </div>
+                                    <div class="pr-catalog-btn-wrap">
+                                        <button class="order-product button">Заказать расчет</button>
+                                        <a href="{{ product.href }}" class="pr-catalog-btn-link button">Калькулятор</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {########### banners #}
+                        {% set i = i + 1 %}
+
+                        {# banner 1 #}
+                        {% if i == 4 %}
+                            <div class="pr-catalog-banner-1 pr-catalog-banner product-layout col-xs-12 col-sm-4">
+                                <div class="pr-catalog-banner-inner">
+                                    <div class="pr-catalog-banner-title">Вы экономите 20%</div>
+                                    <div class="pr-catalog-banner-text">Потому что у нас кухни<br>собственного производства,<br>без перекупщиков</div>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        {# banner 2 #}
+                        {% if i == 8 %}
+                            <div class="pr-catalog-banner-2 pr-catalog-banner product-layout col-xs-12 col-sm-4">
+                                <div class="pr-catalog-banner-inner">
+                                    <div class="pr-catalog-banner-title">Изготавливаем<br>кухни более 20 лет</div>
+                                    <div class="pr-catalog-banner-text">Мы занимаемся изготовлением<br>кухонных гарнитуров и корпусной<br>мебели с 1999 года<br><br>Мы уже сделали более<br>18 тысяч кухонь</div>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        {# banner 3 #}
+                        {% if i == 12 %}
+                            <div class="pr-catalog-banner-3 pr-catalog-banner product-layout col-xs-12 col-sm-4">
+                                <div class="pr-catalog-banner-inner">
+                                    <div class="pr-catalog-banner-title">У нас более 800<br>видов фасадов</div>
+                                    <div class="pr-catalog-banner-text">и фурнитура от европейских<br>производителей</div>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        {# banner 4 #}
+                        {% if i == 16 %}
+                            <div class="pr-catalog-banner-4 pr-catalog-banner product-layout col-xs-12 col-sm-4">
+                                <div class="pr-catalog-banner-inner">
+                                    <div class="pr-catalog-banner-title">Бесплатная<br>3D визуализация<br>вашей кухни</div>
+                                    <div class="pr-catalog-banner-text">наш дизайнер разработает<br>макет вашей будущей кухни<br>в разных ракурсах</div>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        {# banner 5 #}
+                        {% if i == 20 %}
+                            <div class="pr-catalog-banner-5 pr-catalog-banner product-layout col-xs-12 col-sm-4">
+                                <div class="pr-catalog-banner-inner">
+                                    <div class="pr-catalog-banner-title">Дарим пять<br>бонусных услуг!</div>
+                                    <div class="pr-catalog-banner-text">
+                                        <ul>
+                                            <li>3D визуализация</li>
+                                            <li>Выезд замерщика</li>
+                                            <li>Доставка</li>
+                                            <li>Подъём на этаж</li>
+                                            <li>Уборка после монтажа</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        {# banner 6 #}
+                        {% if i == 24 %}
+                            <div class="pr-catalog-banner-6 pr-catalog-banner product-layout col-xs-12 col-sm-4">
+                                <div class="pr-catalog-banner-inner">
+                                    <div class="pr-catalog-banner-title">Полный цикл<br>производства</div>
+                                    <div class="pr-catalog-banner-text">У нас собственное производство,<br>мы сами изготавливаем фасады,<br>и другие элементы мебели,<br>поэтому вы не переплачиваете<br>деньги диллерам.</div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {########### end banners #}
+                    {% endfor %}
+
+                    <div id="show_more_html" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                </div>
+
+                <div class="pagination-wrapper row">
+                    <div class="col-sm-6 text-right page-result" id="light_results">{{ results }}</div>
+                    <div class="col-sm-6 text-left page-link" id="light_pagination">{{ pagination }}</div>
+                </div>
+
+            {% endif %}
+            {% if not categories and not products %}
+                <p>{{ text_empty }}</p>
+                <div class="buttons">
+                    <div class="pull-right"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
+                </div>
+            {% endif %}
+
+
+            {{ description }}
+        </div>
+        {{ content_bottom }}
+        {{ column_right }}
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: '/index.php?route=common/show_more_html',
+            dataType: 'html',
+            success: function(htmlText) {
+                $('#show_more_html').html(htmlText);
+            }
+        });
+    });
+</script>
+
+
+{{ footer }}
+
+{#
+
+{{ content_top }}
 <div id="product-category" class="container">
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
@@ -16,7 +229,7 @@
     {% else %}
     {% set class = 'col-sm-12' %}
     {% endif %}
-    <div id="content" class="{{ class }}">{{ content_top }}
+    <div id="content" class="{{ class }}">
       <h1>{{ heading_title }}</h1>
       {% if thumb or description %}
       <div class="row"> {% if thumb %}
@@ -67,31 +280,31 @@
           <div class="form-group input-group input-group-sm">
             <label class="input-group-addon" for="input-sort">{{ text_sort }}</label>
             <select id="input-sort" class="form-control" onchange="location = this.value;">
-              
-              
-              
+
+
+
               {% for sorts in sorts %}
               {% if sorts.value == '%s-%s'|format(sort, order) %}
-              
-              
-              
+
+
+
               <option value="{{ sorts.href }}" selected="selected">{{ sorts.text }}</option>
-              
-              
-              
+
+
+
               {% else %}
-              
-              
-              
+
+
+
               <option value="{{ sorts.href }}">{{ sorts.text }}</option>
-              
-              
-              
+
+
+
               {% endif %}
               {% endfor %}
-            
-            
-            
+
+
+
             </select>
           </div>
         </div>
@@ -99,31 +312,31 @@
           <div class="form-group input-group input-group-sm">
             <label class="input-group-addon" for="input-limit">{{ text_limit }}</label>
             <select id="input-limit" class="form-control" onchange="location = this.value;">
-              
-              
-              
+
+
+
               {% for limits in limits %}
               {% if limits.value == limit %}
-              
-              
-              
+
+
+
               <option value="{{ limits.href }}" selected="selected">{{ limits.text }}</option>
-              
-              
-              
+
+
+
               {% else %}
-              
-              
-              
+
+
+
               <option value="{{ limits.href }}">{{ limits.text }}</option>
-              
-              
-              
+
+
+
               {% endif %}
               {% endfor %}
-            
-            
-            
+
+
+
             </select>
           </div>
         </div>
@@ -170,4 +383,6 @@
       {{ content_bottom }}</div>
     {{ column_right }}</div>
 </div>
-{{ footer }} 
+{{ footer }}
+
+#}
