@@ -1731,4 +1731,108 @@
     .block2 .section__descriptor {
         color: #fff;
     }
+
+
+
+
+
+    .cat-categories {
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .cat-categories-title {
+        margin-right: 0 !important;
+        width: 100%;
+        font-size: 14px;
+    }
+    .cat-categories ul li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .cat-categories ul li a {
+        padding: 8px 10px;
+    }
+    .cat-title {
+        font-size: 32px;
+    }
+
+    .pr-catalog-banner .pr-catalog-banner-inner {
+        height: 450px;
+    }
+    .pr-catalog-banner-title {
+        font-size: 25px;
+    }
+
+
+    .pr-catalog-banner-1 .pr-catalog-banner-inner:after {
+        width: calc(332px/1.3);
+        height: calc(364px/1.3);
+        right: 0;
+        bottom: 20px;
+    }
+    .pr-catalog-banner-2 .pr-catalog-banner-inner:after {
+        width: calc(382px/1.4);
+        height: calc(345px/1.4);
+        left: 0;
+        bottom: 0;
+    }
+    .pr-catalog-banner-3 .pr-catalog-banner-inner:after {
+        width: calc(392px/1.4);
+        height: calc(431px/1.4);
+        right: -25px;
+        bottom: -10px;
+    }
+    .pr-catalog-banner-4 .pr-catalog-banner-inner:after {
+        width: calc(400px/1.4);
+        height: calc(384px/1.4);
+        right: -65px;
+        bottom: -10px;
+    }
+    .pr-catalog-banner-5 .pr-catalog-banner-inner {
+        padding-top: 180px;
+    }
+    .pr-catalog-banner-5 .pr-catalog-banner-inner:after {
+        width: calc(424px/1.5);
+        height: calc(560px/1.5);
+        right: -90px;
+        top: -30px;
+    }
+    .pr-catalog-banner-6 .pr-catalog-banner-inner:after {
+        width: calc(393px/1.6);
+        height: calc(338px/1.6);
+        right: -25px;
+        bottom: -15px;
+    }
+
+
+
+    .cat-text-block-item {
+        flex-flow: wrap;
+        margin-bottom: 50px;
+    }
+    .cat-text-block-item-1 {
+        width: 100%;
+        padding-right: 0;
+        margin: 20px 0;
+    }
+    .cat-text-block-item-2 {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .cat-text-block-item:nth-of-type(2) .cat-text-block-item-1 {
+        order: 1;
+    }
+
+
+    .pr-catalog-stickers {
+        right: 8px;
+        top: 8px;
+        max-width: 100px;
+    }
+    .pr-catalog-sticker {
+        font-size: 12px;
+        padding: 4px 10px;
+        margin-bottom: 3px;
+        margin-left: 3px;
+    }
 }

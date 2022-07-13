@@ -4173,7 +4173,38 @@ nav a:hover {
     box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
 }
+.pr-catalog-stickers {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    max-width: 130px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+}
+.pr-catalog-sticker {
+    border-radius: 5px;
+    background: #6DA730;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 15px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+.pr-catalog-sticker.new {
+    background: #6DA730;
+}
+.pr-catalog-sticker.discount {
+    background: #C13D3E;
+}
+.pr-catalog-sticker.bestseller {
+    background: #13A3E1;
+}
+
+
 
 .pr-catalog .image {
     margin-bottom: 10px;
@@ -4202,6 +4233,7 @@ nav a:hover {
     color: #6D6D6D;
     padding: 4px 10px;
     margin-right: 20px;
+    margin-bottom: 5px;
 }
 .pr-catalog-option-item.active {
     background: #FFDC98;
