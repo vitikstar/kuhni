@@ -1,9 +1,8 @@
 <?php
 class ControllerMailSend extends Controller {
 	public function index() {
-		//$recepient = "Nastya772.85@mail.ru"; //pr877@mail.ru Nastya772.85@mail.ru  ip@seops.ru
 		$recepient = $this->config->get('config_email');
-		$from_name = "Кухни";
+		$from_name = $this->config->get('config_name');
 		$from_email = 'no-reply@pr-kuhni.ru';
 
 		$phone = trim($_POST["phone"]);
@@ -143,6 +142,80 @@ class ControllerMailSend extends Controller {
 		) {
 			return true;
 		} else return false;
+	}
+
+
+	public function priceCalculator(){
+		$recepient = $this->config->get('config_email');
+		$from_name = $this->config->get('config_name');
+		$from_email = 'no-reply@pr-kuhni.ru';
+
+		$phone = trim($_POST["phone"]);
+		$type = trim($_POST["type"]);
+		$subject = "$type";
+
+		$msg = "<p><strong>$type</strong><p>";
+
+		if (!empty($_POST['name'])) {
+			$msg .= "<p><strong>Имя:</strong> " . trim($_POST["name"]) . "<p>";
+		}
+
+		$msg .= "<p><strong>Телефон:</strong> $phone<p>";
+
+		$comment = trim($_POST['comment']);
+
+		if (!empty($comment)) {
+			$msg .= "<p><strong>Коментарий:</strong> " . $comment . "<p>";
+		}
+
+
+		$msg = nl2br($msg);
+
+		$data = [
+			// '_FILES' => $_FILES,
+			// '_REQUEST' => $_REQUEST
+		];
+
+		if (!empty($_FILES['popup_2_file'])) {
+			$uploaddir = DIR_DOWNLOAD;
+			$uploaddir .= "/" . date("Y") . "/";
+			@mkdir($uploaddir);
+			$uploaddir .= date('m') .  "/";
+			@mkdir($uploaddir);
+			$fileInfo = pathinfo($_FILES['popup_2_file']['name']);
+			$fileExt = $fileInfo['extension'];
+			$fname = date("Y-m-d__h-i-s") . '.' . $fileExt;
+			$uploadfile = $uploaddir . $fname;
+			if (!move_uploaded_file($_FILES['popup_2_file']['tmp_name'], $uploadfile)) {
+				$data['error'] = "move_uploaded_file() fail :: {$_FILES["file"]["error"]}";
+				$uploadfile = "";
+			} else {
+				if (!empty($uploadfile)) {
+					//$data['uploadFile'] = $uploadfile;
+					//$data['uploadFileName'] = $fname;
+				} else $data['uploadError'] = 'Ошибка загрузки файлов.';
+			}
+		}
+
+
+		$headers = "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\n";
+		$headers .= "From: =?UTF-8?B?" . base64_encode($from_name) . "?= <" . $from_email . ">\r\n";
+		if ($type != '') {
+			if (empty($uploadfile)) {
+				$data['mailres'][] = mail($recepient, $subject, $msg, $headers);
+				foreach (explode(',', $this->config->get('config_mail_alert_email')) as $recepient) {
+					$data['mailres'][] = mail($recepient, $subject, $msg, $headers);
+				}
+			} else {
+				$data['mailres'][] = $this->send_mail($from_name, $from_email, $recepient, $subject, $msg, $uploadfile, $fname);
+				foreach (explode(',', $this->config->get('config_mail_alert_email')) as $recepient) {
+					$data['mailres'][] = $this->send_mail($from_name, $from_email, $recepient, $subject, $msg, $uploadfile, $fname);
+				}
+			}
+
+
+			die(json_encode($data));
+		}
 	}
 
 	protected function send_mail($fromName, $fromEmail, $to, $thm, $html, $path, $fname)

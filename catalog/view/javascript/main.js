@@ -201,11 +201,6 @@ $(document).ready(function ()
         $('.popup').fadeOut(300)
     })
 
-
-    $('.block5__item').each(function (e)
-    {
-        $(this).attr('data-case', e)
-    })
     $('.case-popup').each(function (e)
     {
         if (!$(this).is('.furn'))
@@ -213,45 +208,58 @@ $(document).ready(function ()
             $(this).attr('data-case', e)
         }
     })
-    $('.block5__item').click(function ()
-    {
-        document.body.style.overflow = 'hidden';
-        var e = $(this).data('case')
-        $('.layer').fadeIn(300)
-        $('.case-popup[data-case=' + e + ']').fadeIn(500)
-    })
 
-    //ajax form
-    $("form").submit(function ()
-    {
+
+     $("#price_calculation").submit(function ()
+     {
         var type = $(this).children('input[name=type]').val();
         var formData = new FormData(this);
-        console.log(formData);
         $.ajax({
             type: "POST",
             contentType: false,
             processData: false,
-            url: "/send",
+            url: "priceCalculator",
             data: formData,
         }).done(function ()
         {
-            if (type == 'Квиз')
-            {
-                $('.block2__quiz').trigger('next.owl.carousel');
-            }
-            else if (type == 'Скачивание каталога')
-            {
-                window.open("http://axis-portfolio.ru/logo.png");
-            }
-            else
-            {
-                $('.layer').fadeIn(300)
-                $('.popup').fadeOut(200)
-                $('.thank-popup').fadeIn(300)
-            }
+                //надсилає но що при успіху робити я незнаю
         });
         return false;
     });
+    
+    //ajax form
+    // $("form").submit(function ()
+    // {
+    //     var type = $(this).children('input[name=type]').val();
+    //     var formData = new FormData(this);
+    //     console.log(formData);
+    //     $.ajax({
+    //         type: "POST",
+    //         contentType: false,
+    //         processData: false,
+    //         url: "/send",
+    //         data: formData,
+    //     }).done(function ()
+    //     {
+    //         if (type == 'Квиз')
+    //         {
+    //             $('.block2__quiz').trigger('next.owl.carousel');
+    //         }
+    //         else if (type == 'Скачивание каталога')
+    //         {
+    //             window.open("http://axis-portfolio.ru/logo.png");
+    //         }
+    //         else
+    //         {
+    //             $('.layer').fadeIn(300)
+    //             $('.popup').fadeOut(200)
+    //             $('.thank-popup').fadeIn(300)
+    //         }
+    //     });
+    //     return false;
+    // });
+
+    
     //ajax form -- END
 
     if (isMobile())
