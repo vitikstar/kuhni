@@ -218,7 +218,46 @@ $(document).ready(function ()
         }
     })
 
+    
 
+         $("#order_calculation").submit(function ()
+     {
+        var type = $(this).children('input[name=type]').val();
+        var formData = new FormData(this);
+        $.ajax({
+            type: "POST",
+            contentType: false,
+            processData: false,
+            url: "callback", //.htaccess
+            data: formData,
+        }).done(function ()
+        {
+                $('.layer').fadeIn(300)
+                $('#call-popup-1').fadeOut(200)
+                $('.thank-popup').fadeIn(300)
+        });
+        return false;
+         });
+    
+             $(".case__form").submit(function ()
+     {
+        var type = $(this).children('input[name=type]').val();
+        var formData = new FormData(this);
+        $.ajax({
+            type: "POST",
+            contentType: false,
+            processData: false,
+            url: "callback", //.htaccess
+            data: formData,
+        }).done(function ()
+        {
+                $('.layer').fadeIn(300)
+                $('.popup').fadeOut(200)
+                $('.thank-popup').fadeIn(300)
+        });
+        return false;
+         });
+    
      $("#price_calculation").submit(function ()
      {
         var type = $(this).children('input[name=type]').val();
@@ -231,7 +270,9 @@ $(document).ready(function ()
             data: formData,
         }).done(function ()
         {
-                //надсилає но що при успіху робити я незнаю
+                $('.layer').fadeIn(300)
+                $('.popup').fadeOut(200)
+                $('.thank-popup').fadeIn(300)
         });
         return false;
      });
@@ -244,11 +285,32 @@ $(document).ready(function ()
             type: "POST",
             contentType: false,
             processData: false,
-            url: "requestYourGift", //.htaccess
+            url: "callback", //.htaccess
             data: formData,
         }).done(function ()
         {
-                //надсилає но що при успіху робити я незнаю
+                $('.layer').fadeIn(300)
+                $('.popup').fadeOut(200)
+                $('.thank-popup').fadeIn(300)
+        });
+        return false;
+         });
+    
+      $("#callback").submit(function ()
+     {
+        var type = $(this).children('input[name=type]').val();
+        var formData = new FormData(this);
+        $.ajax({
+            type: "POST",
+            contentType: false,
+            processData: false,
+            url: "callback", //.htaccess
+            data: formData,
+        }).done(function ()
+        {
+                $('.layer').fadeIn(300)
+                $('.popup').fadeOut(200)
+                $('.thank-popup').fadeIn(300)
         });
         return false;
      });

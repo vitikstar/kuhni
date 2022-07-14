@@ -143,8 +143,8 @@ class ControllerMailSend extends Controller {
 			return true;
 		} else return false;
 	}
-
-	public function requestYourGift(){
+	public function callback()
+	{
 		$recepient = $this->config->get('config_email');
 		$from_name = $this->config->get('config_name');
 		$from_email = 'no-reply@pr-kuhni.ru';
