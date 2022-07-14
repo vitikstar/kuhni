@@ -1231,6 +1231,22 @@ class ControllerCatalogProduct extends Controller {
 			$data['width'] = '';
 		}
 
+		if (isset($this->request->post['bestseller'])) {
+			$data['bestseller'] = 1;
+		} elseif (!empty($product_info)) {
+			$data['bestseller'] = ($product_info['bestseller'] == 'on') ? 1 : 0;
+		} else {
+			$data['bestseller'] = 0;
+		}
+
+		if (isset($this->request->post['new'])) {
+			$data['new'] = 1;
+		} elseif (!empty($product_info)) {
+			$data['new'] = ($product_info['new'] == 'on') ? 1 : 0;
+		} else {
+			$data['new'] = 0;
+		}
+
 		if (isset($this->request->post['height'])) {
 			$data['height'] = $this->request->post['height'];
 		} elseif (!empty($product_info)) {
@@ -1619,7 +1635,6 @@ class ControllerCatalogProduct extends Controller {
 		if (!$this->user->hasPermission('modify', 'catalog/product')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
-
 		foreach ($this->request->post['product_description'] as $language_id => $value) {
 			if ((utf8_strlen($value['name']) < 1) || (utf8_strlen($value['name']) > 255)) {
 				$this->error['name'][$language_id] = $this->language->get('error_name');

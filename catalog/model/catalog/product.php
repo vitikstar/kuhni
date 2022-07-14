@@ -13,6 +13,8 @@ class ModelCatalogProduct extends Model {
 		if ($query->num_rows) {
 			return array(
 				'product_id'       => $query->row['product_id'],
+				'new'       => $query->row['new'],
+				'bestseller'       => $query->row['bestseller'],
 				'name'             => $query->row['name'],
 				'description'      => $query->row['description'],
 				'meta_title'       => $query->row['meta_title'],

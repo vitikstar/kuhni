@@ -38,9 +38,9 @@
                             <div class="product-thumb">
 
                                 <div class="pr-catalog-stickers">
-                                    <div class="pr-catalog-sticker new">Новинка</div>
-                                    <div class="pr-catalog-sticker discount">-5%</div>
-                                    <div class="pr-catalog-sticker bestseller">Хит</div>
+                                   {% if product.new %}  <div class="pr-catalog-sticker new">Новинка</div>{% endif %}
+                                   {% if product.discount %} <div class="pr-catalog-sticker discount">-{{ product.discount }}%</div>{% endif %}
+                                    {% if product.bestseller %} <div class="pr-catalog-sticker bestseller">Хит</div>{% endif %}
                                 </div>
 
                                 <div class="image">
