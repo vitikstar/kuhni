@@ -178,6 +178,15 @@ $(document).ready(function ()
         $('.callback-popup').fadeIn(500)
     })
 
+    $('.p-one-click').click(function ()
+    {
+        document.body.style.overflow = 'hidden';
+        $('.layer').fadeIn(300)
+        $('.callback-popup').fadeIn(500)
+    })
+
+     
+
     $('.quiz-start').click(function ()
     {
         document.body.style.overflow = 'hidden';
