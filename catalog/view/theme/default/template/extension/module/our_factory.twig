@@ -1,61 +1,69 @@
 <section class="bloсk5"><img src="/catalog/view/theme/default/image/block5/bg.png" alt="" class="block5__bg">
-			<div class="container">
-				<h2 class="section__title">Посмотрите на кухни изготовленные нашей фабрикой</h2>
-				<div class="block5__flex">
-                    {% for category in categories %}
-                    	<div class="block5__item" data-toggle="modal" data-target="#case{{ category.id }}">
-                            <img src="/image/{{ category.image }}" alt="">
-                            <div class="block5__item__link">
-                                <span>Подробнее</span><img src="/image/icons/arrow.png" alt="">
-                            </div>
-                            <div class="block5__item__bottom">
-                                <span class="price">{{ category.name }}</span>
-                            </div>
-					    </div>
-                    {% endfor %}
-					<div class="block5__link"><a href="/projects/"><button class="button">Больше готовых кухонь</button></a></div>
-				</div>
-			</div>
-		</section>
+    <div class="container">
+        <h2 class="section__title">Посмотрите на кухни изготовленные нашей фабрикой</h2>
+        <div class="block5__flex">
+            {% for category in categories %}
+                <div class="block5__item" data-toggle="modal" data-target="#case{{ category.id }}">
+                    <img src="/image/{{ category.image }}" alt="">
+                    <div class="block5__item__link">
+                        <span>Подробнее</span><img src="/image/icons/arrow.png" alt="">
+                    </div>
+                    <div class="block5__item__bottom">
+                        <span class="price">{{ category.name }}</span>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="block5__link"><a href="/projects/">
+                    <button class="button">Больше готовых кухонь</button>
+                </a></div>
+        </div>
+    </div>
+</section>
 
- {% for category in categories %}
-                            <div class="modal fade case-popup furn" id="case{{ category.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="case-popup__wrapper">
-									<div class="case__left">
-										<div class="title">Кухня "{{ category.name }}"</div>
-										<div class="case__images clearfix">
-											<a href="/image/{{ category.image }}" data-lightbox="case" style="background-image: url('/image/{{ category.image }}');" class="case__img"></a>
-										</div>
-										<div class="text"></div>
-									</div>
-									<div class="case__right">
-										<div class="case__price">
-											<div class="key">Стоимость за кухню</div>
-											<div class="value">{{ category.name }}</div>
-										</div>
-										<div class="case__price">
-											<div class="key">Стоимость за м.п</div>
-											<div class="value">От {{ category.cost }} т.рр</div>
-										</div>
-										<!--
-										<div class="case__bonus">
-											<div class="text">Закажите кухню до конца 2019 года <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="<? bloginfo('template_url'); ?>/img/cases/1.png" alt=""/>
-										</div>
-										-->
-										<form class="case__form">
-											<div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
-											<div class="input">
-												<div class="input__img"><img src="/image/icons/3.png" alt=""/></div>
-												<input type="text" name="name" placeholder="Введите имя" required="required"/>
-											</div>
-											<div class="input">
-												<div class="input__img"><img src="/image/icons/4.png" alt=""/></div>
-												<input type="text" name="phone" placeholder="Ваш телефон" required="required"/>
-											</div>
-											<button class="button">Закрепить за собой подарки</button>
-											<input type="hidden" name="type" value="Заявка с проекта "/>
-										</form>
-									</div>
-								</div>
-							</div>
+{% for category in categories %}
+    <div id="case{{ category.id }}" class="case-category modal-custom modal-vertical-center modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close-modal" data-dismiss="modal"></button>
+                <div class="case-popup__wrapper">
+                    <div class="case__left">
+                        <div class="title">Кухня "{{ category.name }}"</div>
+                        <div class="case__images clearfix">
+                            <a href="/image/{{ category.image }}" data-lightbox="case"
+                               style="background-image: url('/image/{{ category.image }}');" class="case__img"></a>
+                        </div>
+                        <div class="text"></div>
+                    </div>
+                    <div class="case__right">
+                        <div class="case__price">
+                            <div class="key">Стоимость за кухню</div>
+                            <div class="value">{{ category.name }}</div>
+                        </div>
+                        <div class="case__price">
+                            <div class="key">Стоимость за м.п</div>
+                            <div class="value">От {{ category.cost }} т.рр</div>
+                        </div>
+                        <!--
+                        <div class="case__bonus">
+                            <div class="text">Закажите кухню до конца 2019 года <br><b>и закрепите за собой подарок - каменную мойку + варочную панель</b></div><img src="<? bloginfo('template_url'); ?>/img/cases/1.png" alt=""/>
+                        </div>
+                        -->
+                        <form class="case__form">
+                            <div class="title">Заполните поля ниже. Специалист свяжется с вами в течение 12 минут.</div>
+                            <div class="input">
+                                <div class="input__img"><img src="/image/icons/3.png" alt=""/></div>
+                                <input type="text" name="name" placeholder="Введите имя" required="required"/>
+                            </div>
+                            <div class="input">
+                                <div class="input__img"><img src="/image/icons/4.png" alt=""/></div>
+                                <input type="text" name="phone" placeholder="Ваш телефон" required="required"/>
+                            </div>
+                            <button class="button">Закрепить за собой подарки</button>
+                            <input type="hidden" name="type" value="Заявка с проекта "/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endfor %}
