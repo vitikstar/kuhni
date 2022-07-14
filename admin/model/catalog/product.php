@@ -81,6 +81,12 @@ class ModelCatalogProduct extends Model {
 			}
 		}
 
+		if (isset($data['complements'])) {
+			foreach ($data['complements'] as $complement) {
+				$this->db->query("INSERT INTO " . DB_PREFIX . "product_complement SET product_id = '" . (int)$product_id ."',type = '" . $complement['type'] ."',sort_order = '" . $complement['sort_order'] . "', image = '" . $this->db->escape($complement['image']) . "', description = '" . $complement['description'] . "', title = '" . $complement['title'] . "'");
+			}
+		}
+
 		if (isset($data['product_download'])) {
 			foreach ($data['product_download'] as $download_id) {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "product_to_download SET product_id = '" . (int)$product_id . "', download_id = '" . (int)$download_id . "'");
@@ -246,6 +252,15 @@ class ModelCatalogProduct extends Model {
 		if (isset($data['product_image'])) {
 			foreach ($data['product_image'] as $product_image) {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+			}
+		}
+
+		$this->db->query("DELETE FROM " . DB_PREFIX . "product_complement WHERE product_id = '" . (int)$product_id . "'");
+
+
+		if (isset($data['complements'])) {
+			foreach ($data['complements'] as $complement) {
+				$this->db->query("INSERT INTO " . DB_PREFIX . "product_complement SET product_id = '" . (int)$product_id ."',type = '" . $complement['type'] . "', image = '" . $this->db->escape($complement['image']) ."',sort_order = '" . $complement['sort_order'] . "',  description = '" . $complement['description'] . "', title = '" . $complement['title'] . "'");
 			}
 		}
 
@@ -665,6 +680,13 @@ class ModelCatalogProduct extends Model {
 
 	public function getProductImages($product_id) {
 		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_image WHERE product_id = '" . (int)$product_id . "' ORDER BY sort_order ASC");
+
+		return $query->rows;
+	}
+
+	public function getProductComplements($product_id)
+	{
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_complement WHERE product_id = '" . (int)$product_id . "'");
 
 		return $query->rows;
 	}

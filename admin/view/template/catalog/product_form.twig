@@ -34,6 +34,7 @@
             <li><a href="#tab-discount" data-toggle="tab">{{ tab_discount }}</a></li>
             <li><a href="#tab-special" data-toggle="tab">{{ tab_special }}</a></li>
             <li><a href="#tab-image" data-toggle="tab">{{ tab_image }}</a></li>
+            <li><a href="#tab-complement" data-toggle="tab">Комплект</a></li>
             <li><a href="#tab-reward" data-toggle="tab">{{ tab_reward }}</a></li>
             <li><a href="#tab-seo" data-toggle="tab">{{ tab_seo }}</a></li>
             <li><a href="#tab-design" data-toggle="tab">{{ tab_design }}</a></li>
@@ -1073,6 +1074,60 @@
                 </table>
               </div>
             </div>
+            <div class="tab-pane" id="tab-complement">
+              <div class="table-responsive">
+                <table id="complements" class="table table-striped table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <td class="text-left">Картинка</td>
+                      <td class="text-right">Заголовок</td>
+                      <td class="text-right">Описание</td>
+                      <td class="text-right">Тип</td>
+                      <td class="text-right">Сортировка</td>
+                      <td class="text-right"></td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                  {% set complement_row = 0 %}
+                  {% for complement in complements %}
+                  <tr id="complement-row{{ complement_row }}">
+                    <td class="text-left">
+                      <a href="" id="thumb-image-complement{{ complement_row }}" data-toggle="image" class="img-thumbnail"><img src="{{ complement.thumb }}" alt="" title="" data-placeholder="{{ placeholder }}" /></a>
+                      <input type="hidden" name="complements[{{ complement_row }}][image]" value="{{ complement.image }}" id="input-image-complement{{ complement_row }}" />
+                    </td>
+                    <td class="text-left">
+                      <input type="text" name="complements[{{ complement_row }}][title]" value="{{ complement.title }}" />
+                    </td>
+                    <td class="text-right">
+                    <textarea name="complements[{{ complement_row }}][description]" class="form-control">{{ complement.description }}</textarea>
+                    </td>
+                    <td class="text-right">
+                    <select name="complements[{{ complement_row }}][type]" class="form-control">
+                      <option value="main" {% if complement.type == 'main' %} selected {% endif %}>Основное</option>
+                      <option value="more" {% if complement.type == 'more' %} selected {% endif %}>Дополнительно</option>
+                    </select>
+                    </td>
+                    <td class="text-left">
+                      <input type="number" min=1 name="complements[{{ complement_row }}][sort_order]" value="{{ complement.sort_order }}" />
+                    </td>
+                    <td class="text-left"><button type="button" onclick="$('#complement-row{{ complement_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button>
+                    </td>
+                  </tr>
+                  {% set complement_row = complement_row + 1 %}
+                  {% endfor %}
+                    </tbody>
+                  
+                  <tfoot>
+                    <tr>
+                      <td colspan="2"></td>
+                      <td class="text-left"><button type="button" onclick="addComplement();" data-toggle="tooltip" title="{{ button_image_add }}" class="btn btn-primary"><i class="fa fa-plus-circle"></i></button></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
             <div class="tab-pane" id="tab-reward">
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-points"><span data-toggle="tooltip" title="{{ help_points }}">{{ entry_points }}</span></label>
@@ -1669,6 +1724,22 @@ function addImage() {
 	$('#images tbody').append(html);
 
 	image_row++;
+}
+
+var complement_row = {{ complement_row }};
+
+function addComplement() {
+	html  = '<tr id="complement-row' + complement_row + '">';
+	html += '<td class="text-left"><a href="" id="thumb-image-complement' + complement_row + ' "data-toggle="image" class="img-thumbnail"><img src="{{ placeholder }}" alt="" title="" data-placeholder="{{ placeholder }}" /></a><input type="hidden" name="complements[' + complement_row + '][image]" value="" id="input-image-complement' + complement_row + '" /></td>';
+	html += '<td class="text-left"><input type="text" name="complements[' + complement_row + '][title]" value="" /></td>';
+  html += '<td class="text-right"><textarea name="complements[' + complement_row + '][description]"  placeholder="" class="form-control"></textarea></td>';
+  html += '<td class="text-right"><select name="complements[' + complement_row + '][type]" class="form-control"><option value="main">Основное</option><option value="more">Дополнительно</option></select></td>';
+  html += '<td class="text-left"><input type="number" min=1 name="complements[' + complement_row + '][sort_order]"/></td>';
+	html += '<td class="text-left"><button type="button" onclick="$(\'#complement-row' + complement_row  + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+	html += '</tr>';
+	$('#complements tbody').append(html);
+
+	complement_row++;
 }
 //--></script> 
   <script type="text/javascript"><!--

@@ -1620,6 +1620,36 @@ class ControllerCatalogProduct extends Controller {
 			$data['product_layout'] = array();
 		}
 
+		// Images complements
+		if (isset($this->request->post['complements'])) {
+			$complements = $this->request->post['complements'];
+		} elseif (isset($this->request->get['product_id'])) {
+			$complements = $this->model_catalog_product->getProductComplements($this->request->get['product_id']);
+		} else {
+			$complements = array();
+		}
+
+		$data['complements'] = array();
+
+		foreach ($complements as $complement) {
+			if (is_file(DIR_IMAGE . $complement['image'])) {
+				$image = $complement['image'];
+				$thumb = $complement['image'];
+			} else {
+				$image = '';
+				$thumb = 'no_image.png';
+			}
+
+			$data['complements'][] = array(
+				'image'      => $image,
+				'thumb'      => $this->model_tool_image->resize($thumb, 100, 100),
+				'title' => $complement['title'],
+				'sort_order' => $complement['sort_order'],
+				'type' => $complement['type'],
+				'description' => $complement['description']
+			);
+		}
+
 		$this->load->model('design/layout');
 
 		$data['layouts'] = $this->model_design_layout->getLayouts();

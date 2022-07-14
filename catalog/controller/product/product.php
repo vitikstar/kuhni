@@ -458,6 +458,28 @@ class ControllerProductProduct extends Controller {
 
 			$data['recurrings'] = $this->model_catalog_product->getProfiles($this->request->get['product_id']);
 
+			$data['complements'] = array();
+
+			$row = 0;
+			foreach($this->model_catalog_product->getProductComplements($this->request->get['product_id'],'main') as $complement){
+				$data['complements'][$row]['image'] = $complement['image'];
+			    $data['complements'][$row]['title'] = $complement['title'];
+				$data['complements'][$row]['description'] = $complement['description'];
+				$data['complements'][$row]['type'] = $complement['type'];
+				$row++;
+			}
+
+			$data['complements_more'] = array();
+
+			$row = 0;
+			foreach ($this->model_catalog_product->getProductComplements($this->request->get['product_id'],'more') as $complement) {
+				$data['complements_more'][$row]['image'] = $complement['image'];
+				$data['complements_more'][$row]['title'] = $complement['title'];
+				$data['complements_more'][$row]['description'] = $complement['description'];
+				$data['complements_more'][$row]['type'] = $complement['type'];
+				$row++;
+			}
+
 			$this->model_catalog_product->updateViewed($this->request->get['product_id']);
 			
 			$data['column_left'] = $this->load->controller('common/column_left');

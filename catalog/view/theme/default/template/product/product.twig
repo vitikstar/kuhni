@@ -157,123 +157,42 @@
 
             </div>
 
-
+{% if complements %}
         <div class="p-set">
             <div class="container">
                 <h2 class="section__title">В комплект кухни входит</h2>
                 <div class="p-set-items">
+                    {% for complement in complements %}
                     <div class="p-set-item">
                         <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-1.jpg" alt="">
+                            <img src="/image/{{ complement.image }}" alt="">
                         </div>
-                        <div class="p-set-item-name">Корпус из 18мм ЛДСП Kronospan</div>
-                        <div class="p-set-item-text">Германия, производство - Польша; ЛДСП покрыта устойчивым к
-                            УФ-излучению ламинатом; Стандартные цвета + корпуса
-                            могут быть изготовлены из ЛДСП покрытые натуральным шпоном Дуба и покрашенные в цвет фасадов.</div>
+                        <div class="p-set-item-name">{{ complement.title }}</div>
+                        <div class="p-set-item-text">{{ complement.description }}</div>
                     </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-2.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Петли Hettich Infermat
-                            Blum Clip Top Blumotion</div>
-                        <div class="p-set-item-text">Бесшумное идеально плавное открывание шкафов с петлями от всемирноизвестных брендов Hettich(Австрия) и Blum(Германия)</div>
-                    </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-3.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Столешница Egger / PFLEIDERER</div>
-                        <div class="p-set-item-text">В приведённую стоимость включена стоимость столещницы из ЛДСП. Но мы также готовы предложить столешницу из пластика HPL, искуственного камня и кварцевого камня</div>
-                    </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-4.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Ручки Giusti / Gamet</div>
-                        <div class="p-set-item-text">Производство Италия / Польша</div>
-                    </div>
-
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-1.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Корпус из 18мм ЛДСП Kronospan</div>
-                        <div class="p-set-item-text">Германия, производство - Польша; ЛДСП покрыта устойчивым к
-                            УФ-излучению ламинатом; Стандартные цвета + корпуса
-                            могут быть изготовлены из ЛДСП покрытые натуральным шпоном Дуба и покрашенные в цвет фасадов.</div>
-                    </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-2.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Петли Hettich Infermat
-                            Blum Clip Top Blumotion</div>
-                        <div class="p-set-item-text">Бесшумное идеально плавное открывание шкафов с петлями от всемирноизвестных брендов Hettich(Австрия) и Blum(Германия)</div>
-                    </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-3.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Столешница Egger / PFLEIDERER</div>
-                        <div class="p-set-item-text">В приведённую стоимость включена стоимость столещницы из ЛДСП. Но мы также готовы предложить столешницу из пластика HPL, искуственного камня и кварцевого камня</div>
-                    </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-4.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Ручки Giusti / Gamet</div>
-                        <div class="p-set-item-text">Производство Италия / Польша</div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
-
-
-
+{% endif %}
+{% if complements_more %}
         <div class="p-set-dop p-set">
             <div class="container">
                 <h2 class="section__title">Дополнительно можно установить</h2>
-                <div class="p-set-items">
+                                <div class="p-set-items">
+                {% for complement in complements_more %}
                     <div class="p-set-item">
                         <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-dop-1.jpg" alt="">
+                            <img src="/image/{{ complement.image }}" alt="">
                         </div>
-                        <div class="p-set-item-name">Подъёмные механизмы</div>
-                        <div class="p-set-item-text">Семейства Aventos от австрийской компании Blum</div>
+                        <div class="p-set-item-name">{{ complement.title }}</div>
+                        <div class="p-set-item-text">{{ complement.description }}</div>
                     </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-dop-2.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Выдвижные системы</div>
-                        <div class="p-set-item-text">Hettich Innotech и Hettich Arcitech</div>
-                    </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-dop-3.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Лоток для приборов и другие системы организации</div>
-                        <div class="p-set-item-text">Пластиковые и металические лотки для приборов с разделительными элементами для индивидуальной организации</div>
-                    </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-dop-4.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Мойки и смесители</div>
-                        <div class="p-set-item-text">Семейства Aventos от австрийской компании Blum</div>
-                    </div>
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/catalog/products/set-dop-5.jpg" alt="">
-                        </div>
-                        <div class="p-set-item-name">Остальная фурнитура</div>
-                        <div class="p-set-item-text">Семейства Aventos от австрийской компании Blum</div>
-                    </div>
-                </div>
+                {% endfor %}
+                                </div>
             </div>
         </div>
-
+{% endif %}
 
 
 
