@@ -27,6 +27,7 @@ RewriteRule ^googlebase.xml$ index.php?route=extension/feed/google_base [L]
 
 RewriteRule ^send index.php?route=mail/send [L]
 RewriteRule ^priceCalculator index.php?route=mail/send/priceCalculator [L]
+RewriteRule ^requestYourGift index.php?route=mail/send/requestYourGift [L]
 
 
 RewriteRule ^system/storage/(.*) index.php?route=error/not_found [L]

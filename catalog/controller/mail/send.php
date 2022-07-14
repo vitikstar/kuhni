@@ -144,6 +144,44 @@ class ControllerMailSend extends Controller {
 		} else return false;
 	}
 
+	public function requestYourGift(){
+		$recepient = $this->config->get('config_email');
+		$from_name = $this->config->get('config_name');
+		$from_email = 'no-reply@pr-kuhni.ru';
+
+		$phone = trim($_POST["phone"]);
+		$type = trim($_POST["type"]);
+		$subject = "$type";
+
+		$msg = "<p><strong>$type</strong><p>";
+
+		if (!empty($_POST['name'])) {
+			$msg .= "<p><strong>Имя:</strong> " . trim($_POST["name"]) . "<p>";
+		}
+
+		$msg .= "<p><strong>Телефон:</strong> $phone<p>";
+
+		$msg = nl2br($msg);
+
+		$headers = "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\n";
+		$headers .= "From: =?UTF-8?B?" . base64_encode($from_name) . "?= <" . $from_email . ">\r\n";
+		if ($type != '') {
+			if (empty($uploadfile)) {
+				$data['mailres'][] = mail($recepient, $subject, $msg, $headers);
+				foreach (explode(',', $this->config->get('config_mail_alert_email')) as $recepient) {
+					$data['mailres'][] = mail(trim($recepient), trim($subject), $msg, $headers);
+				}
+			} else {
+				$data['mailres'][] = $this->send_mail($from_name, $from_email, $recepient, $subject, $msg, $uploadfile, $fname);
+				foreach (explode(',', $this->config->get('config_mail_alert_email')) as $recepient) {
+					$data['mailres'][] = $this->send_mail($from_name, $from_email, $recepient, $subject, $msg, $uploadfile, $fname);
+				}
+			}
+
+
+			die(json_encode($data));
+		}
+	}
 
 	public function priceCalculator(){
 		$recepient = $this->config->get('config_email');
@@ -264,7 +302,7 @@ class ControllerMailSend extends Controller {
 		$multipart .= $message_part . "--$boundary--\n";
 
 
-		if (!mail($to, $thm, $multipart, $headers)) {
+		if (!mail(trim($to), trim($thm), $multipart, $headers)) {
 			return "mail() error";
 		}
 

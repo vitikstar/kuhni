@@ -227,14 +227,32 @@ $(document).ready(function ()
             type: "POST",
             contentType: false,
             processData: false,
-            url: "priceCalculator",
+            url: "priceCalculator", //.htaccess
             data: formData,
         }).done(function ()
         {
                 //надсилає но що при успіху робити я незнаю
         });
         return false;
-    });
+     });
+    
+         $("#request_your_gift").submit(function ()
+     {
+        var type = $(this).children('input[name=type]').val();
+        var formData = new FormData(this);
+        $.ajax({
+            type: "POST",
+            contentType: false,
+            processData: false,
+            url: "requestYourGift", //.htaccess
+            data: formData,
+        }).done(function ()
+        {
+                //надсилає но що при успіху робити я незнаю
+        });
+        return false;
+     });
+    
     
     //ajax form
     // $("form").submit(function ()
