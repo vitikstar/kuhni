@@ -1836,3 +1836,229 @@
         margin-left: 3px;
     }
 }
+
+
+
+
+
+
+@media (max-width: 1199px) {
+    .popup-1-slider-block {
+        display: block;
+        padding: 50px 50px;
+    }
+    .popup-1-slider {
+        width: 100%;
+        padding-right: 0;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .popup-1-block {
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 25px;
+    }
+
+    .popup-1-slider-item-info {
+        display: none;
+    }
+    #call-popup-1 .slick-prev,
+    #call-popup-1 .slick-next {
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        border: 4px solid #fff;
+    }
+
+    .popup-1-block {
+        background: none !important;
+        box-shadow: none;
+    }
+    #call-popup-1 .modal-content {
+        background: #36383B;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .popup-1-slider-item-img {
+        border-radius: 10px;
+        border: 5px solid #fff;
+        background: #fff;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .p-title {
+        display: none;
+    }
+    .p-title.mob {
+        display: block;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.3;
+        color: #000;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .p-thumbnails {
+        display: block;
+    }
+    .p-add-images {
+        width: calc(100% + 8px);
+        margin-top: 10px;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .p-add-image {
+        margin: 0 5px;
+    }
+    .p-price {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .p-price-block .price-new {
+        font-size: 30px;
+    }
+    .p-price .price-old {
+        font-size: 14px;
+        color: #C44041;
+    }
+
+    .p-btn {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 65px;
+    }
+    .p-btn:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .p-block-tabs .nav-tabs li {
+        width: 50%;
+        flex: none;
+    }
+    .p-block-tabs .nav-tabs a {
+        padding: 12px 20px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+    .p-block-tabs {
+        margin-top: 30px;
+    }
+
+
+    .tab-description-specification {
+        display: block;
+        margin-top: 30px;
+    }
+    .tab-description {
+        width: 100%;
+        margin-right: 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .tab-specification {
+        margin-top: 30px;
+    }
+    .tab-specification .spec-item-name {
+        font-size: 12px;
+        line-height: 1.4;
+        width: 40%;
+        padding-right: 15px;
+    }
+
+    .tab-specification .spec-item-text {
+        font-size: 12px;
+        line-height: 1.3;
+        width: 60%;;
+    }
+    .spec-item {
+        padding: 6px 15px;
+        min-height: 60px;
+    }
+
+    .p-set-items {
+        margin-top: 30px;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .p-set-item {
+        width: 100%;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        border-radius: 15px;
+    }
+    .p-set-item-text {
+        margin-top: 12px;
+    }
+
+
+    .p-set-dop .p-set-item {
+        width: 100%;
+    }
+    .p-set-dop .p-set-item-name {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .p-set-dop .p-set-item-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    #call-popup-2 .block1__right .input,
+    #call-popup-1 .block1__right .input {
+        width: 270px;
+    }
+    #call-popup-2 .block1__right button,
+    #call-popup-1 .block1__right button {
+        width: 270px;
+    }
+
+    #call-popup-2 .block1__right .input input,
+    #call-popup-1 .block1__right .input input {
+        height: 58px;
+    }
+    #call-popup-2 .block1__right .input__img,
+    #call-popup-1 .block1__right .input__img {
+        height: 58px;
+        width: 58px;
+    }
+    #call-popup-2 .block1__right .input input,
+    #call-popup-1 .block1__right .input input {
+        width: 213px;
+    }
+
+
+    .popup-1-slider-block {
+        padding: 50px 15px 10px;
+    }
+    .popup-1-block {
+        padding: 10px 0 30px;
+    }
+    .popup-1-slider {
+        padding: 0 20px;
+    }
+    .popup-1-slider {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+
+
+    .to-top-btn {
+        width: 50px;
+        height: 50px;
+    }
+}

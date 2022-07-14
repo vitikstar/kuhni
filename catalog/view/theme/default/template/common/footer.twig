@@ -515,28 +515,52 @@
             <button type="button" class="close-modal" data-dismiss="modal"></button>
             <div class="modal-body">
 
-                <form class="block1__right">
-                    <div class="title">Расчёт цены под свой размер</div>
-                    <div class="descriptor">Возьмём в работу в течение двух минут!</div>
-                    <div class="input">
-                        <div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
-                        <input type="text" name="name" placeholder="Введите имя">
+                <div class="popup-1-slider-block">
+                    <div class="popup-1-slider">
+                        <div class="popup-1-slider-items before-slider">
+                            <div class="popup-1-slider-item">
+                                <div class="popup-1-slider-item-info">
+                                    <div class="popup-1-slider-item-name">Кухня “Астория 2”</div>
+                                    <div class="popup-1-slider-item-price">от <span>26 000 ₽</span> за м.п</div>
+                                </div>
+                                <div class="popup-1-slider-item-img">
+                                    <img src="/image/catalog/products/product-1.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="popup-1-slider-item">
+                                <div class="popup-1-slider-item-info">
+                                    <div class="popup-1-slider-item-name">Кухня “Астория 2”</div>
+                                    <div class="popup-1-slider-item-price">от <span>26 000 ₽</span> за м.п</div>
+                                </div>
+                                <div class="popup-1-slider-item-img">
+                                    <img src="/image/catalog/products/product-1.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input">
-                        <div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
-                        <input type="text" name="phone" placeholder="Ваш телефон" required="required">
-                    </div>
+                    <form class="popup-1-block block1__right">
+                        <div class="title">Оставьте заявку</div>
+                        <div class="descriptor">Наш специалист свяжется с Вами в течение 12 минут</div>
+                        <div class="input">
+                            <div class="input__img"><img src="/catalog/view/theme/default/image/icons/3.png" alt=""></div>
+                            <input type="text" name="name" placeholder="Введите имя">
+                        </div>
+                        <div class="input">
+                            <div class="input__img"><img src="/catalog/view/theme/default/image/icons/4.png" alt=""></div>
+                            <input type="text" name="phone" placeholder="Ваш телефон" required="required">
+                        </div>
 
-                    <div class="checkbox input">
-                        <input type="checkbox" id="popup_1_c0" checked="checked">
-                        <label for="popup_1_c0">
-                            <div class="box"><img src="/catalog/view/theme/default/image/icons/check.png" alt=""></div>
-                            <div class="text">Я даю своё согласие на обработку персональных данных</div>
-                        </label>
-                    </div>
-                    <button class="button">Рассчитать стоимость</button>
-                    <input type="hidden" name="type" value="Расчёт цены под свой размер">
-                </form>
+                        <div class="checkbox input">
+                            <input type="checkbox" id="popup_1_c0" checked="checked">
+                            <label for="popup_1_c0">
+                                <div class="box"><img src="/catalog/view/theme/default/image/icons/check.png" alt=""></div>
+                                <div class="text">Я даю своё согласие на обработку персональных данных</div>
+                            </label>
+                        </div>
+                        <button class="button">Закрепить за собой подарки</button>
+                        <input type="hidden" name="type" value="Заказ расчета (карточка товара)">
+                    </form>
+                </div>
 
             </div>
         </div>
@@ -544,8 +568,40 @@
 </div>
 
 <script>
-    function call_popup_1_show() {
-        $('#call-popup-1').modal('show');
+    $(document).ready(function() {
+        if (window.innerWidth < 768) {
+            $('.popup-1-slider').insertAfter('#call-popup-1 .descriptor');
+        }
+
+        $('#call-popup-1').on('shown.bs.modal', function (e) {
+            popup_1_slider();
+        });
+    });
+
+    function popup_1_slider() {
+        var slider = $('.popup-1-slider-items');
+        if (slider.length) {
+            slider.removeClass('before-slider');
+
+            slider.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                infinite: false,
+                nextArrow: '<div class="slick-next"></div>',
+                prevArrow: '<div class=slick-prev></div>'
+                ,responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1
+//                                    ,adaptiveHeight: true
+                        }
+                    }
+                ]
+            });
+        }
     }
 </script>
 {############# end popup 1 #}

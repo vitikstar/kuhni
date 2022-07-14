@@ -28,6 +28,8 @@
 
             <div class="p-block-wrap row">
 
+                <div class="p-title mob">{{ heading_title }}</div>
+
                 {#### product left #}
                 <div class="p-block-image col-sm-7">
                     {% if thumb or images %}
@@ -68,13 +70,14 @@
                                 nextArrow: '<div class="slick-next"></div>',
                                 prevArrow: '<div class=slick-prev></div>',
                                 vertical: true,
-                                verticalSwiping: true,
-                                adaptiveHeight: true
+                                verticalSwiping: true
                                 ,responsive: [
                                     {
                                         breakpoint: 767,
                                         settings: {
-                                            slidesToShow: 3
+                                            slidesToShow: 4,
+                                            verticalSwiping: false,
+                                            vertical: false,
 //                                    ,adaptiveHeight: true
                                         }
                                     }
@@ -204,7 +207,7 @@
                         {% set i = 0 %}
                         {% for product in products %}
 
-                            <div class="product-layout col-xs-12 col-sm-3 light_product">
+                            <div class="product-layout col-xs-12 col-sm-6 col-lg-3 light_product">
                                 <div class="product-thumb">
                                     <div class="image">
                                         <a href="{{ product.href }}">
