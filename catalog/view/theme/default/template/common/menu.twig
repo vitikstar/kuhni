@@ -34,93 +34,29 @@
     <div class="custom-menu">
         <ul>
             <li><a href="/">главная</a></li>
+             {%for categorie_level1 in categories %}
             <li class="menu-dropdown-li">
-                <a href="/projects">кухни</a>
+                <a href="{{ categorie_level1.href }}">{{ categorie_level1.name }}</a>
                 <div class="menu-dropdown-ul" style="display: none;">
                     <div class="menu-dropdown-ul-inner">
-                        <div class="md-ul-item">
-                            <div class="md-ul-item-title">По материалу</div>
-                            <div class="md-ul-item-list">
-                                <ul class="md-ul-item-list-ul">
-                                    <li><a href="#">Массив дерева</a></li>
-                                    <li><a href="#">МДФ</a></li>
-                                    <li><a href="#">МДФ Эмаль</a></li>
-                                    <li><a href="#">Кухни из шпона</a></li>
-                                    <li><a href="#">Акрил</a></li>
-                                    <li><a href="#">Из пластика</a></li>
-                                    <li><a href="#">Глянцевые</a></li>
-                                    <li><a href="#">Матовые</a></li>
-                                    <li><a href="#">С патиной</a></li>
-                                </ul>
+                    {%for categorie_level2 in categorie_level1.children %}
+                    {% if categorie_level2.children %}
+                            <div class="md-ul-item">
+                                <div class="md-ul-item-title">{{ categorie_level2.name }}</div>
+                            {%for categorie_level3 in categorie_level2.children %}
+                                    <div class="md-ul-item-list">
+                                        <ul class="md-ul-item-list-ul">
+                                            <li><a href="{{ categorie_level3.href }}">{{ categorie_level3.name }}</a></li>
+                                        </ul>
+                                    </div>
+                            {% endfor %}
                             </div>
-                        </div>
-                        <div class="md-ul-item">
-                            <div class="md-ul-item-title">По стилю</div>
-                            <div class="md-ul-item-list">
-                                <ul class="md-ul-item-list-ul">
-                                    <li><a href="#">Современные</a></li>
-                                    <li><a href="#">Классические</a></li>
-                                    <li><a href="#">Неоклассика</a></li>
-                                    <li><a href="#">Лофт</a></li>
-                                    <li><a href="#">Прованс</a></li>
-                                    <li><a href="#">Кантри</a></li>
-                                    <li><a href="#">Хай тек</a></li>
-                                    <li><a href="#">Модерн</a></li>
-                                    <li><a href="#">Минимализм</a></li>
-                                    <li><a href="#">В скандинавском стиле</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="md-ul-item">
-                            <div class="md-ul-item-title">По фасаду</div>
-                            <div class="md-ul-item-list">
-                                <ul class="md-ul-item-list-ul">
-                                    <li><a href="#">Кухни без ручек</a></li>
-                                    <li><a href="#">С рамочными фасадами</a></li>
-                                    <li><a href="#">С радиусными фасадами</a></li>
-                                    <li><a href="#">С декоративной фрезеровкой</a></li>
-                                </ul>
-                            </div>
-                            <div class="md-ul-item-title">По цене</div>
-                            <div class="md-ul-item-list">
-                                <ul class="md-ul-item-list-ul">
-                                    <li><a href="#">Эконом класса</a></li>
-                                    <li><a href="#">Элитные</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="md-ul-item">
-                            <div class="md-ul-item-title">По форму</div>
-                            <div class="md-ul-item-list">
-                                <ul class="md-ul-item-list-ul">
-                                    <li><a href="#">Прямые</a></li>
-                                    <li><a href="#">Угловые</a></li>
-                                    <li><a href="#">П-образные</a></li>
-                                    <li><a href="#">С барной стойкой</a></li>
-                                    <li><a href="#">С островом</a></li>
-                                    <li><a href="#">Встроенные</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="md-ul-item">
-                            <div class="md-ul-item-title">По цвету</div>
-                            <div class="md-ul-item-list">
-                                <ul class="md-ul-item-list-ul">
-                                    <li><a href="#">Светлые</a></li>
-                                    <li><a href="#">Тёмные</a></li>
-                                    <li><a href="#">Белые</a></li>
-                                    <li><a href="#">Голубые</a></li>
-                                    <li><a href="#">Зелёные</a></li>
-                                    <li><a href="#">Красные</a></li>
-                                    <li><a href="#">Серые</a></li>
-                                    <li><a href="#">Черные</a></li>
-                                    <li><a href="#">Черно-белые</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                            {% endif %}
+                     {% endfor %}
                     </div>
                 </div>
             </li>
+            {% endfor %}
             <li><a href="/furniture">корпусная мебель</a></li>
             <li><a href="/sales1">акции</a></li>
             <li><a href="/quiz">Конструктор</a></li>

@@ -25,8 +25,26 @@ class ControllerCommonMenu extends Controller {
 						'filter_sub_category' => true
 					);
 
+
+					$children_data_level3 = array();
+
+					$children_level3 = $this->model_catalog_category->getCategories($child['category_id']);
+
+					foreach ($children_level3 as $child_level3) {
+						$filter_data_level3 = array(
+							'filter_category_id'  => $child_level3['category_id'],
+							'filter_sub_category' => true
+						);
+
+						$children_data_level3[] = array(
+							'name'  => $child_level3['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data_level3) . ')' : ''),
+							'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child_level3['category_id'])
+						);
+					}
+
 					$children_data[] = array(
 						'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+						'children' => $children_data_level3,
 						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
 					);
 				}
@@ -40,7 +58,10 @@ class ControllerCommonMenu extends Controller {
 				);
 			}
 		}
-
+// echo"<pre>";
+// print_r($data['categories']);
+// echo "</pre>";
+// exit;
 		return $this->load->view('common/menu', $data);
 	}
 }
