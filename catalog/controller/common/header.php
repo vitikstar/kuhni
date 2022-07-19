@@ -101,6 +101,20 @@ class ControllerCommonHeader extends Controller {
 
 		$data['class_nav'] = ($this->request->get['route'] != "common/home") ? "radiant-bg" : ""; //@TODO: якщо головна то пустий класс, забув як перевіряється роут
 
+
+        $data['class_nav'] = 'radiant-bg';
+        if (isset($this->request->get['route'])) {
+            $route = $this->request->get['route'];
+            if ($route == 'product/category'
+                || $route == 'product/product'
+                || $route == 'common/home'
+                || $route == 'error/not_found'
+            ) {
+                $data['class_nav'] = '';
+            }
+        }
+
+
 		return $this->load->view('common/header', $data);
 	}
 }

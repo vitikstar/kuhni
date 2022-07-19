@@ -310,6 +310,7 @@ $(document).ready(function ()
         {
                 $('.layer').fadeIn(300)
                 $('.popup').fadeOut(200)
+                $('.modal').fadeOut(200)
                 $('.thank-popup').fadeIn(300)
         });
         return false;

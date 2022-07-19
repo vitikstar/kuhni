@@ -3791,7 +3791,7 @@ nav a:hover {
 
 #map iframe {
     width: 100%;
-    height: 450px;
+    height: 100%;
 }
 
 
@@ -5095,4 +5095,34 @@ nav a:hover {
 
 .p-title.mob {
     display: none;
+}
+
+
+
+.case-category .case-popup__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.case-category .case-popup__wrapper {
+    width: 100%;
+}
+.case-category .modal-content {
+    border: none;
+    border-radius: 15px;
+}
+.case-category .modal-dialog {
+    width: calc(100% - 30px);
+}
+@media (min-width: 1200px) {
+    .case-category .modal-dialog {
+        width: 1170px;
+    }
+}
+
+
+.header-menu-fixed .custom-menu > ul > li > a {
+    color: #fff;
+}
+.header-menu-fixed .custom-menu > ul > li > a:hover {
+    color: #FFAF13;
 }

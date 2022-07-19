@@ -1442,11 +1442,11 @@
     img.block__bg {
         display: none;
     }
-    .header__logo .title {
+    .only-header .header__logo .title {
         display: none;
     }
 
-    .header__right {
+    .only-header .header__right {
         display: none;
     }
 
@@ -1482,8 +1482,9 @@
     }
     .header__logo img {
         margin: 0;
-        position: static;
-        width: 145px;
+        width: 140px;
+        left: -10px;
+        position: relative;
     }
     .header__flex {
         justify-content: space-between !important;
@@ -2060,5 +2061,103 @@
     .to-top-btn {
         width: 50px;
         height: 50px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .block__bg_small + * .block1 {
+        padding-top: 0;
+    }
+    .header-menu-fixed header {
+        padding-bottom: 0;
+    }
+    .header-menu-fixed .header__contact.insta span {
+        display: none;
+    }
+    .header-menu-fixed .header__contacts img {
+        position: static;
+    }
+    .header-menu-fixed .header__contact.insta {
+        margin-right: 5px;
+    }
+    .header-menu-fixed .mobile-menu__button {
+        margin-top: 5px;
+    }
+
+    .header-menu-fixed nav {
+        padding: 25px 0;
+    }
+
+
+    .footer {
+        padding: 20px 0 25px;
+    }
+    .footer .header__logo {
+        display: block !important;
+    }
+    .footer .header__logo .title {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .footer .header__logo img {
+        left: 0;
+    }
+
+
+
+
+
+    .custom-menu > ul > li {
+        display: none;
+    }
+    .custom-menu > ul > li.menu-dropdown-li {
+        display: block;
+    }
+    .custom-menu > ul > li.menu-dropdown-li > a {
+        display: none;
+    }
+    .menu-dropdown-ul {
+        display: block !important;
+        position: static;
+        transform: none;
+    }
+    .menu-dropdown-ul-inner {
+        box-shadow: none;
+        background: none;
+        display: block;
+        padding: 0;
+    }
+    .md-ul-item {
+        width: 100%;
+        margin-right: 0;
+        position: relative;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .md-ul-item-title {
+        color: #fff;
+    }
+    .menu-dropdown-ul a {
+        padding: 3px 0;
+        color: #fff;
+    }
+    .menu-dropdown-ul li {
+        margin-bottom: 3px;
+    }
+    .md-ul-item:after {
+        display: none;
+    }
+    nav.nav-open {
+        overflow: auto;
+    }
+    .menu-dropdown-ul {
+        opacity: 1 !important;
     }
 }

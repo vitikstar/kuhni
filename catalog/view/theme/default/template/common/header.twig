@@ -75,7 +75,7 @@
 
 <div class="page-wrapper">
 
-    <div class="header-menu">
+    <div class="header-menu only-header">
         <header>
             <div class="container">
                 <div class="header__flex">
@@ -147,7 +147,7 @@
 
         function menu_fixed() {
             var width = window.innerWidth;
-            if (width > 767) {
+//            if (width > 767) {
                 var menu_fixed = $('.header-menu-fixed');
                 var menu_offset_top = 200;
                 var window_scroll_top = $(window).scrollTop();
@@ -157,7 +157,7 @@
                 } else {
                     menu_fixed.fadeOut();
                 }
-            }
+//            }
         }
     </script>
 {# end fixed menu #}
