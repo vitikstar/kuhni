@@ -4,12 +4,12 @@
 		<header class="footer">
 			<div class="container">
 				<div class="header__flex">
-					<div class="header__logo"><a href="/"><img src="/image/catalog/logo.png" alt=""></a>
+					<div class="header__logo"><a href="/"><img src="/image/catalog/logo.png" alt="Кухни на заказ"></a>
 						<div class="title">Изготовление кухонь на заказ <br>в Москве и Московской области</div>
 					</div>
 					<div class="header__right">
 						<div class="header__contacts">
-							<div class="header__contact"><a href="+74951396339"><img src="/catalog/view/theme/default/image/1.png" alt=""><span class="mobitel" data-tel="+74951396339">+7 (495) 139-63-39</span></a></div>
+							<div class="header__contact"><a href="tel:+74951396339"><img src="/catalog/view/theme/default/image/1.png" alt=""><span class="mobitel" data-tel="+74951396339">+7 (495) 139-63-39</span></a></div>
 							<!-- <div class="header__contact"><img src="/catalog/view/theme/default/image/icons/2.png" alt=""/><span>2233553@mail.ru</span></div> -->
     						<div class="header__contact insta"><a href="https://www.instagram.com/pravilnie_kuhni/" target="_blank"><img src="/catalog/view/theme/default/image/icons/insta20.svg" alt=""><span>@pravilnie_kuhni</span> </a></div>
 						</div>
@@ -605,6 +605,37 @@
     }
 </script>
 {############# end popup 1 #}
+
+
+
+
+<script>
+    $(document).ready(function() {
+        if (window.innerWidth > 767) {
+            $('.menu-dropdown-li').hover(function() {
+                    $(this).find('.menu-dropdown-ul').stop().fadeIn();
+                },
+                function() {
+                    $(this).find('.menu-dropdown-ul').stop().fadeOut();
+                });
+        }
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        if (window.innerWidth < 768) {
+            $('.header-menu .custom-menu .menu-dropdown-li > a').click(function(e) {
+                e.preventDefault();
+                var el = $(this);
+                var wrapper = el.parent();
+                var menu_dropdown = wrapper.find('.menu-dropdown-ul');
+                menu_dropdown.slideToggle();
+                wrapper.toggleClass('active');
+            });
+        }
+    });
+</script>
 
 
 </body></html>

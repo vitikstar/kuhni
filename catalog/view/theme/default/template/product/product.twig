@@ -160,42 +160,60 @@
 
             </div>
 
-{% if complements %}
-        <div class="p-set">
-            <div class="container">
-                <h2 class="section__title">В комплект кухни входит</h2>
-                <div class="p-set-items">
-                    {% for complement in complements %}
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/{{ complement.image }}" alt="">
-                        </div>
-                        <div class="p-set-item-name">{{ complement.title }}</div>
-                        <div class="p-set-item-text">{{ complement.description }}</div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-{% endif %}
-{% if complements_more %}
-        <div class="p-set-dop p-set">
-            <div class="container">
-                <h2 class="section__title">Дополнительно можно установить</h2>
-                                <div class="p-set-items">
-                {% for complement in complements_more %}
-                    <div class="p-set-item">
-                        <div class="p-set-item-img">
-                            <img src="/image/{{ complement.image }}" alt="">
-                        </div>
-                        <div class="p-set-item-name">{{ complement.title }}</div>
-                        <div class="p-set-item-text">{{ complement.description }}</div>
-                    </div>
-                {% endfor %}
-                                </div>
-            </div>
-        </div>
-{% endif %}
+
+        {% if sets_html %}
+            {% for sets_html_item in sets_html %}
+                {{ sets_html_item }}
+            {% endfor %}
+        {% endif %}
+
+
+        {#{% if complements or complements_more and 0%}#}
+            {#{% if complements %}#}
+                {#<div class="p-set">#}
+                    {#<div class="container">#}
+                        {#<h2 class="section__title">В комплект кухни входит</h2>#}
+                        {#<div class="p-set-items">#}
+                            {#{% for complement in complements %}#}
+                                {#<div class="p-set-item">#}
+                                    {#<div class="p-set-item-img">#}
+                                        {#<img src="/image/{{ complement.image }}" alt="">#}
+                                    {#</div>#}
+                                    {#<div class="p-set-item-name">{{ complement.title }}</div>#}
+                                    {#<div class="p-set-item-text">{{ complement.description }}</div>#}
+                                {#</div>#}
+                            {#{% endfor %}#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#{% endif %}#}
+            {#{% if complements_more %}#}
+                {#<div class="p-set-dop p-set">#}
+                    {#<div class="container">#}
+                        {#<h2 class="section__title">Дополнительно можно установить</h2>#}
+                        {#<div class="p-set-items">#}
+                            {#{% for complement in complements_more %}#}
+                                {#<div class="p-set-item">#}
+                                    {#<div class="p-set-item-img">#}
+                                        {#<img src="/image/{{ complement.image }}" alt="">#}
+                                    {#</div>#}
+                                    {#<div class="p-set-item-name">{{ complement.title }}</div>#}
+                                    {#<div class="p-set-item-text">{{ complement.description }}</div>#}
+                                {#</div>#}
+                            {#{% endfor %}#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#{% endif %}#}
+        {#{% else %}#}
+            {# sets html #}
+            {#{% if sets_html %}#}
+                {#{% for sets_html_item in sets_html %}#}
+                    {#{{ sets_html_item }}#}
+                {#{% endfor %}#}
+            {#{% endif %}#}
+            {# end sets html #}
+        {#{% endif %}#}
 
 
 

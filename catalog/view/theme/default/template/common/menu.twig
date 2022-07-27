@@ -34,46 +34,77 @@
     <div class="custom-menu">
         <ul>
             <li><a href="/">главная</a></li>
-             {%for categorie_level1 in categories %}
             <li class="menu-dropdown-li">
-                <a href="{{ categorie_level1.href }}">{{ categorie_level1.name }}</a>
-                <div class="menu-dropdown-ul" style="display: none;">
-                    <div class="menu-dropdown-ul-inner">
-                    {%for categorie_level2 in categorie_level1.children %}
-                    {% if categorie_level2.children %}
-                            <div class="md-ul-item">
-                                <div class="md-ul-item-title">{{ categorie_level2.name }}</div>
-                            {%for categorie_level3 in categorie_level2.children %}
+
+
+                {% for categorie_level1 in categories %}
+                    <a href="{{ categorie_level1.href }}">{{ categorie_level1.name }}</a>
+                    <div class="menu-dropdown-ul" style="display: none;">
+                        <div class="menu-dropdown-ul-inner">
+
+                            {% set item_div_start = true %}
+                            {% set item_div_close_first = true %}
+                            {% set item_div_close_second = false %}
+                            {% set before_item_column = '1' %}
+
+                            {% for categorie_level2 in categorie_level1.children %}
+
+                            {% if before_item_column == '1' and categorie_level2.column == '2' %}
+                                {% set item_div_start = true %}
+                                {% set item_div_close_first = false %}
+                                {% set item_div_close_second = false %}
+                            {% endif %}
+                            {% if before_item_column == '2' and categorie_level2.column == '2' %}
+                                {% set item_div_start = false %}
+                                {% set item_div_close_first = false %}
+                                {% set item_div_close_second = false %}
+                            {% endif %}
+                            {% if before_item_column == '2' and categorie_level2.column == '1' %}
+                                {% set item_div_start = true %}
+                                {% set item_div_close_first = true %}
+                                {% set item_div_close_second = true %}
+                            {% endif %}
+                            {% if before_item_column == '1' and categorie_level2.column == '1' %}
+                                {% set item_div_start = true %}
+                                {% set item_div_close_first = true %}
+                                {% set item_div_close_second = false %}
+                            {% endif %}
+
+
+                                {% if item_div_close_second %}
+                                </div>
+                                {% endif %}
+                                {% if item_div_start %}
+                                <div class="md-ul-item">
+                                {% endif %}
+                                    <div class="md-ul-item-title"><a href="{{ categorie_level2.href }}">{{ categorie_level2.name }}</a></div>
                                     <div class="md-ul-item-list">
                                         <ul class="md-ul-item-list-ul">
-                                            <li><a href="{{ categorie_level3.href }}">{{ categorie_level3.name }}</a></li>
+                                            {% for categorie_level3 in categorie_level2.children %}
+                                                <li><a href="{{ categorie_level3.href }}">{{ categorie_level3.name }}</a></li>
+                                            {% endfor %}
                                         </ul>
                                     </div>
+                                {% if item_div_close_first %}
+                                </div>
+                                {% endif %}
+
+
+                            {% set before_item_column = categorie_level2.column %}
                             {% endfor %}
-                            </div>
-                            {% endif %}
-                     {% endfor %}
+
+
+                        </div>
                     </div>
-                </div>
+                {% endfor %}
+
             </li>
-            {% endfor %}
             <li><a href="/furniture">корпусная мебель</a></li>
             <li><a href="/sales1">акции</a></li>
             <li><a href="/quiz">Конструктор</a></li>
             <li><a href="/payment">Оплата</a></li>
             <li><a href="/about">о компании</a></li>
-            <li><a href="" class="contacts-btn">контакты</a></li>
+            <li><a href="/#contact" class="contacts-btn">контакты</a></li>
         </ul>
     </div>
 </div>
-
-<script>
-    $(document).ready(function() {
-        $('.menu-dropdown-li').hover(function() {
-                $(this).find('.menu-dropdown-ul').stop().fadeIn();
-            },
-            function() {
-                $(this).find('.menu-dropdown-ul').stop().fadeOut();
-            });
-    });
-</script>

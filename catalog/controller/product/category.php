@@ -222,6 +222,7 @@ class ControllerProductCategory extends Controller {
 
 
 
+                $image = '/image/'.$result['image'];
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,

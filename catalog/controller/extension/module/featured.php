@@ -10,16 +10,20 @@ class ControllerExtensionModuleFeatured extends Controller {
 		$data['products'] = array();
 
 		if (!$setting['limit']) {
-			$setting['limit'] = 4;
+			$setting['limit'] = 6;
 		}
+
 
 		if (!empty($setting['product'])) {
 			$products = array_slice($setting['product'], 0, (int)$setting['limit']);
 
+
 			foreach ($products as $product_id) {
 				$product_info = $this->model_catalog_product->getProduct($product_id);
 
+
 				if ($product_info) {
+
 					if ($product_info['image']) {
 						$image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
 					} else {
@@ -50,20 +54,32 @@ class ControllerExtensionModuleFeatured extends Controller {
 						$rating = false;
 					}
 
-					$data['products'][] = array(
+                    //up
+                    $attribute_groups = $this->model_catalog_product->getProductAttributes($product_info['product_id']);
+                    //
+
+
+                    $image = '/image/'.$product_info['image'];
+                    $data['products'][] = array(
 						'product_id'  => $product_info['product_id'],
 						'thumb'       => $image,
+                        'attribute_groups' => $attribute_groups,
 						'name'        => $product_info['name'],
 						'description' => utf8_substr(strip_tags(html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('theme_' . $this->config->get('config_theme') . '_product_description_length')) . '..',
 						'price'       => $price,
 						'special'     => $special,
-						'tax'         => $tax,
+                        'discount'    => ($special) ? round((((int)$price - (int)$special) / (int)$price) * 100) : 0,
+                        'tax'         => $tax,
+                        'new'         => ($product_info['new'] == 'on') ? 1 : 0,
+                        'bestseller'  => ($product_info['bestseller'] == 'on') ? 1 : 0,
 						'rating'      => $rating,
 						'href'        => $this->url->link('product/product', 'product_id=' . $product_info['product_id'])
 					);
 				}
 			}
 		}
+
+
 
 		if ($data['products']) {
 			return $this->load->view('extension/module/featured', $data);

@@ -117,6 +117,7 @@ class ControllerInformationInformation extends Controller {
 		} elseif ($information_id == 8) {
 			$html .= $this->load->controller('extension/module/capacity');
 			$html .= $this->load->controller('extension/module/cost_calculator');
+            $html .= $this->load->controller('extension/module/google_map');
 		} elseif ($information_id == 9 or $information_id == 11 or $information_id == 10) {
 			$html .= $this->load->controller('extension/module/constructor'); //3D конструктор
 			$html .= $this->load->controller('extension/module/cost_calculator');

@@ -273,12 +273,17 @@ class ControllerProductProduct extends Controller {
 			} else {
 				$data['popup'] = '';
 			}
+            $data['popup'] = '/image/'.$product_info['image'];
+
 
 			if ($product_info['image']) {
 				$data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_thumb_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_thumb_height'));
+
 			} else {
 				$data['thumb'] = '';
 			}
+            $data['thumb'] = '/image/'.$product_info['image'];
+
 
 			$data['images'] = array();
 
@@ -286,8 +291,10 @@ class ControllerProductProduct extends Controller {
 
 			foreach ($results as $result) {
 				$data['images'][] = array(
-					'popup' => $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_popup_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_popup_height')),
-					'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_additional_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_additional_height'))
+                    'popup' => '/image/'.$result['image'],
+                    'thumb' => '/image/'.$result['image']
+//					'popup' => $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_popup_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_popup_height')),
+//					'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_additional_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_additional_height'))
 				);
 			}
 
@@ -428,6 +435,7 @@ class ControllerProductProduct extends Controller {
                 $attribute_groups = $this->model_catalog_product->getProductAttributes($result['product_id']);
                 //
 
+                $image = '/image/'.$product_info['image'];
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
@@ -481,6 +489,31 @@ class ControllerProductProduct extends Controller {
 			}
 
 			$this->model_catalog_product->updateViewed($this->request->get['product_id']);
+
+
+
+			//// sets
+            $data['sets_html'] = array();
+            $html_block_module_id_array = array(
+                53, // В комплект кухни входит
+                54 // Дополнительно можно установить
+            );
+            //
+            $config_language_id = (int)$this->config->get('config_language_id');
+            $this->load->model('setting/module');
+
+            foreach ($html_block_module_id_array as $module_id) {
+                $getModule = $this->model_setting_module->getModule($module_id);
+
+                if ($getModule && $getModule['status']) {
+                    if ($getModule['module_description'][$config_language_id]['description']) {
+                        $data['sets_html'][] = html_entity_decode($getModule['module_description'][$config_language_id]['description'], ENT_QUOTES, 'UTF-8');
+                    }
+                }
+            }
+            //
+            //// end sets
+
 			
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');

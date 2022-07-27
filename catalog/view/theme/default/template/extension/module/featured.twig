@@ -1,42 +1,91 @@
-<h3>{{ heading_title }}</h3>
-<div class="row">
- {% for product in products %}
-  <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="product-thumb transition">
-      <div class="image"><a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" /></a></div>
-      <div class="caption">
-        <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-        <p>{{ product.description }}</p>
-        {% if product.rating %}
-        <div class="rating">
-          {% for i in 5 %}
-          {% if product.rating < i %}
-          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-          {% else %}
-          <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-          {% endif %}
-          {% endfor %}
+<section class="bloсk5"><img src="/catalog/view/theme/default/image/block5/bg.png" alt="" class="block5__bg">
+    <div class="container">
+        <h2 class="section__title">Посмотрите на кухни изготовленные нашей фабрикой</h2>
+        <div class="block5__flex">
+
+            <div class="pr-catalog row">
+                {% set i = 0 %}
+                {% for product in products %}
+
+                    <div class="product-layout col-xs-12 col-sm-6 col-lg-4 light_product">
+                        <div class="product-thumb">
+                            {#<div class="pr-catalog-stickers">#}
+                                {#<div class="pr-catalog-sticker new">Новинка</div>#}
+                                {#<div class="pr-catalog-sticker discount">-5%</div>#}
+                                {#<div class="pr-catalog-sticker bestseller">Хит</div>#}
+                            {#</div>#}
+                            <div class="pr-catalog-stickers">
+                                {% if product.new %}  <div class="pr-catalog-sticker new">Новинка</div>{% endif %}
+                                {% if product.discount %} <div class="pr-catalog-sticker discount">-{{ product.discount }}%</div>{% endif %}
+                                {% if product.bestseller %} <div class="pr-catalog-sticker bestseller">Хит</div>{% endif %}
+                            </div>
+
+                            <div class="image">
+                                <a href="{{ product.href }}">
+                                    <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="pr-catalog-detail">
+                                <div class="caption">
+                                    <h3><a href="{{ product.href }}">{{ product.name }}</a></h3>
+                                    <div class="pr-catalog-option-items">
+                                        <div class="pr-catalog-option-item active">Любой цвет</div>
+                                        <div class="pr-catalog-option-item">Любые размеры и формы</div>
+                                    </div>
+
+                                    <div class="pr-catalog-attrs">
+                                        {% if product.attribute_groups %}
+                                            {% for attribute_group in product.attribute_groups %}
+                                                {% for attribute in attribute_group.attribute %}
+                                                    {# 17 - Фасады, 18 - Стиль, 19 - Цвет #}
+                                                    {%
+                                                    if attribute.attribute_id == 17
+                                                    or
+                                                    attribute.attribute_id == 18
+                                                    or
+                                                    attribute.attribute_id == 19
+                                                    %}
+                                                        <div class="pr-catalog-attr">
+                                                            <div class="pr-catalog-attr-name">{{ attribute.name }}</div>
+                                                            <div class="pr-catalog-attr-text">{{ attribute.text }}</div>
+                                                        </div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endfor %}
+                                        {% endif %}
+
+                                        {% if product.price %}
+                                            <div class="pr-catalog-attr price">
+                                                <div class="pr-catalog-attr-name">Цена</div>
+                                                {% if not product.special %}
+                                                    <div class="price-new pr-catalog-attr-text">от {{ product.price }} / метр</div>
+                                                {% else %}
+                                                    <div class="price-new pr-catalog-attr-text">от {{ product.special }} / метр</div>
+                                                    {#<span class="price-old">{{ product.price }}</span>#}
+                                                {% endif %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+
+                                </div>
+                                <div class="pr-catalog-btn-wrap">
+                                    <button onclick="call_popup_2_show()" class="order-product button">Заказать расчет</button>
+                                    <a href="{{ product.href }}" class="pr-catalog-btn-link button">Калькулятор</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+                {#<div id="show_more_html" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>#}
+            </div>
+
+
+
+            <div class="block5__link"><a href="/projects/">
+                    <button class="button">Больше готовых кухонь</button>
+                </a>
+            </div>
         </div>
-        {% endif %}
-        {% if product.price %}
-        <p class="price">
-          {% if not product.special %}
-          {{ product.price }}
-          {% else %}
-          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
-          {% endif %}
-          {% if product.tax %}
-          <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
-          {% endif %}
-        </p>
-        {% endif %}
-      </div>
-      <div class="button-group">
-        <button type="button" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
-        <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i></button>
-        <button type="button" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>
-      </div>
     </div>
-  </div>
-  {% endfor %}
-</div>
+</section>
