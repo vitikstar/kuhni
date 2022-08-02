@@ -8,8 +8,10 @@
 
 
 <script>
-    $('.block46').insertAfter('.block1');
-    $('.bloсk5').insertAfter('.block46');
+    if (window.innerWidth < 768) {
+        $('.block46').insertAfter('.block1');
+        $('.bloсk5').insertAfter('.block46');
+    }
 </script>
 
 {{ footer }}

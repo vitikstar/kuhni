@@ -156,26 +156,22 @@ class ControllerProductCategory extends Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 
+
 			$data['categories'] = array();
 
-			$results = $this->model_catalog_category->getCategories($category_id);
+			$categories = $this->model_catalog_category->getCategories($category_id);
 
-			foreach ($results as $result) {
-				$filter_data = array(
-					'filter_category_id'  => $result['category_id'],
-					'filter_sub_category' => true
-				);
-
-				$data['categories'][] = array(
-					'name' => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-					'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
-				);
+			foreach ($categories as $category) {
+						$data['categories'][] = array(
+							'name'  => $category['name'],
+							'href'  => $this->url->link('product/category', 'path=' . $category_id . '_' . $category['category_id'])
+						);
 			}
-
 			$data['products'] = array();
 
 			$filter_data = array(
 				'filter_category_id' => $category_id,
+				"filter_sub_category" => true,
 				'filter_filter'      => $filter,
 				'sort'               => $sort,
 				'order'              => $order,
@@ -288,7 +284,7 @@ class ControllerProductCategory extends Controller {
 					'text'  => $this->language->get('text_rating_desc'),
 					'value' => 'rating-DESC',
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
-				);
+			);
 
 				$data['sorts'][] = array(
 					'text'  => $this->language->get('text_rating_asc'),

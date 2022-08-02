@@ -4312,7 +4312,9 @@ nav a:hover {
 
 
 
-
+.pr-catalog-banner {
+    min-height: 550px;
+}
 .pr-catalog-banner .pr-catalog-banner-inner {
     height: 100%;
     padding-top: 40px;
@@ -4388,6 +4390,7 @@ nav a:hover {
     background-image: url(/image/catalog/category/banner-cat-2.png);
     left: 0;
     bottom: 0;
+    max-width: 100%;
 }
 
 .pr-catalog-banner-3 .pr-catalog-banner-inner {

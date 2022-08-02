@@ -435,7 +435,7 @@ class ControllerProductProduct extends Controller {
                 $attribute_groups = $this->model_catalog_product->getProductAttributes($result['product_id']);
                 //
 
-                $image = '/image/'.$product_info['image'];
+                $image = '/image/'.$result['image'];
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
